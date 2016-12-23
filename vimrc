@@ -7,4 +7,5 @@
 :noremap <Left> <NOP>
 :noremap <Right> <NOP>
 
-"
+" Turn on syntax Highlighting.
+syntax on
