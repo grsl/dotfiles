@@ -1,0 +1,43 @@
+: 1482837103:0;cd Sites/grsl.co.uk
+: 1482837119:0;ll
+: 1482837128:0;ls -a
+: 1482837132:0;ls -al
+: 1482837141:0;git status
+: 1482837145:0;exit
+: 1482837162:0;ll
+: 1482837171:0;brew update
+: 1482837194:0;brew upgrade
+: 1482837229:0;brew doctor
+: 1482837496:0;ls /etc/shells
+: 1482837506:0;cat /etc/shells
+: 1482837700:0;exit
+: 1482837704:0;ll
+: 1482837709:0;la
+: 1482837718:0;vim updateDotFiles.sh
+: 1482837804:0;./updateDotFiles.sh
+: 1482837816:0;ll ./dotfiles
+: 1482837826:0;ll
+: 1482837835:0;./updateDotFiles.sh
+: 1482837841:0;vim updateDotFiles.sh
+: 1482837859:0;./updateDotFiles.sh
+: 1482837867:0;la
+: 1482837874:0;vim updateDotFiles.sh
+: 1482837972:0;./updateDotFiles.sh
+: 1482837980:0;vim up
+: 1482837989:0;vim updateDotFiles.sh
+: 1482838011:0;./updateDotFiles.sh
+: 1482838025:0;ll ./dotfiles
+: 1482838034:0;./updateDotFiles.sh
+: 1482838042:0;man cp
+: 1482838054:0;vim updateDotFiles.sh
+: 1482838089:0;./updateDotFiles.sh
+: 1482838110:0;ll ./dotfiles
+: 1482838124:0;la
+: 1482838147:0;cat updateDotFiles.sh
+: 1482838199:0;la ./dotfiles
+: 1482838207:0;pwd
+: 1482838211:0;vim updateDotFiles.sh
+: 1482838239:0;cd dotfiles
+: 1482838240:0;ll
+: 1482838242:0;la
+: 1482838250:0;../updateDotFiles.sh
