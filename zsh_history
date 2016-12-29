@@ -41,3 +41,173 @@
 : 1482838240:0;ll
 : 1482838242:0;la
 : 1482838250:0;../updateDotFiles.sh
+: 1482838252:0;ll
+: 1482838256:0;la
+: 1482838268:0;rm .zsh*
+: 1482838269:0;ll
+: 1482838284:0;git status
+: 1482838291:0;git add .
+: 1482838298:0;git status
+: 1482838305:0;git commit -a
+: 1482838335:0;git push
+: 1482838356:0;exit
+: 1482919594:0;cd Sites/splatmedia.co.uk
+: 1482919596:0;ll
+: 1482919602:0;git status
+: 1482919613:0;vim index.php
+: 1482920008:0;ll
+: 1482920017:0;rm chapter-1
+: 1482920022:0;rmdir chapter-1
+: 1482920030:0;rm chapter-1/*
+: 1482920038:0;cd chapter-1
+: 1482920039:0;ll
+: 1482920043:0;..
+: 1482920046:0;ll
+: 1482920050:0;ls
+: 1482920056:0;rm -rf chapter-1
+: 1482920057:0;ll
+: 1482920064:0;ls css
+: 1482920086:0;~
+: 1482920088:0;ll
+: 1482920094:0;ls .shh
+: 1482920098:0;.ssh
+: 1482920107:0;ls
+: 1482920132:0;cat id_rsa.pub
+: 1482920184:0;~
+: 1482920186:0;ll
+: 1482920192:0;cd Sites/splatmedia.co.uk
+: 1482920193:0;ll
+: 1482920221:0;scp index.php www.splatmedia.co.uk
+: 1482920232:0;ll
+: 1482920257:0;man scp 
+: 1482920285:0;gw
+: 1482920292:0;ll
+: 1482920304:0;rm www.splatmedia.co.uk
+: 1482920305:0;ll
+: 1482920311:0;git init
+: 1482920322:0;git status
+: 1482920333:0;git add .
+: 1482920338:0;git commit -a
+: 1482920366:0;git push
+: 1482920377:0;git config user.name
+: 1482920384:0;git config user.email
+: 1482920416:0;git remote add ssh:grsl@github.com/grsl
+: 1482920453:0;git remote add -m splatmedia ssh:grsl@github.com/grsl
+: 1482920480:0;git remote add -m --mirror=push splatmedia ssh:grsl@github.com/grsl
+: 1482920500:0;git remote
+: 1482920511:0;git feetch splatmedia
+: 1482920522:0;git fetch splatmedia
+: 1482920526:0;ll
+: 1482920529:0;git status
+: 1482920545:0;git branch working
+: 1482920553:0;git checkout working
+: 1482920557:0;git branch
+: 1482920677:0;cd ..
+: 1482920680:0;~
+: 1482920681:0;ll
+: 1482920691:0;ls
+: 1482920692:0;la
+: 1482920763:0;ssh grsl@splatmedia.co.uk/home/p05splatmed 
+: 1482920789:0;ssh grsl@81.27.85.25/home/p05splatmed 
+: 1482920804:0;ssh grsl@81.27.85.25:2082 
+: 1482921932:0;ssh grsl@81.27.85.25/home/p05splatmed/ 
+: 1482921941:0;ssh grsl@81.27.85.25:home/p05splatmed/ 
+: 1482921957:0;ping 81.27.85.25
+: 1482922113:0;ssh p05splatmed@81.27.85.25:home/p05splatmed/ 
+: 1482922143:0;ssh grsl@splatmedia.co.uk:home/p05splatmed/ 
+: 1482922154:0;ssh grsl@splatmedia.co.uk 
+: 1482922203:0;ssh p05splatmed@splatmedia.co.uk 
+: 1482922233:0;ssh grsl@splatmedia.co.uk 
+: 1482922496:0;exit
+: 1482924030:0;ll
+: 1482924092:0;ssh p05splatmed@splatmedia.co.uk:home/p05splatmed/public_html/
+: 1482924103:0;ssh p05splatmed@splatmedia.co.uk
+: 1483005948:0;ls
+: 1483005950:0;ll
+: 1483005973:0;cd Sites/grsl.co.uk
+: 1483005978:0;git status
+: 1483005996:0;ll
+: 1483006001:0;ll ./css
+: 1483006012:0;git rm css/
+: 1483006027:0;git rm -r css/
+: 1483006034:0;git status
+: 1483006047:0;git rm facebook.php
+: 1483006049:0;git status
+: 1483006063:0;git commit -a
+: 1483006092:0;git status
+: 1483006100:0;git rm css
+: 1483006104:0;git rm css/
+: 1483006109:0;git rm ./css/
+: 1483006110:0;ll
+: 1483006117:0;ls css
+: 1483006128:0;git rmdir css
+: 1483006139:0;git rm -r css
+: 1483006142:0;ll
+: 1483006148:0;git status
+: 1483006158:0;git add css/
+: 1483006159:0;ll
+: 1483006164:0;ll css
+: 1483006170:0;ll css/
+: 1483006175:0;cd css
+: 1483006176:0;ll
+: 1483006188:0;git log
+: 1483006207:0;la
+: 1483006213:0;cd ..
+: 1483006214:0;ll
+: 1483006230:0;vim login.php
+: 1483006258:0;gw
+: 1483006271:0;ll
+: 1483006275:0;la
+: 1483006289:0;vim .zshrc
+: 1483007009:0;alias
+: 1483007053:0;l
+: 1483007060:0;alias
+: 1483007077:0;exit
+: 1483007100:0;l
+: 1483007103:0;ll
+: 1483007109:0;la
+: 1483007114:0;alias
+: 1483007175:0;gbda
+: 1483007183:0;cd Sites/grsl.co.uk
+: 1483007185:0;gbda
+: 1483007209:0;gss
+: 1483007226:0;gst
+: 1483007235:0;ga
+: 1483007260:0;cd css
+: 1483007261:0;ll
+: 1483007265:0;l
+: 1483007292:0;ga -a
+: 1483007300:0;gst
+: 1483007302:0;ll
+: 1483007416:0;ssh p05splatmed@splatmedia.co.uk
+: 1483008042:0;ll
+: 1483008044:0;la
+: 1483008046:0;cd ~
+: 1483008049:0;~
+: 1483008050:0;ll
+: 1483008065:0;l
+: 1483008070:0;ll
+: 1483008073:0;cls
+: 1483008075:0;clear
+: 1483008077:0;ll
+: 1483008086:0;./updateDotFiles.sh
+: 1483008093:0;brew update
+: 1483008100:0;clear
+: 1483008102:0;exit
+: 1483008113:0;brew upgrade
+: 1483008123:0;brew dictor
+: 1483008128:0;brew doctor
+: 1483008160:0;exit
+: 1483011471:0;prompt
+: 1483012093:0;l
+: 1483012109:0;vim .zshrc
+: 1483012188:0;ll
+: 1483012199:0;l
+: 1483012219:0;cat updateDotFiles.sh
+: 1483012271:0;vim updateDotFiles.sh
+: 1483012615:0;man cp
+: 1483012796:0;./updateDotFiles.sh
+: 1483012810:0;vim updateDotFiles.sh
+: 1483012854:0;./updateDotFiles.sh
+: 1483012860:0;vim updateDotFiles.sh
+: 1483012872:0;./updateDotFiles.sh

@@ -1,0 +1,5 @@
+ls
+cd Sites/
+ll
+vim index.html 
+exit

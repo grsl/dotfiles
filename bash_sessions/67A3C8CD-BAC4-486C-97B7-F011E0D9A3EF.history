@@ -1,0 +1,449 @@
+ls
+la
+cat .bash_profile 
+ls
+la
+ll
+ls ./.vim
+la
+ll
+cd ~
+vim
+ll
+sudo brew update; brew upgrade; 
+brew update; brew upgrade; 
+brew doctor
+ls
+cd Sites/
+ll
+cd splatmedia.co.uk/
+ll
+cd ..
+cd countries/
+ll
+vim countries.p
+vim countries.php 
+vim countries.txt 
+mv countries.txt dewey.txt
+ll
+..
+cd ..
+ll
+cd grsl.co.uk/
+git status
+cd ../splatmedia.co.uk/
+git status
+cd ../css/
+ll
+cd ..
+rmd -rf ./css/
+rm -rf ./css/
+ll
+cd images/
+ll
+rm gradient.jpg 
+cd ..
+rmdir images/
+ll
+cd bookCellar/
+ll
+cd php/
+ll
+mv * ../
+ll
+cd ..
+ll
+rmdir php/
+ll
+la
+la -l
+vim diff array.php array.php.bak 
+vimdiff array.php array.php.bak 
+cat array.php
+cat array.php | less
+mv array.php countries.class.php
+ll
+mv Books\ Database booksDatabase
+cat booksDatabase 
+vim booksDatabase 
+rm booksDatabase 
+cls
+ll
+cat index.html 
+cat index.php
+rm index.php
+ll
+cls
+ll
+cat bookList.php 
+rm bookList.php 
+ll
+act sql.php 
+cat sql.php 
+rm sql.php 
+cat index.php.bak 
+ll
+cat countries.php.bak 
+cat countries.php.bak | less
+ll
+mv countries.php.bak countries.class.php.bak
+ll
+cls
+ll
+cat c.php
+cat c.php | less
+mv c.php countries.array.php
+ll
+cat c.php.bak | less
+rm c.php.bak 
+ll
+cat array.php.bak | less
+rm array.php.bak 
+ll
+cat book_categories.sql 
+cat book_categories.sql  | less
+mv book_categories.sql bookCategories.sql
+ll
+cat bookshops.html | less
+rm bookshops.html
+ll
+cat index\ copy.php 
+rm index\ copy.php 
+ll
+cat index.php.bak 
+cat index.html 
+ll
+cd ..
+ll
+rm -rf Smarty-3.1.19/
+ll
+cd countries/
+ll
+cd ..
+ll
+cat index.html 
+:q
+cls
+ll
+brew update; brew upgrade; brew doctor;
+apachectl start
+sudo apachectl start
+httpd
+cd ~
+ll
+cd dotfiles\ 2/
+ll
+git status
+cd ..
+ll
+rm -rf dotfiles\ 2/
+ll
+brew update
+brew upgrade
+brew doctor
+ll
+cd Sites/
+ll
+cd grsl.co.uk/
+git init
+git status
+ll
+vim html5.html 
+ll ./Classes/
+ll
+cd Classes/
+ll
+cd ..
+cat requirements.txt 
+rm requirements.txt 
+ll
+ll ./i
+cd ./i/vis/
+ll
+rm osa_*
+ll
+rm *.zip
+ll
+cd ..
+rmdir vis
+ll
+rm *.png
+ll
+rm g*
+ll
+cd ..
+rmdir i
+ll
+ll js
+rm -rf ./js/
+ll
+ls ./css/
+cd css/
+ll
+rm bootstrap-responsive.min.css 
+sass grsl.scss grsl.css
+gem install sass
+sudo gem install sass
+sass grsl.scss grsl.css
+ll
+cd ..
+ll
+cat backup_index.html 
+vim backup_index.html 
+vim backup_index.html 
+cls
+ll
+mv html5.html ./
+rm html5.html 
+ll
+cat select.php 
+rm select.php 
+ll
+cls
+ll
+cat login.php 
+vim login.php 
+cd ~
+ll
+mkdir .vim
+cd .vim
+ll
+mkdir syntax
+cd ~
+vim .bash_profile 
+brew doctor
+brew update; brew upgrade; brew doctor;
+vim ~/.bash_profile 
+buu
+exit
+buu
+vim .bash_profile 
+buu
+exit
+vim ./buu.sh 
+exit
+buu
+vim .bash_profile 
+brew update &;
+brew update &
+brew update & ;
+brew update & ; fg
+vim buu.sh
+ll
+vim ./buu.sh
+ll
+chmod +x buu.sh 
+ll
+buu
+vim .bash_profile 
+./buu.sh 
+:
+./buu.sh 
+ps
+ps
+ps -usimon
+ps -ugrsl
+brew install rails
+xcode-select --install
+Software update
+gcc --version
+cls
+la
+gcc --version
+cls
+exit
+EXIT
+exit
+man ssh
+ll ./.ssh/
+ll
+cd Downloads/
+ll
+cp id_rsa.pub ~/.ssh/authorized_keys/
+mkdir ~/.ssh/authorized_keys/
+cp id_rsa.pub ~/.ssh/authorized_keys/
+ssh-askpass
+ssh-add
+ssh grsl@grsl.co.uk
+exit
+vim .bash_profile 
+sudo service restart ssh
+sudo restart ssh
+sudo ssh restart
+ssh service
+service ssh
+exit
+rails
+sudo gem install rails
+./buu.sh 
+brew update
+brew upgrade
+brew doctor
+sudo gem install rails
+ruby update
+ruby
+ruby 2+2
+ll
+cd ~
+ll
+rm buu.sh 
+ll
+ssh host58.servers.prgn.misp.co.uk/home/grsl/www/
+ssh host58.servers.prgn.misp.co.uk/www/
+ssh grsl@host58.servers.prgn.misp.co.uk/home/grsl/www/
+ssh grsl@host58.servers.prgn.misp.co.uk:home/grsl/www/
+ssh grsl@host58.servers.prgn.misp.co.uk
+ssh grsl@host58.servers.prgn.misp.co.uk:www
+ssh grsl@host58.servers.prgn.misp.co.uk/www
+ssh grsl@host58.servers.prgn.misp.co.uk:/home/grsl/public_html/
+exit
+gw
+exit
+ssh grsl@splatmedia.co.uk
+ssh grsl@splatmedia.co.uk
+ping splatmedia.co.uk =c5
+ping splatmedia.co.uk -c5
+ping splatmedia.co.uk -c 5
+ping www.splatmedia.co.uk -c 5
+ping www.splatmedia.co.uk
+cd Sites/splatmedia.co.uk/
+ll
+vim index.php
+cat index.php 
+gw
+ll
+cd ../grsl.co.uk/
+ll
+git fetch origin master
+scp grsl@grsl.co.uk .
+scp grsl@grsl.co.uk:www/* 
+scp grsl@grsl.co.uk:www . 
+scp grsl@grsl.co.uk:www/* . 
+scp -R grsl@grsl.co.uk:www/* . 
+scp -r grsl@grsl.co.uk:www/* . 
+git status
+git config user.name
+git config user.email
+git add -A
+git status
+git commit -m
+git commit -A
+git config core.editor
+git commit -m
+git commit -a
+git status
+git branch
+ll
+cd ../splatmedia.co.uk/
+ll
+cd ..
+ll
+cd splatmedia.co.uk/
+ll
+ssh grsl@splatmedia.co.uk 
+exit
+gw
+cd ~
+cd www
+gw
+locate ssh*
+exit
+cd Sites/splatmedia.co.uk/
+ssh p05splatmed@splatmedia.co.uk
+ssh p05splatmed@81.27.85.25:home/public_html/
+ssh p05splatmed@81.27.85.25/home/public_html
+ssh p05splatmed@81.27.85.25
+cd ../..
+ll
+cd Sites/grsl.co.uk/
+ll
+cls
+ll
+git configure origin
+git config origin
+git config core.origin
+git status
+git fetch
+git fetch master origin
+git fetch origin master
+cd ~
+cat .bash_profile 
+cd Sites/grsl.co.uk/
+git fetch ssh grls@host58.servers.prgn.misp.co.uk
+git fetch grls@host58.servers.prgn.misp.co.uk
+git fetch grls@host58.servers.prgn.misp.co.uk/www/
+git fetch ssh://grls@host58.servers.prgn.misp.co.uk/home/grsl/www/
+scp grls@host58.servers.prgn.misp.co.uk/home/grsl/www/* .
+scp grls@host58.servers.prgn.misp.co.uk/home/grsl/www/ .
+git fetch ssh://grsl@host58.servers.prgn.misp.co.uk/home/grsl/www/
+git fetch origin master
+git status
+ll
+git push
+git remote add grsl host58.servers.prng.misp.co.uk/home/grsl/www/
+git push grsl
+git push --set-upstream grsl master
+git remote add grsl ssh://grsl@host58.servers.prng.misp.co.uk/home/grsl/www/
+git remote remove grsl
+git remote add grsl ssh://grsl@host58.servers.prng.misp.co.uk/home/grsl/www/
+git push grsl
+git push --set-upstream grsl master
+clear
+git push --set-upstream grsl master
+git remote remove grsl
+git remote add grsl ssh://grsl@host58.servers.prng.misp.co.uk:home/grsl/www/
+git push --set-upstream grsl master
+git remote remove grsl
+git remote add grsl grsl@host58.servers.prng.misp.co.uk/home/grsl/www/
+git push --set-upstream grsl master
+git fetch
+git fetch grsl@host58.servers.prng.misp.co.uk/home/grsl/www/
+git fetch ssh://grsl@host58.servers.prgn.misp.co.uk/home/grsl/www/
+git remote remove grsl
+git remote add grsl ssh://grsl@host58.servers.prgn.misp.co.uk/home/grsl/www/
+git fetch
+git fetch grsl
+git branch
+git status
+git push grsl
+git push --set-upstream grsl master
+git pull
+clear
+git pull
+git pull grsl
+git pull grsl master 
+ll
+pwd
+git clone grsl
+ll
+git init
+git clone grsl
+git config user.name
+git config user.email
+git fetch grsl master
+ll
+git pull grsl master
+scp grsl@host58.servers.prgn.misp.co.uk/home/grsl/www/ .
+scp grsl@host58.servers.prgn.misp.co.uk/home/grsl/www/* .
+scp ssh://grsl@host58.servers.prgn.misp.co.uk/home/grsl/www/* .
+scp ssh://grsl@host58.servers.prgn.misp.co.uk:home/grsl/www/* .
+scp ssh://grsl@host58.servers.prgn.misp.co.uk:home/grsl/www/* .clear
+clear
+man ssh
+grep / -f ssh*
+man grep
+grep / ssh*
+cd /
+grep / ssh*
+grep ssh*
+clear
+exit
+ll
+ls
+cd .vim
+ll
+ll syntax/
+cd ~
+ll
+cat .viminfo 
+exit
