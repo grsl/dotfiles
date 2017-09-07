@@ -1,3 +1,104 @@
+clear
+man ssh
+grep / -f ssh*
+man grep
+grep / ssh*
+cd /
+grep / ssh*
+grep ssh*
+clear
+exit
+ll
+ls
+cd .vim
+ll
+ll syntax/
+cd ~
+ll
+cat .viminfo 
+exit
+ll
+touch updateDotFiles.sh
+ll
+vim updateDotFiles.sh 
+chmod x+ updateDotFiles.sh 
+chmod +x updateDotFiles.sh 
+ll
+./updateDotFiles.sh 
+ll ./dotfiles/
+cd dotfiles/
+ll
+git status
+ git add viminfo 
+ll
+git status
+git commit -e
+ll
+git push
+git push
+git push
+git status
+exit
+ll
+cat .bash_profile 
+ssh remote add grsl host58.servers.prgn.misp.co.uk
+ssh remote add 
+ssh remote 
+man ssh remote add
+cat ~/.ssh/id_rsa.pub | ssh grsl@host58.servers.prgn.misp.co.uk 'cat >> .ssh/authorized_keys'
+gw
+ll
+cd ~\
+cd ~
+]ll
+ll
+cd Sites/splatmedia.co.uk/
+ll
+sw
+cd ~
+ll
+gw
+ll
+ls .vimrc
+touch .vimrc
+vim .vimrc
+vim .vimrc
+vim .vimrc
+ll
+git status
+mkdir dotfiles
+cp .vimrc ./dotfiles/
+cat ./dotfiles/.vimrc 
+cp .bash_profile ./dotfiles/
+ll ./dotfiles/
+cat ./dotfiles/.bash_profile 
+cd dotfiles/
+ll
+mc .vimrc vimrc
+mv .vimrc vimrc
+mv .bash_profile bash_profile
+ll
+cd ~
+cd dotfiles/
+ll
+git status
+git config user.name
+git config user.email
+git remote add
+git clone https://github.com/grsl/dotfiles.git
+ll
+rmdir dotfiles/
+rm bash_profile 
+ll
+rm bash_profile 
+rm vimrc 
+ll
+cd dotfiles/
+ll
+rm *
+ll
+cd .git/
+ll
 ..
 rm -rf .git/
 ll
@@ -401,100 +502,4 @@ $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools
 chsh szh
 chsh zsh
 zsh
-exit
-tree
-exit
-ll
-ls
-ls -al
-vim .bash_profile 
-gw
-ls
-exit
-./bash_profile
-ls
-ls -al
-exit
-ls
-./list
-./list
-locate bash
-./list
-cat list
-exit
-./list 
-cat list
-vi list
-./list
-date
-users
-uptime
-vi list
-./list
-vi list 
-./list
-vi list 
-./list
-vi list 
-ll
-ls
-cat list.log 
-./list
-cat list.log 
-clear
-cat list.log 
-./list
-cat list.log 
-basename \users\simon.txt
-man basename
-basename "\users\simon.txt"
-basename /users/simon.txt
-man cut
-basename /users/simon.txt | cut -d .
-basename /users/simon.txt | cut -d "."
-basename /users/simon.txt | cut -f -d "."
-man cut
-basename /users/simon.txt | cut -c -d "."
-basename /users/simon.txt | cut -c "."
-basename /users/simon.txt | cut -d "."
-man cut
-basename /users/simon.txt | cut - -d "."
-basename /users/simon.txt > cut - -d "."
-basename /users/simon.txt | cut - -d "."
-exit
-vim .vimrc
-vim .vimrc
-vim .vimrc
-vim .vimrc
-exit
-ps
-kill 1398
-ps
-exit
-ps -ax
-ps -ua
-ps -u
-ps -u < 'whoami'
-ps -u | 'whoami'
-exit
-ps
-vim .vimrc
-exit
-sudo exit
-kill bash
-kill 1397
-exit
-cls
-exit
-bw
-gw
-la
-ls
-ls -a
-vim .bash_profile 
-gw
-ls -a .bash_*
-ls -a .bash_profile 
-cat .bash_profile 
-ls
 exit

@@ -1,0 +1,268 @@
+ls
+la
+cat .bash_profile 
+ls
+la
+ll
+ls ./.vim
+la
+ll
+cd ~
+vim
+ll
+sudo brew update; brew upgrade; 
+brew update; brew upgrade; 
+brew doctor
+ls
+cd Sites/
+ll
+cd splatmedia.co.uk/
+ll
+cd ..
+cd countries/
+ll
+vim countries.p
+vim countries.php 
+vim countries.txt 
+mv countries.txt dewey.txt
+ll
+..
+cd ..
+ll
+cd grsl.co.uk/
+git status
+cd ../splatmedia.co.uk/
+git status
+cd ../css/
+ll
+cd ..
+rmd -rf ./css/
+rm -rf ./css/
+ll
+cd images/
+ll
+rm gradient.jpg 
+cd ..
+rmdir images/
+ll
+cd bookCellar/
+ll
+cd php/
+ll
+mv * ../
+ll
+cd ..
+ll
+rmdir php/
+ll
+la
+la -l
+vim diff array.php array.php.bak 
+vimdiff array.php array.php.bak 
+cat array.php
+cat array.php | less
+mv array.php countries.class.php
+ll
+mv Books\ Database booksDatabase
+cat booksDatabase 
+vim booksDatabase 
+rm booksDatabase 
+cls
+ll
+cat index.html 
+cat index.php
+rm index.php
+ll
+cls
+ll
+cat bookList.php 
+rm bookList.php 
+ll
+act sql.php 
+cat sql.php 
+rm sql.php 
+cat index.php.bak 
+ll
+cat countries.php.bak 
+cat countries.php.bak | less
+ll
+mv countries.php.bak countries.class.php.bak
+ll
+cls
+ll
+cat c.php
+cat c.php | less
+mv c.php countries.array.php
+ll
+cat c.php.bak | less
+rm c.php.bak 
+ll
+cat array.php.bak | less
+rm array.php.bak 
+ll
+cat book_categories.sql 
+cat book_categories.sql  | less
+mv book_categories.sql bookCategories.sql
+ll
+cat bookshops.html | less
+rm bookshops.html
+ll
+cat index\ copy.php 
+rm index\ copy.php 
+ll
+cat index.php.bak 
+cat index.html 
+ll
+cd ..
+ll
+rm -rf Smarty-3.1.19/
+ll
+cd countries/
+ll
+cd ..
+ll
+cat index.html 
+:q
+cls
+ll
+brew update; brew upgrade; brew doctor;
+apachectl start
+sudo apachectl start
+httpd
+cd ~
+ll
+cd dotfiles\ 2/
+ll
+git status
+cd ..
+ll
+rm -rf dotfiles\ 2/
+ll
+brew update
+brew upgrade
+brew doctor
+ll
+cd Sites/
+ll
+cd grsl.co.uk/
+git init
+git status
+ll
+vim html5.html 
+ll ./Classes/
+ll
+cd Classes/
+ll
+cd ..
+cat requirements.txt 
+rm requirements.txt 
+ll
+ll ./i
+cd ./i/vis/
+ll
+rm osa_*
+ll
+rm *.zip
+ll
+cd ..
+rmdir vis
+ll
+rm *.png
+ll
+rm g*
+ll
+cd ..
+rmdir i
+ll
+ll js
+rm -rf ./js/
+ll
+ls ./css/
+cd css/
+ll
+rm bootstrap-responsive.min.css 
+sass grsl.scss grsl.css
+gem install sass
+sudo gem install sass
+sass grsl.scss grsl.css
+ll
+cd ..
+ll
+cat backup_index.html 
+vim backup_index.html 
+vim backup_index.html 
+cls
+ll
+mv html5.html ./
+rm html5.html 
+ll
+cat select.php 
+rm select.php 
+ll
+cls
+ll
+cat login.php 
+vim login.php 
+cd ~
+ll
+mkdir .vim
+cd .vim
+ll
+mkdir syntax
+cd ~
+vim .bash_profile 
+brew doctor
+brew update; brew upgrade; brew doctor;
+vim ~/.bash_profile 
+buu
+exit
+buu
+vim .bash_profile 
+buu
+exit
+vim ./buu.sh 
+exit
+buu
+vim .bash_profile 
+brew update &;
+brew update &
+brew update & ;
+brew update & ; fg
+vim buu.sh
+ll
+vim ./buu.sh
+ll
+chmod +x buu.sh 
+ll
+buu
+vim .bash_profile 
+./buu.sh 
+:
+./buu.sh 
+ps
+ps
+ps -usimon
+ps -ugrsl
+brew install rails
+xcode-select --install
+Software update
+gcc --version
+cls
+la
+gcc --version
+cls
+exit
+EXIT
+exit
+man ssh
+ll ./.ssh/
+ll
+cd Downloads/
+ll
+cp id_rsa.pub ~/.ssh/authorized_keys/
+mkdir ~/.ssh/authorized_keys/
+cp id_rsa.pub ~/.ssh/authorized_keys/
+ssh-askpass
+ssh-add
+ssh grsl@grsl.co.uk
+exit

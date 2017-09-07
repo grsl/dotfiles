@@ -16,13 +16,24 @@
 
 
 " Tab settings. {{{
-set tabstop=4
-set softtabstop=4
-set expandtab
+:set tabstop=4
+:set softtabstop=4
+:set expandtab
+:set shiftwidth=4
+:set autoindent
 "}}}
 
 " Screen display {{{
-set number
-set lazyredraw
-set showmatch
+:set number
+:set lazyredraw
+:set showmatch
 "}}}
+
+" Folding. {{{
+" set foldmethod=marker
+:set foldmethod=indent
+:set foldlevel=1
+:set nofoldenable
+"}}}
+
+:inoremap <F1> <form name="" action="" method="POST" enctype=""><CR><LF></form>
