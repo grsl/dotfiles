@@ -1,21 +1,3 @@
-..
-rm -rf .git/
-ll
-cd ..
-ll
-rmdir dotfiles/
-ll
-..
-ll
-rmdir ./dotfiles/
-ll
-git clone https://github.com/grsl/dotfiles.git
-ll
-cd dotfiles/
-ll
-git status
-git status
-git branch
 ll
 cd ~
 ll
@@ -497,4 +479,22 @@ ls -a .bash_*
 ls -a .bash_profile 
 cat .bash_profile 
 ls
+exit
+gw
+cd ~
+exit
+ll
+la
+ls
+pwd
+laravel new blog
+ll
+ls
+cd blog/
+ll
+ls
+exit
+which php
+exit
+which php
 exit

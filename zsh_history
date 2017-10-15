@@ -3156,3 +3156,1654 @@ clear.d
 : 1504778175:0;cd ~
 : 1504778176:0;ll
 : 1504778185:0;./updateDotFiles.sh
+: 1504778196:0;cat ./updateDotFiles.sh
+: 1504778244:0;cd ~/dotfiles
+: 1504778247:0;gst
+: 1504778297:0;git commit -m "Updated configuration files for VIm."
+: 1504778307:0;git add -A
+: 1504778309:0;git commit -m "Updated configuration files for VIm."
+: 1504778333:0;gst
+: 1504778343:0;git push
+: 1504779407:0;gw
+: 1504779412:0;cd ~
+: 1504779414:0;gw
+: 1504779423:0;ll
+: 1504779434:0;vim .bashrc
+: 1504779441:0;la
+: 1504779449:0;vim .bash_profile
+: 1504779497:0;ssh grsl@host58.servers.prgn.misp.co.uk -p2510 -lgrsl
+: 1504779540:0;gw
+: 1504779550:0;ssh grsl@host58.servers.prgn.misp.co.uk -p2510 -lgrsl
+: 1504779579:0;gw
+: 1504779588:0;exit
+: 1504779592:0;gw
+: 1504779606:0;cat .bash_profile
+: 1504779645:0;ssh grsl@host58.servers.prgn.misp.co.uk -p2510 -lgrsl
+: 1504779861:0;pwd
+: 1504779866:0;cd Sites/g
+: 1504779868:0;cd Sites/grsl.co.uk
+: 1504779873:0;git status
+: 1504779881:0;git add
+: 1504779888:0;git add Classes/validateEmailAddress.php
+: 1504779894:0;git branch
+: 1504779905:0;gw
+: 1504779929:0;cd ~
+: 1504779934:0;vim .bash_profile
+: 1504779970:0;gw
+: 1504780042:0;exit
+: 1505641971:0;brew update
+: 1505642080:0;brew upgrade
+: 1505644367:0;vagrant up
+: 1505644385:0;cd Sites/testSite
+: 1505644389:0;vagrant up
+: 1505644407:0;vagrant global-status
+: 1505644435:0;vagrant up b08330a
+: 1505644999:0;ll
+: 1505645014:0;grep -rf "No input file"
+: 1505645024:0;grep -f "No input file"
+: 1505645029:0;grep  "No input file"
+: 1505645097:0;ll
+: 1505645116:0;vim config/database.php
+: 1505645177:0;mysql
+: 1505645197:0;cd Sites/grsl.co.uk
+: 1505645198:0;ll
+: 1505645204:0;cd Includes
+: 1505645205:0;ll
+: 1505645210:0;vim database.php
+: 1505645639:0;vagrant halt b08330a
+: 1505645703:0;exit
+: 1505647468:0;cd Sites/testSite
+: 1505647469:0;ll
+: 1505647474:0;la
+: 1505647483:0;cat .env
+: 1505647769:0;composer
+: 1505647782:0;composer selfupdate
+: 1505647798:0;composer diagnose
+: 1505647881:0;ll
+: 1505647888:0;la
+: 1505647893:0;gst
+: 1505647903:0;git init
+: 1505647907:0;gst
+: 1505647921:0;git add -A
+: 1505647922:0;ll
+: 1505647925:0;clear
+: 1505647926:0;ll
+: 1505648065:0;cd public
+: 1505648066:0;ll
+: 1505648070:0;cat index.php
+: 1505648121:0;ll
+: 1505648128:0;cd ~/Sites/testSite
+: 1505648129:0;ll
+: 1505648132:0;cd config
+: 1505648133:0;ll
+: 1505648153:0;cat app.php
+: 1505648175:0;clear; cat app.php
+: 1505648186:0;clear; cat app.php | less
+: 1505727033:0;cd Sites/testSite
+: 1505727038:0;ll
+: 1505727046:0;la
+: 1505727066:0;bash init.sh
+: 1505727221:0;ll bootstrap
+: 1505727234:0;ll tests
+: 1505727246:0;cd public
+: 1505727247:0;ll
+: 1505727252:0;vim index.php
+: 1505727572:0;pwd
+: 1505727578:0;..
+: 1505727579:0;ll
+: 1505727591:0;ll storage
+: 1505727665:0;vagrant up
+: 1505727690:0;vagrant global-status
+: 1505727703:0;vagrant up b08330a
+: 1505727751:0;vagrant provision
+: 1505727771:0;vagrant provision b08330a
+: 1505727809:0;vagrant ssh
+: 1505727824:0;vagrant ssh b08330a
+: 1505728086:0;ll
+: 1505728138:0;composer selfupdate
+: 1505728147:0;brew update
+: 1505728369:0;brew upgrade
+: 1505728384:0;cd Sites
+: 1505728388:0;cd testSite
+: 1505728407:0;vagrant box add laravel/homestead
+: 1505728458:0;cd ~
+: 1505728459:0;ll
+: 1505728463:0;cd Homestead
+: 1505728464:0;ll
+: 1505728503:0;pwd
+: 1505728507:0;clear
+: 1505728509:0;ll
+: 1505728520:0;vagrant up
+: 1505728565:0;git status
+: 1505728623:0;cd ~
+: 1505728624:0;ll
+: 1505728655:0;git clone https://github.com/laravel/homestead.git Homestead
+: 1505728671:0;git -f clone https://github.com/laravel/homestead.git Homestead
+: 1505728702:0;cd Homestead
+: 1505728712:0;git checkout v6.1.0
+: 1505728802:0;git checkout v6.2.2
+: 1505728808:0;pwd
+: 1505728816:0;rm -rf *
+: 1505728821:0;ll
+: 1505728826:0;cd ~
+: 1505728827:0;ll
+: 1505728842:0;git clone https://github.com/laravel/homestead.git Homestead
+: 1505728856:0;rmdir Homestead
+: 1505728861:0;ll Homestead
+: 1505728865:0;la Homestead
+: 1505728877:0;rm .git*
+: 1505728887:0;rm .tr*
+: 1505728895:0;rm .tr*.*
+: 1505728898:0;la
+: 1505728910:0;cd Homestead
+: 1505728911:0;ll
+: 1505728913:0;la
+: 1505728927:0;rm .git
+: 1505728941:0;rmdir -rf .git
+: 1505728946:0;rmdir -f .git
+: 1505728953:0;cd ..
+: 1505728955:0;ll
+: 1505728957:0;la
+: 1505728983:0;./updateDotFiles.sh
+: 1505728988:0;cat updateDotFiles.sh
+: 1505729447:0;mysql
+: 1505729458:0;mysql start
+: 1505729489:0;cd BT\ 
+: 1505729497:0;cd BT\ Cloud\ Sync
+: 1505729499:0;ll
+: 1505729508:0;cd ~
+: 1505729509:0;ll
+: 1505729515:0;cd Homestead
+: 1505729516:0;ll
+: 1505729522:0;la
+: 1505729531:0;rm .gitignore
+: 1505729538:0;rm .gitattributes
+: 1505729540:0;la
+: 1505729545:0;rm .travis.yml
+: 1505729547:0;la
+: 1505729552:0;cd .vagrant
+: 1505729554:0;la
+: 1505729559:0;cd machines
+: 1505729560:0;ll
+: 1505729569:0;cd homestead-7
+: 1505729570:0;ll
+: 1505729574:0;cd virtualbox
+: 1505729575:0;ll
+: 1505729577:0;la
+: 1505729621:0;cd ~
+: 1505729625:0;cd Homestead
+: 1505729636:0;homestead up --provision
+: 1505729651:0;vagrant halt
+: 1505729664:0;vagrant halt b08330a
+: 1505729680:0;cd ~
+: 1505729683:0;ll
+: 1505729695:0;ll VirtualBox\ VMs
+: 1505729717:0;./tailErrors
+: 1505729734:0;clear
+: 1505729735:0;ll
+: 1505729752:0;cat cut
+: 1505729761:0;cat 1
+: 1505729768:0;rm 1
+: 1505729773:0;rm cut
+: 1505729775:0;cat dir
+: 1505729781:0;./dir
+: 1505729786:0;rm dir
+: 1505729788:0;ll
+: 1505729790:0;clear
+: 1505729791:0;ll
+: 1505729802:0;./list
+: 1505729813:0;rm list
+: 1505729814:0;ll
+: 1505729816:0;la
+: 1505729839:0;ll
+: 1505729844:0;clear
+: 1505729846:0;ll
+: 1505729853:0;rmdir Homestead
+: 1505729863:0;rmdir -f Homestead
+: 1505729870:0;cd Homestead
+: 1505729871:0;ll
+: 1505729873:0;la
+: 1505729883:0;rm -rf .*
+: 1505729885:0;la
+: 1505729889:0;cd ..
+: 1505729893:0;rmdir Homestead
+: 1505729896:0;la
+: 1505729946:0;git clone https://github.com/laravel/homestead.git Homestead
+: 1505729954:0;cd Homestead
+: 1505729963:0;git checkout v6.2.2
+: 1505730004:0;bash init.sh
+: 1505730012:0;ll
+: 1505730025:0;vim Homestead.yaml
+: 1505730142:0;ll
+: 1505730149:0;cd Homestead
+: 1505730150:0;ll
+: 1505730227:0;la src
+: 1505730237:0;la -r src
+: 1505730247:0;ls -R src
+: 1505730272:0;clear
+: 1505730274:0;exit
+: 1505730597:0;vim /etc/hosts
+: 1505730652:0;cd /etc/hosts
+: 1505730657:0;cd /etc/
+: 1505730658:0;ll
+: 1505730694:0;sudo vim hosts
+: 1505730758:0;cd ~
+: 1505730765:0;ll
+: 1505730768:0;cd ~
+: 1505730770:0;ll
+: 1505730779:0;cd Homestead
+: 1505730793:0;clear;ll
+: 1505730874:0;cd ..
+: 1505730877:0;pwd
+: 1505730881:0;cd Sites
+: 1505730886:0;cd grsl.co.uk
+: 1505730888:0;ll
+: 1505730940:0;composer require laravel/homestead --dev
+: 1505730985:0;php vendor/bin/homestead make
+: 1505730995:0;ll
+: 1505731005:0;git status
+: 1505731036:0;vagrant up
+: 1505731478:0;brew list
+: 1505731515:0;brew uninstall php71
+: 1505731532:0;brew uninstall php71-xdebug
+: 1505731541:0;brew uninstall php71
+: 1505731580:0;brew uninstall geoip
+: 1505731596:0;brew list
+: 1505731658:0;cd ~
+: 1505731666:0;vagrant halt
+: 1505731686:0;vagrant global-status
+: 1505731703:0;vagrant halt b08330a
+: 1505731733:0;vagrant halt ad971f0
+: 1505731762:0;vagrant halt b08330a
+: 1505731798:0;exit
+: 1505843807:0;cd Sites/grsl.co.uk
+: 1505843808:0;ll
+: 1505843822:0;brew update
+: 1505843925:0;vagrant up; brew upgrade;
+: 1505844096:0;git status
+: 1505844114:0;git add -A
+: 1505844143:0;git commit -m "Created a local laravel installation."
+: 1505844152:0;git status
+: 1505844176:0;git checkout master
+: 1505844184:0;git push
+: 1505844191:0;gw
+: 1505844204:0;ll
+: 1505844215:0;vim ~/.vimrc
+: 1505844230:0;vim ~/.bash_rc
+: 1505844244:0;vim ~/.zshrc
+: 1505844415:0;ll
+: 1505844416:0;la
+: 1505844422:0;git status
+: 1505844443:0;ll
+: 1505844444:0;exit
+: 1505844453:0;clear
+: 1505844455:0;ll
+: 1505844456:0;la
+: 1505844473:0;cd css
+: 1505844475:0;ll
+: 1505844497:0;git checkout working
+: 1505844502:0;ll
+: 1505844505:0;..
+: 1505844507:0;ll
+: 1505844514:0;git merge
+: 1505844529:0;git merge master
+: 1505844545:0;git merge origin master
+: 1505844565:0;git checkout master
+: 1505844579:0;git merge index.php
+: 1505844595:0;git diff
+: 1505844632:0;vimdiff index.php
+: 1505844676:0;ll
+: 1505844684:0;git diff index.php
+: 1505844877:0;gitdiff
+: 1505844882:0;git-diff
+: 1505844946:0;git diff --minimal index.php
+: 1505844960:0;ll
+: 1505844967:0;cd Classes
+: 1505844968:0;ll
+: 1505844979:0;vim DNS.php
+: 1505845090:0;cd ..
+: 1505845091:0;ll
+: 1505845096:0;vim index.php
+: 1505845146:0;brew install x-debug
+: 1505845671:0;brew install php71=xdebug
+: 1505845686:0;brew install php71-xdebug
+: 1505845716:0;ll
+: 1505845732:0;cd \\
+;
+: 1505845745:0;cat \\
+;
+: 1505845760:0;cat \\ 
+: 1505845796:0;cat "\"\
+\
+\
+\
+;\
+exit\
+q\
+ll\
+a;sldkfjas;ldkfjad
+: 1505845808:0;ll
+: 1505845812:0;cd ~
+: 1505845813:0;ll
+: 1505845816:0;la
+: 1505845980:0;sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+: 1505846012:0;rm .oh-my-zsh
+: 1505846021:0;rmdir .oh-my-zsh
+: 1505846026:0;sudo rmdir .oh-my-zsh
+: 1505846047:0;cd .oh-my-zsh
+: 1505846049:0;ll
+: 1505846063:0;git status
+: 1505846090:0;git checkout master
+: 1505846098:0;git status
+: 1505846120:0;git checkout custom/example.zsh
+: 1505846123:0;git status
+: 1505846143:0;git fetch
+: 1505846158:0;ll
+: 1505846166:0;cd plugins
+: 1505846168:0;ll
+: 1505846487:0;ll O*
+: 1505846494:0;o*
+: 1505846503:0;cd ..
+: 1505846504:0;ll
+: 1505846506:0;..
+: 1505846509:0;ll
+: 1505846533:0;cat oh-my-zsh.sh
+: 1505846559:0;ll
+: 1505846563:0;..
+: 1505846564:0;ll
+: 1505846566:0;la
+: 1505846591:0;cat .mysql_history
+: 1505846609:0;la
+: 1505846788:0;ssh vagtant
+: 1505846794:0;ssh vagrant
+: 1505846797:0;cd Sites
+: 1505846802:0;cd grsl.co.uk
+: 1505846811:0;ssh vagrant
+: 1505846821:0;ssh grsl.co.uk
+: 1505846835:0;cat ll
+: 1505846838:0;clear
+: 1505846841:0;la
+: 1505846852:0;la ../../
+: 1505846864:0;cd ~
+: 1505846874:0;vim .bash_profile
+: 1505846944:0;ssh grsl@host58.servers.prgn.misp.co.uk -p2510 -lgrsl
+: 1505846971:0;bash gw
+: 1505846978:0;bash
+: 1505847002:0;sh
+: 1505847014:0;gw
+: 1505847028:0;exit
+: 1505847048:0;cd ~
+: 1505847049:0;la
+: 1505847059:0;cd .oh-my-zsh
+: 1505847060:0;ll
+: 1505847071:0;cd tools
+: 1505847072:0;ll
+: 1505847093:0;pwd
+: 1505847125:0;cd ..
+: 1505847127:0;ll
+: 1505847129:0;la
+: 1505847133:0;cd ..
+: 1505847134:0;la
+: 1505847151:0;vim .zshrc
+: 1505847229:0;gw
+: 1505847233:0;exit
+: 1505847238:0;gw
+: 1505847658:0;exit
+: 1505929251:0;apachectl
+: 1505929308:0;apachectl -d ~/Sites/grsl.co.uk/ -k start
+: 1505929378:0;cd Sites/grsl.co.uk
+: 1505929379:0;ll
+: 1505929386:0;php -l index.php
+: 1505929397:0;cd Sites
+: 1505929400:0;cd grsl.co.uk
+: 1505929401:0;ll
+: 1505929405:0;vim index.php
+: 1505929462:0;php -l index.php
+: 1505929657:0;gw
+: 1505929743:0;exit
+: 1505929950:0;cd .vim/syntax
+: 1505929951:0;ll
+: 1505930003:0;scp ./php.vim grsl@host58.servers.prgn.misp.co.uk:~/.vim/syntax
+: 1505930040:0;..
+: 1505930070:0;scp ./syntax grsl@host58.servers.prgn.misp.co.uk:~/.vim
+: 1505930128:0;scp php.vim grsl@grsl.co.uk:www/
+: 1505930168:0;scp syntax/ grsl@grsl.co.uk:~/.vim/
+: 1505930221:0;pwd
+: 1505930284:0;scp ./syntax/ grsl@host58.servers.prgn.misp.co.uk:~/.vim/ -P2510
+: 1505930292:0;man scp
+: 1505930333:0;scp -P2519 ./syntax/ grsl@host58.servers.prgn.misp.co.uk:~/.vim/
+: 1505930367:0;cat ~/.zshrc
+: 1505930392:0;scp -P2510 ./syntax/ grsl@host58.servers.prgn.misp.co.uk:~/.vim/
+: 1505930435:0;scp -P2510 ./syntax/php.vim grsl@host58.servers.prgn.misp.co.uk:~/.vim/syntax/php.vim
+: 1505930455:0;gw
+: 1505931079:0;exit
+: 1505931089:0;gw
+: 1505931274:0;cd Sites
+: 1505931277:0;cd grsl.co.uk
+: 1505931278:0;ll
+: 1505931282:0;la
+: 1505931286:0;cd ~
+: 1505931288:0;la
+: 1505931300:0;la .vim/syntax
+: 1505931310:0;cd .vim/syntax
+: 1505931311:0;ll
+: 1505931319:0;../..
+: 1505931322:0;la
+: 1505931330:0;./updateDotFiles.sh
+: 1505931396:0;scp -P2510 ./.vimrc grsl@host58.servers.prgn.misp.co.uk:~/.vimrc
+: 1505931409:0;gw
+: 1505931865:0;ll
+: 1505931868:0;cd Sites
+: 1505931871:0;cd grsl.co.uk
+: 1505931873:0;ll
+: 1505931894:0;mv index.php index.php.original
+: 1505931952:0;scp -P2519 grsl@host58.servers.prgn.misp.co.uk:~/public_html/index.php ./index.php
+: 1505931994:0;scp -P2510 grsl@host58.servers.prgn.misp.co.uk:~/public_html/index.php ./index.php
+: 1505932008:0;vim index.php
+: 1505932378:0;scp -P2510 ./index.php grsl@host58.servers.prgn.misp.co.uk:~/public_html/index.php
+: 1505932386:0;exit
+: 1506101805:0;brew update
+: 1506101928:0;brew upgrade
+: 1506105737:0;./updateDotFiles.sh
+: 1506105739:0;exit
+: 1506158381:0;gw
+: 1506159751:0;exit
+: 1506179587:0;la
+: 1506179595:0;composer
+: 1506179643:0;composer info
+: 1506179670:0;cd Sites/grsl.co.uk
+: 1506179673:0;composer info
+: 1506179920:0;composer update
+: 1506179945:0;brew update
+: 1506179982:0;brew upgrade
+: 1506180008:0;vagrant up
+: 1506180121:0;vagrant box update
+: 1506180728:0;cd Sites/grsl.co.uk
+: 1506180745:0;php artisan migrate:install
+: 1506180759:0;artisan migrate:install
+: 1506180767:0;cd ~
+: 1506180772:0;php artisan migrate:install
+: 1506180786:0;cd Sites/testSite
+: 1506180788:0;php artisan migrate:install
+: 1506180927:0;exit
+: 1506180949:0;cd Sites/grsl.co.uk
+: 1506180953:0;vagrant halt
+: 1506180977:0;ll
+: 1506180985:0;gst
+: 1506181010:0;git add index.php.original
+: 1506181023:0;gb
+: 1506181041:0;cd
+: 1506181049:0;.;u.
+: 1506181053:0;./updateDotFiles.sh
+: 1506181056:0;la
+: 1506181080:0;cat updateDotFiles.sh
+: 1506181110:0;ll ~/dotfiles
+: 1506181159:0;vagrant up
+: 1506181260:0;la
+: 1506181270:0;clear
+: 1506181291:0;php artisan migrate:install
+: 1506181301:0;cd ../tes
+: 1506181304:0;cd ../testSite
+: 1506181307:0;php artisan migrate:install
+: 1506181316:0;ll
+: 1506181322:0;cd database
+: 1506181323:0;ll
+: 1506181340:0;la ../vendor
+: 1506181350:0;composer update
+: 1506181704:0;exit
+: 1506181708:0;cd 
+: 1506181713:0;php artisan
+: 1506181728:0;locate artisan
+: 1506181892:0;ls
+: 1506181897:0;cd ~; clear
+: 1506181900:0;pwd
+: 1506181908:0;cd Sites/testSite
+: 1506181911:0;ll
+: 1506181917:0;cd app
+: 1506181918:0;ll
+: 1506181922:0;..
+: 1506181934:0;php artisan migrate:install
+: 1506181946:0;cd database
+: 1506181948:0;ll
+: 1506181956:0;cd migrations
+: 1506181957:0;ll
+: 1506181973:0;cd ..
+: 1506181975:0;..
+: 1506181976:0;ll
+: 1506182069:0;cls
+: 1506182072:0;clear
+: 1506182075:0;ll
+: 1506182079:0;cd config
+: 1506182080:0;ll
+: 1506182083:0;cim database.php
+: 1506182090:0;vim database.php
+: 1506182141:0;cd Sites/testSite
+: 1506182153:0;php artisan migrate:install
+: 1506182411:0;../..
+: 1506182412:0;ll
+: 1506182415:0;cd testSite
+: 1506182419:0;php artisan
+: 1506182441:0;php artisan migrate:install
+: 1506182509:0;cd ~
+: 1506182515:0;mysql
+: 1506182656:0;brew install mysql
+: 1506182681:0;mysql
+: 1506182736:0;service start mysql
+: 1506182749:0;mysql start
+: 1506182807:0;mysql.server start
+: 1506182822:0;php artisan migrate:install
+: 1506182835:0;mysql
+: 1506182847:0;mysql -uroot -p
+: 1506182937:0;exit
+: 1506183013:0;cd Sites/testSite
+: 1506183016:0;cd config
+: 1506183017:0;ll
+: 1506183022:0;vim database.php
+: 1506183165:0;cd ..
+: 1506183176:0;php artisan migrate:install
+: 1506183266:0;mysql --user=root mysql
+: 1506183307:0;exit
+: 1506183400:0;php artisan migrate:install
+: 1506183416:0;ssh homestead
+: 1506183442:0;mysql.server stop
+: 1506183450:0;mysql
+: 1506183465:0;cd Sites/testSite
+: 1506183467:0;cd config
+: 1506183471:0;cim database.php
+: 1506183477:0;vim database.php
+: 1506183516:0;mysql.server start
+: 1506183525:0;php artisan migrate:install
+: 1506183547:0;cd ~
+: 1506183558:0;mysql 
+: 1506183567:0;mysql --user=root 
+: 1506183629:0;exit
+: 1506272038:0;brew update &;
+: 1506272047:0;composer update &;
+: 1506272058:0;cd Sites
+: 1506272060:0;cd grsl.co.uk
+: 1506272068:0;composer update &;
+: 1506272086:0;brew upgrade &;
+: 1506272127:0;cd ~
+: 1506272128:0;ll
+: 1506272132:0;./updateDotFiles.sh
+: 1506272156:0;cd -
+: 1506272159:0;gst
+: 1506272166:0;cd ../testSite
+: 1506272167:0;ll
+: 1506272177:0;vim config/database.php
+: 1506272563:0;php artisan migrate:install
+: 1506272648:0;php artisan up
+: 1506272664:0;cd app
+: 1506272666:0;ll
+: 1506272670:0;cd ..
+: 1506272682:0;la ./bootstrap
+: 1506272706:0;cat ./bootstrap/app.php
+: 1506272949:0;php artisan migrate:install
+: 1506272954:0;vagrant ssh
+: 1506272979:0;vagrant up
+: 1506273024:0;vagrant init hashicorp/precise64
+: 1506273044:0;vagrant up
+: 1506273083:0;cd ../grsl.co.uk
+: 1506273087:0;vagrant up
+: 1506273102:0;vagrant ssh
+: 1506273694:0;php artisan migrate:install
+: 1506273793:0;vagrant ssh
+: 1506273832:0;vagrant halt
+: 1506273852:0;ll
+: 1506273859:0;cd ../testSite
+: 1506273860:0;ll
+: 1506273881:0;rm -r *
+: 1506273888:0;ll
+: 1506273894:0;..
+: 1506273899:0;rm testSite
+: 1506273905:0;rmdir testSite
+: 1506273907:0;ll
+: 1506273966:0;laravel new grsl
+: 1506273973:0;cd ~
+: 1506273974:0;ll
+: 1506273993:0;laravel new ./Sites/grsl
+: 1506274039:0;composer global require "laravel/installer"
+: 1506274060:0;laravel new ./Sites/grsl
+: 1506274083:0;cd ./Sites/grsl
+: 1506274086:0;cd Sites
+: 1506274087:0;ll
+: 1506274104:0;lavarvel new grsl
+: 1506274391:0;~
+: 1506274395:0;php composer
+: 1506274409:0;cd Sites
+: 1506274411:0;ll
+: 1506274428:0;cd testSite
+: 1506274429:0;ll
+: 1506274434:0;..
+: 1506274440:0;rmdir testSite
+: 1506274448:0;la ./testSite
+: 1506274479:0;rm -r ./testSite/.*
+: 1506274514:0;cd testSite
+: 1506274515:0;la
+: 1506274521:0;rm .*
+: 1506274527:0;cd .git
+: 1506274528:0;ll
+: 1506274529:0;la
+: 1506274533:0;cd objects
+: 1506274534:0;ll
+: 1506274544:0;rm -rf *
+: 1506274547:0;ll
+: 1506274549:0;..
+: 1506274552:0;la
+: 1506274556:0;cd refs
+: 1506274557:0;ll
+: 1506274562:0;..
+: 1506274570:0;rm -rf .git
+: 1506274572:0;la
+: 1506274577:0;rm -rf .vagrant
+: 1506274579:0;la
+: 1506274581:0;..
+: 1506274586:0;rmdir testSite
+: 1506274589:0;la
+: 1506274607:0;cd newSiteTemplate
+: 1506274608:0;ll
+: 1506274613:0;..
+: 1506274619:0;rm -rf newSiteTemplate
+: 1506274621:0;ll
+: 1506274632:0;rm -rf phpUnit
+: 1506274666:0;laravel --help
+: 1506274674:0;cd grsl.co.uk
+: 1506274675:0;ll
+: 1506274685:0;lacavel --help
+: 1506274691:0;laravel --help
+: 1506274730:0;php composer require "laravel/installer"
+: 1506274740:0;composer require "laravel/installer"
+: 1506274756:0;ll
+: 1506275529:0;cd ~
+: 1506275532:0;gw
+: 1506275705:0;exit
+: 1506361920:0;cd Sites
+: 1506361922:0;ll
+: 1506361929:0;ruby --version
+: 1506361957:0;brew update ruby
+: 1506361974:0;brew upgrade ruby
+: 1506362048:0;~
+: 1506362083:0;curl -L https://get.rvm.io | bash -s stable --ruby
+: 1506362608:0;ruby --version
+: 1506362625:0;rvm list known
+: 1506362662:0;rvm install current && rvm use current
+: 1506362674:0;ll
+: 1506362675:0;la
+: 1506362682:0;cd .rvm
+: 1506362683:0;ll
+: 1506362695:0;cd ..
+: 1506362701:0;gem install bundler
+: 1506362715:0;sudo gem install bundler
+: 1506362873:0;gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+: 1506362901:0;curl -sSL https://get.rvm.io | bash -s stable --ruby
+: 1506362985:0;clear
+: 1506363011:0;git init jekyll-site-repository-name
+: 1506363020:0;cd jekyll-site-repository-name
+: 1506363044:0;git checkout -b gh-pages
+: 1506363062:0;ll
+: 1506363066:0;la
+: 1506363116:0;vim Gemfile
+: 1506363183:0;bundle install
+: 1506363819:0;ls
+: 1506363825:0;ll
+: 1506363861:0;exit
+: 1506792439:0;brew update &
+: 1506792447:0;composer update
+: 1506792455:0;cd Sites/grsl.co.uk
+: 1506792460:0;composer update
+: 1506792531:0;brew upgrade
+: 1506792818:0;pwd
+: 1506792821:0;ll
+: 1506792827:0;vagrant up
+: 1506793055:0;~/.ll
+: 1506793057:0;la
+: 1506793080:0;php artisan migrate:install
+: 1506793135:0;artisan help
+: 1506793200:0;loacte artisan
+: 1506793209:0;locate artisan
+: 1506793260:0;CD /Users/grsl/dotfiles/oh-my-zsh/plugins/laravel/
+: 1506793267:0;cd /Users/grsl/dotfiles/oh-my-zsh/plugins/laravel/
+: 1506793269:0;ll
+: 1506793288:0;cat _artisan
+: 1506793329:0;ll
+: 1506793352:0;chmod +x _artisan
+: 1506793355:0;cd ~
+: 1506793364:0;cd Sites/grsl.co.uk
+: 1506793376:0;php artisan migrate:install
+: 1506793383:0;cd -
+: 1506793392:0;ll
+: 1506793411:0;cd -
+: 1506793414:0;pwd
+: 1506793418:0;ll
+: 1506793426:0;cd dotfiles
+: 1506793428:0;ll
+: 1506793431:0;cd oh-my-zsh
+: 1506793433:0;ll
+: 1506793436:0;cd plugins
+: 1506793437:0;ll
+: 1506793444:0;cd laravel
+: 1506793445:0;ll
+: 1506793460:0;chmod -x _artisan
+: 1506793461:0;ll
+: 1506793492:0;cd ~/Sites/
+: 1506793494:0;\;;
+: 1506793496:0;ll
+: 1506793523:0;laravel new testSite
+: 1506793602:0;pwd
+: 1506793611:0;composer install artisan
+: 1506793628:0;cd grsl.co.uk
+: 1506793630:0;ll
+: 1506793640:0;composer require artisan
+: 1506793739:0;ssh vagrant
+: 1506793759:0;ssh homestead
+: 1506793771:0;vagrant global-sessions
+: 1506793787:0;vagrant global-status
+: 1506793805:0;ssh ad971f0
+: 1506793817:0;ssh grsl-co-uk
+: 1506793852:0;~
+: 1506793854:0;ll
+: 1506793863:0;cd Sites
+: 1506793864:0;ll
+: 1506793934:0;composer
+: 1506793969:0;composer global require "laravel/installer"
+: 1506793985:0;ll
+: 1506794064:0;composer global require "artisan/installer"
+: 1506794079:0;composer global require artisan
+: 1506794088:0;clear; ll
+: 1506794108:0;path
+: 1506794114:0;$PATH
+: 1506794160:0;laravel new testSite
+: 1506794169:0;cd ..
+: 1506794182:0;laravel new ./Sites/testSite
+: 1506794197:0;brew install laravel
+: 1506794302:0;~; ssh grsl-co-uk
+: 1506794319:0;laravel global-status
+: 1506794330:0;vagrant global-status
+: 1506794373:0;cd Sites/grsl.co.uk
+: 1506794376:0;vagrant
+: 1506794384:0;vagrant ssh
+: 1506795037:0;ll
+: 1506795039:0;cd ~
+: 1506795043:0;clear;ll
+: 1506795087:0;cd -
+: 1506795094:0;..
+: 1506795140:0;composer create-project --prefer-dist laravel/laravel testSite
+: 1506795205:0;ll
+: 1506795212:0;cd testSite
+: 1506795213:0;ll
+: 1506795260:0;..
+: 1506795274:0;cd-
+: 1506795279:0;cd -
+: 1506795329:0;composer require laravel/laravel -dev
+: 1506795368:0;composer require laravel/laravel > 6 -dev
+: 1506795389:0;composer require laravel/laravel6.1 -dev
+: 1506795497:0;cd ..
+: 1506795498:0;ll
+: 1506795527:0;composer create-project --prefer-dist laravel/laravel=5.4.22 testSite
+: 1506795546:0;composer create-project --prefer-dist laravel/laravel=6 testSite
+: 1506795558:0;composer create-project --prefer-dist laravel/laravel>6 testSite
+: 1506873899:0;cd Sites/testSite
+: 1506873910:0;php artisan migrate:install
+: 1506873936:0;ll
+: 1506873944:0;cd database
+: 1506873945:0;ll
+: 1506873947:0;cd ..
+: 1506873951:0;cd config
+: 1506873952:0;ll
+: 1506873960:0;cat database.php
+: 1506873968:0;cat database.php | less
+: 1506873996:0;cd ..
+: 1506873997:0;ll
+: 1506874239:0;php artisan migrate:install
+: 1506874302:0;vim ./config/database.php
+: 1506874404:0;php artisan migrate:install
+: 1506874423:0;vim ./config/database.php
+: 1506874446:0;php artisan migrate:install
+: 1506874612:0;mysql-server start
+: 1506874620:0;mysql server start
+: 1506874636:0;mysqld start
+: 1506874645:0;mysql
+: 1506874663:0;mysqld stop
+: 1506874688:0;ll
+: 1506874691:0;clear;ll
+: 1506874699:0;composer update
+: 1506874744:0;mysql --user=root -p
+: 1506874765:0;mysql --user=root -pooxooz5Za
+: 1506874773:0;clear; 
+: 1506874778:0;mysql --user=root -p
+: 1506874878:0;mysql -h 127.0.0.1
+: 1506874908:0;sudo /usr/local/mysql/
+: 1506874926:0;cd /usr/local/mysql/
+: 1506874939:0;mysql.server start
+: 1506874951:0;mysql -uroot -p
+: 1506875027:0;php artisan migrate:install
+: 1506875034:0;vim ./config/database.php
+: 1506875088:0;php artisan migrate:install
+: 1506875631:0;vagrant ssh
+: 1506875655:0;cd Sites/testSite
+: 1506875657:0;vagrant ssh
+: 1506875669:0;vagrant up; vagrant ssh
+: 1506875678:0;vagrant up
+: 1506875682:0;ll
+: 1506875699:0;cat readme.md|less
+: 1506875723:0;exit
+: 1506875728:0;clear;
+: 1506875730:0;ll
+: 1506875737:0;la routes
+: 1506875759:0;vim routes/web.php
+: 1506875797:0;cd ~
+: 1506875823:0;composer global require "laravel/laravel"
+: 1506875865:0;clear
+: 1506875868:0;ll
+: 1506875877:0;laravel new blog
+: 1506875891:0;ll
+: 1506875893:0;la
+: 1506875897:0;cd .composer
+: 1506875898:0;ll
+: 1506875904:0;cd vendor
+: 1506875905:0;ll
+: 1506875908:0;cd bin
+: 1506875910:0;ll
+: 1506875938:0;cat PATH
+: 1506875944:0;cat $PATH
+: 1506875995:0;cd ../laravel
+: 1506875996:0;ll
+: 1506876001:0;cd installer
+: 1506876016:0;ll
+: 1506876048:0;cd ~
+: 1506876050:0;ll
+: 1506876073:0;laravel 
+: 1506876140:0;bash
+: 1506876187:0;ll
+: 1506876187:0;la
+: 1506876210:0;vim .zshrc
+: 1506876309:0;exit
+: 1506876355:0;la
+: 1506876367:0;cd Sites
+: 1506876368:0;ll
+: 1506876385:0;laravel new testSite
+: 1506876399:0;cat $PATH
+: 1506876414:0;..
+: 1506876415:0;ll
+: 1506876422:0;cd blog
+: 1506876423:0;ll
+: 1506876439:0;cd routes
+: 1506876440:0;ll
+: 1506876455:0;vim api.php
+: 1506876469:0;vim web.php
+: 1506876530:0;..
+: 1506876533:0;vagrant up
+: 1506969417:0;brew update
+: 1506969503:0;hdparm
+: 1506969883:0;brew upgrade
+: 1506970454:0;composer update
+: 1506970464:0;cd Sites
+: 1506970468:0;composer update
+: 1506970473:0;cd grsl.co.uk
+: 1506970475:0;composer update
+: 1506970520:0;php -v
+: 1506970532:0;brew install php
+: 1506970569:0;brew install php72
+: 1506970594:0;brew list
+: 1506970624:0;brew update php
+: 1506970635:0;brew upgrade php
+: 1506970669:0;brew upgrade php71
+: 1506970754:0;locate php
+: 1506970778:0;brew upgrade php73
+: 1506970885:0;ll
+: 1506970894:0;php index.php
+: 1506970909:0;man bash
+: 1506970918:0;man zsh
+: 1507052284:0;cd Sites
+: 1507052287:0;cd grsl.co.uk
+: 1507052291:0;ll ..
+: 1507052296:0;ll
+: 1507052300:0;mysql
+: 1507052314:0;mysql.server start
+: 1507052317:0;mysql
+: 1507052333:0;mysql -uroot -p
+: 1507052393:0;cd Sites/grsl.co.uk
+: 1507052403:0;vim bookCellar.sql
+: 1507052554:0;mysql < bookCellar.sql
+: 1507052572:0;mysql -uroot -p < bookCellar.sql
+: 1507052762:0;clear
+: 1507052767:0;mysql -uroot -p < bookCellar.sql
+: 1507052944:0;clear
+: 1507052946:0;mysql -uroot -p < bookCellar.sql
+: 1507053104:0;clear
+: 1507053106:0;mysql -uroot -p < bookCellar.sql
+: 1507053558:0;clear
+: 1507053559:0;mysql -uroot -p < bookCellar.sql
+: 1507053648:0;clear; mysql -uroot -p < bookCellar.sql
+: 1507053746:0;ll
+: 1507053775:0;git add bookCellar.sql
+: 1507053786:0;gst
+: 1507053809:0;git -f add bookCellar.sql
+: 1507053833:0;ga -f bookCellar.sql
+: 1507053837:0;gst
+: 1507053854:0;clear; mysql -uroot -p < bookCellar.sql
+: 1507053877:0;clear
+: 1507053882:0;vim bookCellar.sql
+: 1507054016:0;clear; mysql -uroot -p < bookCellar.sql
+: 1507055055:0;mysql -uroot -p
+: 1507055257:0;clear; mysql -uroot -p < bookCellar.sql
+: 1507055283:0;mysql -uroot -p
+: 1507055909:0;clear; mysql -uroot -p < bookCellar.sql
+: 1507057149:0;exit
+: 1507136588:0;cd Sites/grsl.co.uk
+: 1507136594:0;vim bookCellar.sql
+: 1507136817:0;cd Sites/grsl.co.uk
+: 1507136836:0;mysql -uroot -p < bookCellar.sql
+: 1507136847:0;mysql.server start
+: 1507136850:0;mysql -uroot -p < bookCellar.sql
+: 1507137727:0;mysql -uroot -p
+: 1507138296:0;mysql -uroot -p < bookCellar.sql
+: 1507138340:0;clear
+: 1507138343:0;mysql -uroot -p < bookCellar.sql
+: 1507138589:0;clear
+: 1507138603:0;mysql -uroot -p < bookCellar.sql
+: 1507138800:0;clear
+: 1507138802:0;mysql -uroot -p < bookCellar.sql
+: 1507139644:0;clear
+: 1507139646:0;mysql -uroot -p < bookCellar.sql
+: 1507140038:0;clear
+: 1507140040:0;mysql -uroot -p < bookCellar.sql
+: 1507140071:0;clear
+: 1507140073:0;mysql -uroot -p < bookCellar.sql
+: 1507140306:0;mysql
+: 1507140320:0;mysql -uroot -p
+: 1507140722:0;clear
+: 1507140725:0;mysql -uroot -p < bookCellar.sql
+: 1507140778:0;clear; mysql -uroot -p < bookCellar.sql
+: 1507140860:0;exit
+: 1507141026:0;mysql -uroot -p
+: 1507141296:0;exit
+: 1507227550:0;cd Sites
+: 1507227552:0;cd g
+: 1507227557:0;cd grsl.co.uk
+: 1507227565:0;brew update &
+: 1507227570:0;vim bookCellar.sql
+: 1507227593:0;mysql.server start
+: 1507227602:0;brew upgrade &
+: 1507227606:0;vim bookCellar.sql
+: 1507227681:0;ls
+: 1507227691:0;./updateGRSL.sh
+: 1507227704:0;composer upgrade
+: 1507227767:0;php --version
+: 1507227786:0;php update
+: 1507227892:0;curl -s http://php-osx.liip.ch/install.sh | bash -s 7.0
+: 1507227982:0;cd Sites/grsl.co.uk
+: 1507227987:0;vim bookCellar.sql
+: 1507228096:0;php -v
+: 1507228109:0;ll
+: 1507228119:0;brew upgrade php
+: 1507228172:0;brew upgrade php7.0
+: 1507228244:0;brew install php70
+: 1507228321:0;brew php -v
+: 1507228330:0;php 0v
+: 1507228334:0;php -v
+: 1507228418:0;exit
+: 1507228432:0;brew unlink php53
+: 1507228439:0;brew unlink php55
+: 1507228446:0;brew unlink php5538
+: 1507228459:0;la /usr/local/Cellar
+: 1507228552:0;which php
+: 1507228598:0;echo PATH
+: 1507228602:0;echo $PATH
+: 1507228683:0;which php
+: 1507228699:0;la /usr/bin/php
+: 1507228706:0;la /usr/bin/php/
+: 1507228718:0;cd /usr/bin
+: 1507228719:0;ll
+: 1507228734:0;la p*
+: 1507228740:0;la ph*
+: 1507228756:0;cat php
+: 1507228775:0;ls
+: 1507228787:0;mv php php_old
+: 1507228796:0;sudo mv php php_old
+: 1507228815:0;cd ~
+: 1507228816:0;ll
+: 1507228822:0;php -v
+: 1507229078:0;cd /usr/local
+: 1507229078:0;ll
+: 1507229117:0;cd Cellar
+: 1507229118:0;ll
+: 1507229124:0;cd php71
+: 1507229125:0;ll
+: 1507229141:0;cd 7.1.8_20
+: 1507229142:0;ll
+: 1507229148:0;cd bin
+: 1507229149:0;ll
+: 1507229168:0;cd ~
+: 1507229172:0;ll
+: 1507229179:0;cd /usr/local
+: 1507229180:0;ll
+: 1507229197:0;ln php5
+: 1507229203:0;cd php5
+: 1507229204:0;ll
+: 1507229216:0;cd ..
+: 1507229242:0;brew unlink php5
+: 1507229264:0;man rm
+: 1507229280:0;man ln
+: 1507229358:0;ll
+: 1507229386:0;pwd
+: 1507229417:0;ln -F php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507229426:0;ll
+: 1507229442:0;ln -F php5 /usr/local/Cellar/php71/7.1.8_20/
+: 1507229452:0;link -F php5 /usr/local/Cellar/php71/7.1.8_20/
+: 1507229496:0;unlink php5
+: 1507229502:0;sudo unlink php5
+: 1507229507:0;ll
+: 1507229518:0;link php5 /usr/local/Cellar/php71/7.1.8_20/
+: 1507229528:0;ll
+: 1507229533:0;mkdir php5
+: 1507229536:0;ll
+: 1507229541:0;pwd
+: 1507229552:0;sudo mkdir php5
+: 1507229554:0;ll
+: 1507229561:0;link php5 /usr/local/Cellar/php71/7.1.8_20/
+: 1507229573:0;rmdir php5
+: 1507229578:0;sudo rmdir php5
+: 1507229584:0;touch php5
+: 1507229589:0;sudo touch php5
+: 1507229593:0;link php5 /usr/local/Cellar/php71/7.1.8_20/
+: 1507229595:0;ll
+: 1507229607:0;link php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507229616:0;ll
+: 1507229621:0;rm php5
+: 1507229633:0;sudo rm php5
+: 1507229635:0;ll
+: 1507229641:0;link php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507229650:0;link ./php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507229667:0;ln ./php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507229674:0;man ln
+: 1507229693:0;ln -F ./php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507229702:0;mkdir php5
+: 1507229708:0;sudo mkdir php5
+: 1507229713:0;ln -F ./php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507229728:0;ln -Ff ./php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507229733:0;ln -f ./php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507229794:0;ln -f /usr/local/Cellar/php71/7.1.8_20 ./php5
+: 1507229816:0;ln -v
+: 1507229848:0;ln -vFf php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507229886:0;ls
+: 1507229900:0;sudo rmdir php5
+: 1507229902:0;ll
+: 1507229907:0;ln -vFf php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507229921:0;ln -vFf ./php5/ /usr/local/Cellar/php71/7.1.8_20/
+: 1507230131:0;ll
+: 1507230154:0;ln -vFf php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507230191:0;ln ./php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507230212:0;ls php5-7.0.24-20171002-092027
+: 1507230226:0;ln -s php5 php5-7.0.24-20171002-092027
+: 1507230241:0;sudo ln  php5 php5-7.0.24-20171002-092027
+: 1507230263:0;sudo ln ./php5 php5-7.0.24-20171002-092027
+: 1507230326:0;pwd
+: 1507230349:0;sudo ln /usr/local/php5 ./php5-7.0.24-20171002-092027
+: 1507230377:0;ln /usr/local/php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507230389:0;sudo ln -Ffv/usr/local/php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507230399:0;sudo ln -Ffv /usr/local/php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507230416:0;sudo ln -Ffv /usr/local/php5/ /usr/local/Cellar/php71/7.1.8_20/
+: 1507230468:0;ls /usr/local/php5/
+: 1507230481:0;mkdir php5
+: 1507230487:0;sudo mkdir php5
+: 1507230496:0;sudo ln -Ffv /usr/local/php5/ /usr/local/Cellar/php71/7.1.8_20/
+: 1507230512:0;sudo ln -Ffv /usr/local/php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507230520:0;rmdir php5
+: 1507230524:0;sudo rmdir php5
+: 1507230531:0;touch php5
+: 1507230535:0;sudo touch php5
+: 1507230542:0;sudo ln -Ffv /usr/local/php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507230546:0;ll
+: 1507230560:0;sudo ln -sFfv /usr/local/php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507230562:0;ll
+: 1507230571:0;~
+: 1507230576:0;php -v
+: 1507230587:0;which php
+: 1507230599:0;echo $PATH
+: 1507230654:0;export PATH=/usr/local/Cellar/php71/7.1.8_28:$PATH
+: 1507230658:0;php -v
+: 1507230676:0;cd /usr/bin
+: 1507230677:0;ll
+: 1507230681:0;cd php
+: 1507230695:0;echo $PATH
+: 1507230726:0;cd /usr/bin
+: 1507230730:0;ll php*
+: 1507230743:0;sudo mv php php_old
+: 1507230747:0;exit
+: 1507311662:0;brew update &
+: 1507311671:0;which php
+: 1507311688:0;ls /usr/bin/php
+: 1507311698:0;ls /usr/bin/ph*
+: 1507311706:0;ll /usr/bin/ph*
+: 1507311726:0;ll /usr/bin/php/
+: 1507311765:0;brew upgrade &
+: 1507311770:0;ll
+: 1507311774:0;cd Sites/grsl.co.uk
+: 1507311782:0;vim bookCellar.sql
+: 1507312046:0;cd Sites/grsl.co.uk
+: 1507312063:0;mysql -uroot -p
+: 1507312075:0;mysql.server start
+: 1507312078:0;mysql -uroot -p
+: 1507312091:0;mysql -uroot -p < bookCellar.sql
+: 1507312096:0;clear
+: 1507312214:0;clear; mysql -uroot -p < bookCellar.sql
+: 1507312408:0;exit
+: 1507312424:0;which php
+: 1507312427:0;ll
+: 1507312442:0;brew unlink php54
+: 1507312677:0;~
+: 1507312679:0;ll
+: 1507312688:0;ll .*
+: 1507312692:0;la
+: 1507312706:0;vim .zshrc
+: 1507312787:0;ll
+: 1507312801:0;ll /
+: 1507312835:0;cd /Users
+: 1507312836:0;ll
+: 1507312839:0;..
+: 1507312844:0;locate Cellar
+: 1507312856:0;cd /usr/local/Cellar
+: 1507312857:0;ll
+: 1507312902:0;exit
+: 1507312917:0;which php
+: 1507312945:0;vim .bash_profile
+: 1507313018:0;lla
+: 1507313060:0;la
+: 1507313074:0;vim .zshrc
+: 1507313136:0;which php
+: 1507313138:0;exit
+: 1507313154:0;which php
+: 1507313355:0;php -v
+: 1507313453:0;bash
+: 1507313512:0;echo $PATH
+: 1507315457:0;pwd
+: 1507315461:0;cd Sites/grsl.co.uk
+: 1507315467:0;vim bookCellar.sql
+: 1507315705:0;mysql -uroot -p
+: 1507316680:0;mysql -uroot -p < bookCellar.sql
+: 1507316691:0;exit
+: 1507392902:0;curl -s http://php-osx.liip.ch/install.sh | bash -s 7.1
+: 1507393113:0;which php
+: 1507393119:0;php -v
+: 1507393138:0;ll /usr/bin/php
+: 1507393739:0;ll /usr/local/
+: 1507393760:0;exit
+: 1507394069:0;=which php
+: 1507394073:0;which php
+: 1507394181:0;vim ~/.bash_profile
+: 1507394246:0;source ~/.bash_profile
+: 1507394251:0;which php
+: 1507394255:0;exit
+: 1507394266:0;which php
+: 1507394273:0;bash
+: 1507394303:0;vim Sites/grsl.co.uk/bookCellar.sql
+: 1507394481:0;mysql.server start
+: 1507394494:0;mysql -uroot -p
+: 1507394516:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.sql
+: 1507394527:0;cd Sites/grsl.co.uk
+: 1507394531:0;vim bookCellar.sql
+: 1507394593:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.sql
+: 1507395174:0;cd ../Sites/Countries
+: 1507395177:0;cd ..
+: 1507395180:0;la
+: 1507395185:0;cd countries
+: 1507395186:0;ll
+: 1507395205:0;cp ./countries.php ../grsl.co.uk/countries.sql
+: 1507395209:0;cd -
+: 1507395212:0;cd grsl.co.uk
+: 1507395213:0;ll
+: 1507395220:0;vim countries.sql
+: 1507396053:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.sql
+: 1507396074:0;cd Sites/grsl.co.uk
+: 1507396078:0;vim bookCellar.sql
+: 1507396221:0;vim countries.sql
+: 1507396273:0;mysql -uroot -p < countries.sql
+: 1507396377:0;mysql -uroot -p
+: 1507396832:0;ll
+: 1507396838:0;pwd
+: 1507396842:0;cd Sites/grsl.co.uk
+: 1507396843:0;ll
+: 1507396861:0;vim isbndb.php
+: 1507396924:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.sql
+: 1507396928:0;exit
+: 1507397432:0;ll
+: 1507397449:0;php isbndb.php
+: 1507397714:0;exit
+: 1507463680:0;mysql.server start
+: 1507463692:0;mysql -uroot -p
+: 1507463735:0;cd Sites
+: 1507463737:0;cd grsl.co.uk
+: 1507463739:0;ll
+: 1507463763:0;mysql < bookCellar.sql
+: 1507463774:0;mysql -uroot -p  < bookCellar.sql
+: 1507463804:0;mysql -uroot -p  < countries.sql
+: 1507463989:0;ll
+: 1507463994:0;vim bookCellar.sql
+: 1507464341:0;pwd
+: 1507464364:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.sql
+: 1507464457:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.sql, ~/Sites/grsl.co.uk/countries
+: 1507464472:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.sql; ~/Sites/grsl.co.uk/countries
+: 1507464480:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.sql; ~/Sites/grsl.co.uk/countries.sql
+: 1507464658:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.sql;
+: 1507464684:0;ll
+: 1507464689:0;cd Sites/grsl.co.uk
+: 1507464690:0;ll
+: 1507464721:0;gst
+: 1507464736:0;ga bookCellar.sql
+: 1507464752:0;ga index.php.original
+: 1507464754:0;gst
+: 1507464763:0;ga index.php
+: 1507464784:0;ga .vagrant/machines/grsl-co-uk/virtualbox/action_set_name
+: 1507464791:0;ga composer.*
+: 1507464795:0;gst
+: 1507464803:0;ga isbndb.php
+: 1507464805:0;gst
+: 1507464819:0;clear
+: 1507464840:0;ll
+: 1507464851:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.sql;
+: 1507464873:0;mysql -uroot -p
+: 1507465045:0;mysql
+: 1507465051:0;mysql -p
+: 1507465079:0;mysql -p < bookCellar.sql
+: 1507465151:0;mysql -uroot -p
+: 1507465251:0;mysql -p
+: 1507465298:0;exit
+: 1507465355:0;mysql -p
+: 1507465512:0;mysql -p < ~/Sites/grsl.co.uk/bookCellar.sql
+: 1507465547:0;mysql -p < ~/Sites/grsl.co.uk/countries.sql
+: 1507465750:0;exit
+: 1507465929:0;vim publishers.sql
+: 1507467199:0;CD Sites/grsl.co.uk
+: 1507467227:0;ll
+: 1507467238:0;ll Sites/grsl.co.uk
+: 1507467280:0;mysql -p < ~/Sites/grsl.co.uk/publishers.sql
+: 1507468856:0;vim bookCellar.sql
+: 1507468926:0;mysql -p < ~/Sites/grsl.co.uk/bookCellar.sql
+: 1507468971:0;vim bookCellar.sql
+: 1507487245:0;cd Sites/grsl.co.uk
+: 1507487250:0;la *.sql
+: 1507487260:0;vim bookCellar.sql
+: 1507487410:0;ll *.sql
+: 1507487428:0;mv forgeinKeys.sql foreignKeys.sql
+: 1507487430:0;ll *.sql
+: 1507487437:0;vim foreignKeys.sql
+: 1507487463:0;ll *.sql
+: 1507487514:0;mysql -p < bookCellar.sql; countries.sql; publishers.sql; foreignKeys.sql;
+: 1507487531:0;mysql.server start
+: 1507487534:0;mysql -p < bookCellar.sql; countries.sql; publishers.sql; foreignKeys.sql;
+: 1507487551:0;vim bookCellar.sql
+: 1507487601:0;mysql -p < bookCellar.sql; countries.sql; publishers.sql; foreignKeys.sql;
+: 1507487614:0;vim bookCellar.sql
+: 1507487717:0;mysql -p < bookCellar.sql;
+: 1507487840:0;vim bookCellar.sql
+: 1507487874:0;vim -r bookCellar.sql
+: 1507487889:0;vim bookCellar.sql
+: 1507488040:0;cd Sites/grsl.co.uk
+: 1507488051:0;mysql -p < bookCellar.sql
+: 1507488075:0;mysql -p < countries.sql
+: 1507488085:0;mysql -p < publishers.sql
+: 1507488100:0;mysql -p < foreignKeys.sql
+: 1507488116:0;vim foreignKeys.sql
+: 1507488155:0;mysql -p < foreignKeys.sql
+: 1507488170:0;vim foreignKeys.sql
+: 1507488188:0;mysql -p < foreignKeys.sql
+: 1507488218:0;ll *.dql
+: 1507488221:0;ll *.sql
+: 1507488241:0;chmod +x *.sql
+: 1507488242:0;ll
+: 1507488251:0;mysql -p < foreignKeys.sql
+: 1507488266:0;chmod -x *.sql
+: 1507488268:0;ll
+: 1507488274:0;./updateGRSL.sh
+: 1507488290:0;brew update
+: 1507488484:0;brew upgrade;
+: 1507488487:0;ll
+: 1507488508:0;mysql -uroot -p < foreignKeys.sql
+: 1507488516:0;vim foreignKeys.sql
+: 1507488529:0;mysql -uroot -p < foreignKeys.sql
+: 1507488551:0;mysql -uroot -p
+: 1507488815:0;exit
+: 1507488821:0;vim bookCellar.sql
+: 1507489130:0;cd Sites/grsl.co.uk
+: 1507489142:0;vim bookCellar.sql
+: 1507489217:0;mysql -p -uroot
+: 1507489495:0;exit
+: 1507489512:0;vim Sites/grsl.co.uk/bookCellar.sql
+: 1507489824:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.sql
+: 1507490014:0;cat countries.sql >> bookCellar.sql
+: 1507490020:0;vim bookCellar.sql
+: 1507490116:0;cat publishers.sql >> bookCellar.sql
+: 1507490142:0;cat foreignKeys.sql >> bookCellar.sql
+: 1507490146:0;vim bookCellar.sql
+: 1507490195:0;vim publishers.sql
+: 1507490263:0;cat publishers.sql >> bookCellar.sql
+: 1507490268:0;vim bookCellar.sql
+: 1507490295:0;cat foreignKeys.sql >> bookCellar.sql
+: 1507490298:0;vim bookCellar.sql
+: 1507490390:0;mysql -uroot -p < bookCellar.sql
+: 1507490401:0;exit
+: 1507490500:0;vim bookCellar.sql
+: 1507490820:0;exit
+: 1507490835:0;cd Sites/grsl.co.uk
+: 1507490839:0;vim bookCellar.sql
+: 1507491448:0;cd ~
+: 1507491450:0;la
+: 1507491456:0;cd .vim
+: 1507491457:0;ll
+: 1507491459:0;cd syntax
+: 1507491460:0;ll
+: 1507491651:0;ftp ftp://cedar-solutions.com
+: 1507491915:0;ll
+: 1507491947:0;git git@github.com:benekastah/mysql.vim.git
+: 1507491987:0;ssh git@github.com:benekastah/mysql.vim.git
+: 1507492030:0;git clone git@github.com:benekastah/mysql.vim.git
+: 1507492044:0;ssh git clone git@github.com:benekastah/mysql.vim.git
+: 1507492070:0;git clone https://github.com:benekastah/mysql.vim.git
+: 1507492081:0;git clone https://github.com:benekastah/mysql.vim
+: 1507492085:0;ll
+: 1507492100:0;touch mysql.vim
+: 1507492105:0;gst
+: 1507492111:0;git init
+: 1507492114:0;ll
+: 1507492141:0;vim mysql.vim
+: 1507492344:0;ll
+: 1507492355:0;mv mysql.vim sql.vim
+: 1507492367:0;cd ../../Sites/grsl.co.uk
+: 1507492371:0;vim bookCellar.sql
+: 1507492423:0;cd -
+: 1507492424:0;ll
+: 1507492433:0;rm sql.vim
+: 1507492434:0;ll
+: 1507492438:0;cd _
+: 1507492440:0;cd -
+: 1507492444:0;vim bookCellar.sql
+: 1507492455:0;cd -
+: 1507492463:0;touch sql.vim
+: 1507492465:0;ll
+: 1507492467:0;cd -
+: 1507492470:0;vim book
+: 1507492482:0;ll
+: 1507492490:0;vim bookCellar.sql
+: 1507492497:0;exit
+: 1507658237:0;mysql.server start
+: 1507658516:0;cd Sites/grsl.co.uk
+: 1507658518:0;ll
+: 1507658575:0;cd ~
+: 1507658619:0;echo $ZDOTDIR
+: 1507658625:0;la
+: 1507658637:0;cat .profile
+: 1507658676:0;ls /etc/
+: 1507658692:0;cat /etc/profile
+: 1507658739:0;ll
+: 1507658741:0;cd ~
+: 1507658742:0;ll
+: 1507658743:0;la
+: 1507658754:0;cat .profile
+: 1507658790:0;touch ./.zprofile
+: 1507658792:0;la
+: 1507658798:0;dir
+: 1507658800:0;ll
+: 1507658835:0;cat $PATH >> .zprofile
+: 1507658841:0;vim .zprofile
+: 1507658866:0;echo $PATH >> .zprofile
+: 1507658872:0;cat .zprofile
+: 1507658879:0;vim .zprofile
+: 1507659197:0;exit
+: 1507659228:0;echo $PATH
+: 1507659234:0;which php
+: 1507659255:0;vim /etc/profile
+: 1507659371:0;sudo vim /etc/profile
+: 1507659483:0;path
+: 1507659494:0;echo $PATH
+: 1507659499:0;which php
+: 1507660005:0;cd ./.vim/syntax
+: 1507660006:0;ll
+: 1507660011:0;vim sql.vim
+: 1507661496:0;cd Sites/grsl.co.uk
+: 1507661501:0;ll *.sql
+: 1507661509:0;vim publishers.sql
+: 1507661540:0;exit
+: 1507661599:0;cd Sites/grsl.co.uk
+: 1507661605:0;vim publishers.sql
+: 1507661627:0;exit
+: 1507662247:0;vim Sites/grsl.co.uk/publishers.sql
+: 1507662265:0;exit
+: 1507662488:0;vim ~/Sites/grsl.co.uk/publishers.sql
+: 1507662526:0;cd ~/.vim
+: 1507662527:0;ll
+: 1507662529:0;cd syntax
+: 1507662530:0;ll
+: 1507662539:0;exit
+: 1507743166:0;rehash
+: 1507743173:0;which php
+: 1507743206:0;cd /etc
+: 1507743207:0;ll
+: 1507743220:0;vim profile
+: 1507743237:0;sudo vim profile
+: 1507743277:0;cd ~
+: 1507743279:0;exit
+: 1507743305:0;cd Sites
+: 1507743306:0;ll
+: 1507743308:0;cd grsl.co.uk
+: 1507743319:0;which php
+: 1507743330:0;cd ~
+: 1507743331:0;ll
+: 1507743347:0;locate php5
+: 1507743365:0;/usr/local/php5
+: 1507743367:0;ll
+: 1507743379:0;cd bin
+: 1507743381:0;ll
+: 1507743392:0;php
+: 1507743421:0;cd 
+: 1507743424:0;ll
+: 1507743439:0;cd Sites/g
+: 1507743441:0;cd Sites/grsl.co.uk
+: 1507743442:0;ll
+: 1507743451:0;gst
+: 1507743460:0;vim bookCellar.sql
+: 1507743469:0;cd 
+: 1507743475:0;cd .vim/syntax
+: 1507743476:0;ll
+: 1507743482:0;vim php.vim
+: 1507744307:0;vim sql.vim
+: 1507744638:0;cd Sites/grsl.co.uk
+: 1507744644:0;vim bookCellar.sql
+: 1507744950:0;ll
+: 1507744969:0;mv bookCellar.sql bookCellar.mysql
+: 1507744973:0;vim bookCellar.mysql
+: 1507745024:0;la
+: 1507745028:0;cd ~
+: 1507745030:0;la
+: 1507745070:0;cat .viminfo
+: 1507745087:0;cat .viminfo | more
+: 1507745270:0;exit
+: 1507745286:0;la
+: 1507745289:0;..
+: 1507745290:0;ll
+: 1507745296:0;cd ~
+: 1507745298:0;exit
+: 1507833842:0;cd Sites/grsl.co.uk
+: 1507833846:0;vim bookCellar.mysql
+: 1507834671:0;cd Sites/grsl.co.uk
+: 1507834717:0;clear; mysql -uroot -p < bookCellar.mysql
+: 1507834730:0;mysql.server start
+: 1507834732:0;clear; mysql -uroot -p < bookCellar.mysql
+: 1507835180:0;mysql.server start
+: 1507835185:0;clear; mysql -uroot -p < bookCellar.mysql
+: 1507835454:0;ll
+: 1507835476:0;clear; mysql -uroot -p < countries.mysql
+: 1507835486:0;clear; mysql -uroot -p < countries.sql
+: 1507835523:0;ll
+: 1507835531:0;vim data.mysql
+: 1507835669:0;vim bookCellar.mysql
+: 1507835765:0;clear; mysql -uroot -p < bookCellar.mysql
+: 1507835778:0;vim bookCellar.mysql
+: 1507835843:0;clear; mysql -uroot -p < bookCellar.mysql
+: 1507835968:0;clear; mysql -uroot -p < data.sql
+: 1507835975:0;clear; mysql -uroot -p < data.mysql
+: 1507835990:0;vim data.mysql
+: 1507836015:0;clear; mysql -uroot -p < data.mysql
+: 1507836333:0;cp *.sql *.mysql
+: 1507836424:0;cp *.sql $1.mysql
+: 1507836463:0;zmv ./*.sql ./$1.mysql
+: 1507836480:0;cp ./*.sql ./$1.mysql
+: 1507836487:0;man cp
+: 1507836535:0;ls *.sql
+: 1507836547:0;mv countries.sql countries.mysql
+: 1507836565:0;mv foreignKeys.sql foreignKeys.mysql
+: 1507836576:0;mv publishers.sql publishers.mysql
+: 1507836584:0;ls *.mysql
+: 1507836602:0;la *.mysql
+: 1507836613:0;exit
+: 1507916217:0;echo $PATH
+: 1507916415:0;cd vim learnVimTheHardWay
+: 1507916422:0;vim learnVimTheHardWay
+: 1507916528:0;vim ./.vimrc
+: 1507917056:0;cd Sites/grsl.co.uk
+: 1507917060:0;vim bookCellar.mysql
+: 1507917621:0;vim ./.vimrc
+: 1507917695:0;exit
+: 1507917712:0;vim bookCellar.mysql
+: 1507917814:0;phpclear
+: 1507917816:0;clear
+: 1507917827:0;php71 -v
+: 1507917837:0;cd ~
+: 1507917842:0;php71 -v
+: 1507918726:0;cd
+: 1507918729:0;la
+: 1507918742:0;vim .zshrc
+: 1507918926:0;clear
+: 1507918933:0;php71 -v
+: 1507918935:0;exit
+: 1507918945:0;which php
+: 1507918953:0;php71 -v
+: 1507918959:0;clear
+: 1507918969:0;echo $PATH
+: 1507918992:0;vim .zshrc
+: 1507919047:0;echo $PATH
+: 1507919050:0;exit
+: 1507919074:0;echo $PATH
+: 1507919081:0;php71 -v
+: 1507919094:0;vim .zshrc
+: 1507919107:0;nano
+: 1507919163:0;cd bach
+: 1507919165:0;bash
+: 1507919175:0;/usr/local
+: 1507919177:0;ll
+: 1507919179:0;la
+: 1507919181:0;ls
+: 1507919499:0;export PATH=$PATH:usr/local/bin/:
+: 1507919501:0;ll
+: 1507919503:0;ls
+: 1507919574:0;cd ~
+: 1507919600:0;defaults write com.apple.finder AppleShowAllFiles yes
+: 1507919616:0;locate vim
+: 1507919689:0;/usr/bin/vim .zshrc
+: 1507919710:0;php71 -v
+: 1507919713:0;ll
+: 1507919715:0;exit
+: 1507919721:0;ll
+: 1507919737:0;clear
+: 1507919748:0;echo $PATH
+: 1507919757:0;php71 -v
+: 1507919762:0;which php
+: 1507920169:0;clear
+: 1507920185:0;cd /usr/local/Cellar/php71
+: 1507920186:0;ll
+: 1507920214:0;la 7.1.8_20
+: 1507920263:0;la 7.1.8_20/php
+: 1507920268:0;la 7.1.8_20/php/php
+: 1507920298:0;la 7.1.8_20/php/php/fpm
+: 1507920484:0;which php
+: 1507920496:0;cd /usr/bin/php
+: 1507920501:0;cd /usr/bin/
+: 1507920502:0;ll
+: 1507920517:0;ll php*
+: 1507920767:0;cd ~
+: 1507920791:0;defaults write com.apple.finder AppleShowAllFiles yes
+: 1507921044:0;exit
+: 1507985524:0;php -v
+: 1507985536:0;ll
+: 1507985541:0;ll /usr
+: 1507985557:0;ll /usr/bin
+: 1507985570:0;locate profile
+: 1507985577:0;clear
+: 1507985642:0;ll /usr/local/Cellar/php71/7.1.8_20/bin
+: 1507985690:0;sudo mv /usr/bin/php /usr/bin/php-5.5.38
+: 1507985772:0;ln -s ./php5 /usr/local/Cellar/php71/7.1.8_20
+: 1507985778:0;ll
+: 1507985799:0;ln -s /usr/local/Cellar/php71/7.1.8_20 ./php71
+: 1507985801:0;ll
+: 1507985821:0;php71 -v
+: 1507985828:0;./php71 -v
+: 1507985855:0;ln -u php71
+: 1507985864:0;rm php71
+: 1507985865:0;ll
+: 1507985876:0;echo $PATH
+: 1507985898:0;vim .zshrc
+: 1507985962:0;rehash
+: 1507985971:0;echo $PATH
+: 1507985975:0;php -v
+: 1507985986:0;vim .zshrc
+: 1507986103:0;echo $PATH
+: 1507986108:0;ecxit
+: 1507986111:0;exit
+: 1507986149:0;which phhp
+: 1507986152:0;which php
+: 1507986174:0;clear
+: 1507986180:0;which php
+: 1507986357:0;echo $PATH
+: 1507986691:0;composer update
+: 1507986699:0;cd Sites/grsl.co.uk
+: 1507986702:0;composer update
+: 1507987467:0;ll
+: 1507987483:0;brew update
+: 1507987544:0;brew upgrade
+: 1507987634:0;which php
+: 1507987687:0;brew services start homebrew/php/php71
+: 1507987704:0;which php
+: 1507987708:0;exit
+: 1507987715:0;which php
+: 1507987720:0;cd Sites/grsl.co.uk
+: 1507987721:0;ll
+: 1507987739:0;mysql.server start
+: 1507987750:0;mysql -uroot -p < bookCellar.mysql
+: 1507987776:0;mysql -uroot -p < data.mysql
+: 1507987795:0;vim data.mysql
+: 1507987982:0;cd Sites/grsl.co.uk
+: 1507987996:0;mysql -uroot -p
+: 1507988006:0;mysql -uroot -p < data.mysql
+: 1507988051:0;mysql -uroot -p
+: 1507988255:0;mysql -uroot -p < data.mysql
+: 1507988578:0;exit
+: 1508073266:0;ruby -v
+: 1508073350:0;ll
+: 1508073352:0;la
+: 1508073363:0;vim .vimrc
+: 1508073595:0;Sites/grsl.co.uk
+: 1508073600:0;vim data.mysql
+: 1508073726:0;exit
+: 1508073742:0;vim Sites/grsl.co.uk/data.mysql
+: 1508073751:0;exit
+: 1508073758:0;vim .vimrc
+: 1508073771:0;vim Sites/grsl.co.uk/data.mysql
+: 1508074103:0;exit
+: 1508074112:0;vim Sites/grsl.co.uk/data.mysql
+: 1508074151:0;exit
+: 1508074187:0;vim Sites/grsl.co.uk/data.mysql
+: 1508074256:0;eixt
+: 1508074258:0;exit
+: 1508074467:0;vim Sites/grsl.co.uk/data.mysql
+: 1508074776:0;exit
+: 1508074786:0;vim Sites/grsl.co.uk/data.mysql
+: 1508074817:0;exit
+: 1508074929:0;vim .vimrc
+: 1508075063:0;exit
+: 1508075072:0;vim .vimrc
+: 1508076135:0;vim Sites/grsl.co.uk/data.mysql
+: 1508076182:0;exit
+: 1508076250:0;gst
+: 1508076264:0;ll
+: 1508076266:0;la
+: 1508076431:0;./updateDotFiles.sh

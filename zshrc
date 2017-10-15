@@ -83,5 +83,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="/usr/local/bin:$PATH"
-export PATH="$PATH:~/.composer/vendor/bin"
+alias gw="ssh grsl@host58.servers.prgn.misp.co.uk -p2510 -lgrsl"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="~/.composer/vendor/bin:/usr/local/Cellar/php71/7.1.8_20/bin:~/.rvm/bin:$PATH:/usr/local/bin:"
+
