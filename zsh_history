@@ -4807,3 +4807,266 @@ a;sldkfjas;ldkfjad
 : 1508076264:0;ll
 : 1508076266:0;la
 : 1508076431:0;./updateDotFiles.sh
+: 1508076498:0;cat updateDotFiles.sh
+: 1508076513:0;cd dotfiles
+: 1508076514:0;ll
+: 1508076519:0;gst
+: 1508076528:0;git add -A
+: 1508076589:0;git commit -m "A few additions to .vimrc from 'Learn Vimscript the Hard Way.'"
+: 1508076675:0;git --global user.name
+: 1508076687:0;git config --global user.name
+: 1508076702:0;git config --global user.name "grsl"
+: 1508076899:0;git config --global user.email "grslong@gmail.com"
+: 1508076906:0;git commit -m "A few additions to .vimrc from 'Learn Vimscript the Hard Way.'"
+: 1508076917:0;git push
+: 1508076983:0;vim updateDotFiles.sh
+: 1508077114:0;./updateDotFiles.sh
+: 1508077140:0;vim updateDotFiles.sh
+: 1508077155:0;./updateDotFiles.sh
+: 1508077173:0;clear
+: 1508077175:0;ll
+: 1508077177:0;exit
+: 1508174488:0;cd Sites/grsl.co.uk
+: 1508174489:0;ll
+: 1508174493:0;./updateGRSL.sh
+: 1508175222:0;cat updateGRSL.sh
+: 1508175246:0;~
+: 1508175247:0;ll
+: 1508175254:0;./updateDotFiles.sh
+: 1508175270:0;gst
+: 1508175279:0;cd -
+: 1508175281:0;ll
+: 1508175287:0;vim data.mysql
+: 1508175366:0;mysql.server start
+: 1508175385:0;mysql -uroot -p < bookCellar.mysql
+: 1508175394:0;mysql -uroot -p < data.mysql
+: 1508175427:0;vim bookCellar.mysql
+: 1508175540:0;rm data.mysql
+: 1508175549:0;ll *.mysql
+: 1508175568:0;cd Sites/grsl.co.uk
+: 1508175577:0;vim bookCellar.mysql
+: 1508175951:0;brew update;
+: 1508176057:0;brew upgrade
+: 1508176066:0;vim bookCellar.mysql
+: 1508176161:0;vimdiff bookCellar1 bookCellar.mysql
+: 1508176191:0;ll *.sqp
+: 1508176196:0;ll *.swp
+: 1508176204:0;vim bookCellar
+: 1508176213:0;vim bookCellar.mysql
+: 1508176682:0;cd Sites/grsl.co.uk
+: 1508176683:0;ll
+: 1508176684:0;la
+: 1508176693:0;cd .vim
+: 1508176694:0;la
+: 1508176702:0;gst
+: 1508176711:0;rm bookCellar1
+: 1508176716:0;gst
+: 1508176728:0;vim bookCellar.mysql
+: 1508176911:0;cd Sites/grsl.co.uk
+: 1508176915:0;rm countries.mysql
+: 1508176932:0;rm publishers.mysql
+: 1508176934:0;ll
+: 1508176989:0;rm foreignKeys.mysql
+: 1508176990:0;ll
+: 1508177011:0;vim updateGRSL.sh
+: 1508177030:0;rm updateGRSL.sh
+: 1508177031:0;ll
+: 1508177034:0;gst
+: 1508177041:0;ga 
+: 1508177046:0;ga -A
+: 1508177050:0;gst
+: 1508177061:0;composer update
+: 1508177297:0;mysql -uroot -p 
+: 1508177308:0;mysql -uroot -p < bookCellar.mysql
+: 1508178060:0;vim bookCellar.mysql
+: 1508178098:0;mysql -uroot -p < bookCellar.mysql
+: 1508179007:0;clear
+: 1508179009:0;mysql -uroot -p < bookCellar.mysql
+: 1508179512:0;clear
+: 1508179514:0;mysql -uroot -p < bookCellar.mysql
+: 1508180046:0;mysql -uroot -p
+: 1508180183:0;mysql -uroot -p < bookCellar.mysql
+: 1508180197:0;mysql
+: 1508180205:0;mysql -uroot -p
+: 1508180438:0;exit
+: 1508260005:0;vim bookCellar.mysql
+: 1508260635:0;cd Sites/grsl.co.uk
+: 1508260643:0;mysql.server start
+: 1508260661:0;mysql -uroot -p 
+: 1508267723:0;exit
+: 1508267737:0;mysql.server stop
+: 1508267741:0;exit
+: 1508346574:0;mysql.server start; brew update; ~/Sites/grsl.co.uk/composer update;
+: 1508346613:0;cd Sites/grsl.co.uk
+: 1508346620:0;composer update
+: 1508346652:0;vim bookCellar.mysql
+: 1508346717:0;vim ~/.vimrc
+: 1508346764:0;vim bookCellar.mysql
+: 1508346960:0;mysql
+: 1508346972:0;mysql -uroot -p 
+: 1508347661:0;cd Sites/grsl.co.uk
+: 1508347676:0;mysql -uroot -p < bookCellar.mysql
+: 1508347944:0;clear
+: 1508347986:0;mysql -uroot -p 
+: 1508348026:0;vim bookCellar.mysql
+: 1508348044:0;mysql -uroot -p < bookCellar.mysql
+: 1508349664:0;exit
+: 1508349693:0;mysql -uroot -p
+: 1508349788:0;vim bookCellar.mysql
+: 1508349975:0;mysql -uroot -p < bookCellar.mysql
+: 1508349983:0;mysql
+: 1508349996:0;mysql bookCellar
+: 1508350006:0;vim bookCellar.mysql
+: 1508350163:0;mysql -p
+: 1508350966:0;vim bookCellar.mysql
+: 1508351985:0;mysql -p
+: 1508351999:0;mysql -p < bookCellar.mysql
+: 1508352020:0;mysql -uroot -p < bookCellar.mysql
+: 1508352033:0;vim bookCellar.mysql
+: 1508352064:0;mysql -uroot -p < bookCellar.mysql
+: 1508352072:0;vim bookCellar.mysql
+: 1508352126:0;mysql -uroot -p < bookCellar.mysql
+: 1508352133:0;vim bookCellar.mysql
+: 1508352153:0;mysql -uroot -p < bookCellar.mysql
+: 1508352208:0;vim bookCellar.mysql
+: 1508352907:0;exit
+: 1508435084:0;brew update;
+: 1508435097:0;composer update;
+: 1508435114:0;brew upgrade;
+: 1508435124:0;vim bookCellar.mysql
+: 1508435222:0;vim .vimrc
+: 1508435228:0;vim bookCellar.mysql
+: 1508435381:0;vim -v
+: 1508435502:0;vim bookCellar.mysql
+: 1508436055:0;mysql.server start
+: 1508436059:0;cd Sites/grsl.co.uk
+: 1508436079:0;mysql bookCellar -uroot -p
+: 1508436109:0;mysql -uroot -p < bookCellar.mysql
+: 1508436252:0;mysql -uroot -p
+: 1508436416:0;mysql bookCellar -uroot -p
+: 1508436497:0;pwd
+: 1508436501:0;cd Sites/grsl.co.uk
+: 1508436504:0;vim bookCellar.mysql
+: 1508436694:0;mysql -uroot -p < bookCellar.mysql
+: 1508436716:0;vim bookCellar.mysql
+: 1508436763:0;mysql -uroot -p < bookCellar.mysql
+: 1508437179:0;exit
+: 1508437549:0;cd Sites/grsl.co.uk
+: 1508437569:0;mysql bookCellar -uroot -p
+: 1508437780:0;mysql -uroot -p ~/Sites/grsl.co.uk/bookCellar.mysql
+: 1508437797:0;cd Sites
+: 1508437799:0;cd grsl.co.uk
+: 1508437818:0;.
+: 1508437821:0;../..
+: 1508437831:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.mysql
+: 1508438456:0;clear
+: 1508438459:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.mysql
+: 1508438593:0;clear
+: 1508438595:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.mysql
+: 1508438739:0;clear
+: 1508438740:0;mysql -uroot -p < ~/Sites/grsl.co.uk/bookCellar.mysql
+: 1508438780:0;exit
+: 1508438830:0;cd Sites
+: 1508438834:0;cd grsl.co.uk
+: 1508438835:0;ll
+: 1508438857:0;exit
+: 1508438876:0;mkdir database
+: 1508438893:0;mv *.mysql ./database/
+: 1508438899:0;ll database
+: 1508438936:0;mv database.md ./database/
+: 1508438937:0;ll
+: 1508438963:0;cd database
+: 1508438964:0;ll
+: 1508438969:0;vim bookCellar.mysql
+: 1508439010:0;ll
+: 1508439035:0;mv tables.mysql createTables.mysql
+: 1508439056:0;mv data.mysql insertData.mysql
+: 1508439058:0;ll
+: 1508439069:0;vim createTables.mysql
+: 1508439275:0;vim alterTables.mysql
+: 1508439512:0;vim insertData.mysql
+: 1508439645:0;gst
+: 1508439653:0;git add -A
+: 1508439657:0;gst
+: 1508439691:0;git commit -m "Moved the database files in to their own directory."
+: 1508439698:0;git push
+: 1508439705:0;cd ..
+: 1508439709:0;git push
+: 1508439722:0;git branch
+: 1508439742:0;git checkout master
+: 1508439753:0;git push
+: 1508439797:0;cat ~/bash_proile
+: 1508439808:0;la ~
+: 1508439816:0;cat ~/.bash_proile
+: 1508439847:0;cat ~/.bash_profile
+: 1508439859:0;git push
+: 1508439890:0;git ssh
+: 1508439994:0;git remote add origin ssh://grsl@host58.servers.prgn.misp.co.uk:2510
+: 1508440007:0;git -f remote add origin ssh://grsl@host58.servers.prgn.misp.co.uk:2510
+: 1508440029:0;git remote add origin ssh://grsl@host58.servers.prgn.misp.co.uk:2510
+: 1508440073:0;git remote set-url origin ssh://grsl@host58.servers.prgn.misp.co.uk:2510
+: 1508440078:0;git push
+: 1508440121:0;git remote set-url origin ssh://grsl@host58.servers.prgn.misp.co.uk:2510/
+: 1508440127:0;git remote -v
+: 1508440167:0;git push grsl
+: 1508440183:0;git push master
+: 1508440216:0;git push origin
+: 1508440236:0;git remote set-url origin ssh://grsl@host58.servers.prgn.misp.co.uk:2510
+: 1508440239:0;git push origin
+: 1508440289:0;git remote set-url origin ssh://grsl@host58.servers.prgn.misp.co.uk:2510/~public_html
+: 1508440297:0;git push origin
+: 1508440314:0;git remote set-url origin ssh://grsl@host58.servers.prgn.misp.co.uk:2510/~/public_html
+: 1508440317:0;git push origin
+: 1508440337:0;git fetch master
+: 1508440359:0;git remote set-url master ssh://grsl@host58.servers.prgn.misp.co.uk:2510/~/public_html
+: 1508440361:0;git fetch master
+: 1508440380:0;git branch
+: 1508440383:0;ll
+: 1508440399:0;exit
+: 1508519197:0;nysql.server start
+: 1508519203:0;mysql.server start
+: 1508519231:0;cd Sites/grsl.co.uk
+: 1508519232:0;ll
+: 1508519253:0;git checkout working
+: 1508519270:0;ll
+: 1508519285:0;mysql -uroot -p < ./database/createTables.mysql
+: 1508519294:0;cd database
+: 1508519299:0;vim createTables.mysql
+: 1508519344:0;mysql -uroot -p <./database/createTables.mysql
+: 1508519417:0;ll
+: 1508519435:0;mysql -uroot -p <./database/createViews.mysql
+: 1508519444:0;vim createViews.mysql
+: 1508519497:0;mysql -uroot -p <./database/createViews.mysql
+: 1508520101:0;vim insertData.mysql
+: 1508520226:0;mysql -uroot -p <./database/insertData.mysql
+: 1508520284:0;mysql bookCellar -uroot -p
+: 1508520432:0;vim createTables.mysql
+: 1508520525:0;mysql -uroot -p <./database/createTables.mysql
+: 1508520536:0;mysql -uroot -p < createTables.mysql
+: 1508520558:0;mysql -uroot -p < createViews.mysql
+: 1508520579:0;ll
+: 1508520590:0;mysql -uroot -p < alterTables.mysql
+: 1508520599:0;mysql -uroot -p < insertData.mysql
+: 1508520621:0;git add createTables.mysql
+: 1508520648:0;git commit -m "Table creation works."
+: 1508520668:0;git add createViews.mysql
+: 1508520711:0;git commit createViews.mysql -m "Views creation works."
+: 1508520722:0;gst
+: 1508521043:0;exit
+: 1508521066:0;ll
+: 1508521074:0;vim vim.php
+: 1508521293:0;ll
+: 1508521298:0;vim vim.php
+: 1508521328:0;ll
+: 1508521334:0;rm foo
+: 1508521336:0;ll
+: 1508521454:0;vim foo.html
+: 1508521832:0;vim vim.php
+: 1508525440:0;exit
+: 1508580148:0;vim php.vim
+: 1508580153:0;ll
+: 1508580158:0;vim vim.php
+: 1508581210:0;vim .vimrc
+: 1508581997:0;exit
+: 1508582381:0;cd 
+: 1508582385:0;./updateDotFiles.sh

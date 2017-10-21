@@ -8,37 +8,41 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/insert
+~MSle0~/years
 
 # Last Substitute Search Pattern:
-~MSle0~&insert
+~MSle0&years
 
 # Last Substitute String:
-$INSERT
+$
 
 # Command Line History (newest to oldest):
-:wq
-:w
-:q
-:jk
-:W
-:set number
-:help 'number'
-:set numberwidth?
-:set numberwidth=4
-:set numberwidth=10
-:set number?
-:set number!
-:set nonumber
-:set number 5
-:set number 10
-:help messages
-:help echo
 :q!
-:messages
-:echom "Hello again, world!"
+:wq
+:q
+:w
+:jk
+:registers
+:help autocmd-events
+:autocmd BufWritePre *.html :normal gg=G
+:quit
+:edit foo
+:autocmd BufNewFile * :write
+:!clear; mysql -uroot -p < %;
+:clear; mysql -uroot -p < %;
+:w createViews.mysql
+:w data.mysql
+:w alterTables.mysql
+:w tables.mysql
+:e
+:%s/years/
+:ujk
 
 # Search String History (newest to oldest):
+? years
+? \<countries\>
+? Afghanistan
+? Afganistan
 ? insert
 ? United Kingdom
 ?   
@@ -55,10 +59,6 @@ $INSERT
 ? ((
 ? ),
 ? )),
-? ,
-? %s
-? ;
-? ^
 
 # Expression History (newest to oldest):
 
@@ -68,150 +68,645 @@ $INSERT
 
 # Registers:
 "0	LINE	0
-	----------------
+	:incoremap {<cr> {<cr>}<c-o><s-o>
 ""1	LINE	0
-	
+	[
 "2	LINE	0
-	
-	-----------------
-	Simon Long
-	grslong@gmail.com
-	----------------- 
-	www.grsl.co.uk 371
+	    (
 "3	LINE	0
-	
-	
-	
-	Well, I don't know waht we should do tehn.
+	        {
 "4	LINE	0
-	
+	            
 "5	LINE	0
-	
+	        }
 "6	LINE	0
-	
+	]
 "7	LINE	0
-	
+	    )
 "8	LINE	0
-	        <<
+	   {
+	    [
+	        (
+	            
+	        )
+	    ]
+	   }
 "9	LINE	0
-	" Learn Vimscript the Hard Way
+	{
+"j	CHAR	0
+	jkjjjjjlllliwjkjkIejkejk
+"q	CHAR	0
+	i{}jkO	qjk
 "-	CHAR	0
-	k
+	>
 
 # File marks:
-'0  369  0  ~/Sites/grsl.co.uk/data.mysql
-'1  59  35  ~/.vimrc
-'2  56  0  ~/.vimrc
-'3  61  41  ~/.vimrc
-'4  49  41  ~/.vimrc
-'5  48  35  ~/.vimrc
-'6  5  25  ~/.vimrc
-'7  116  8  ~/Sites/grsl.co.uk/data.mysql
-'8  89  36  ~/.zshrc
-'9  90  22  ~/.zshrc
+'0  78  0  ~/Sites/grsl.co.uk/vim.php
+'1  1  0  ~/Sites/grsl.co.uk/php.vim
+'2  48  1  ~/Sites/grsl.co.uk/vim.php
+'3  2  1  ~/Sites/grsl.co.uk/vim.php
+'4  50  6  ~/Sites/grsl.co.uk/vim.php
+'5  2  0  ~/Sites/grsl.co.uk/foo.html
+'6  1  0  ~/Sites/grsl.co.uk/foo
+'7  38  26  ~/Sites/grsl.co.uk/database/createTables.mysql
+'8  370  0  ~/Sites/grsl.co.uk/database/insertData.mysql
+'9  23  4  ~/Sites/grsl.co.uk/database/createViews.mysql
 
 # Jumplist (newest first):
--'  369  0  ~/Sites/grsl.co.uk/data.mysql
--'  370  17  ~/Sites/grsl.co.uk/data.mysql
--'  1  0  ~/Sites/grsl.co.uk/data.mysql
--'  59  35  ~/.vimrc
--'  61  27  ~/.vimrc
--'  1  0  ~/.vimrc
--'  56  0  ~/.vimrc
--'  55  17  ~/.vimrc
--'  41  4  ~/.vimrc
--'  4  0  ~/.vimrc
--'  45  4  ~/.vimrc
--'  49  0  ~/.vimrc
--'  33  0  ~/.vimrc
--'  48  29  ~/.vimrc
--'  2  0  ~/.vimrc
--'  42  0  ~/.vimrc
--'  8  0  ~/.vimrc
--'  5  0  ~/.vimrc
--'  116  8  ~/Sites/grsl.co.uk/data.mysql
--'  42  31  ~/Sites/grsl.co.uk/data.mysql
--'  33  8  ~/Sites/grsl.co.uk/data.mysql
--'  363  0  ~/Sites/grsl.co.uk/data.mysql
--'  31  8  ~/Sites/grsl.co.uk/data.mysql
--'  18  8  ~/Sites/grsl.co.uk/data.mysql
--'  159  0  ~/Sites/grsl.co.uk/data.mysql
--'  357  0  ~/Sites/grsl.co.uk/data.mysql
--'  10  0  ~/Sites/grsl.co.uk/data.mysql
--'  356  0  ~/Sites/grsl.co.uk/data.mysql
--'  89  36  ~/.zshrc
--'  1  0  ~/.zshrc
--'  90  0  ~/.zshrc
--'  27  0  ~/.zshrc
--'  87  0  ~/.zshrc
--'  91  0  ~/.zshrc
--'  79  0  ~/.zshrc
--'  20  0  ~/.zshrc
--'  16  13  ~/Sites/grsl.co.uk/bookCellar.mysql
+-'  78  0  ~/Sites/grsl.co.uk/vim.php
+-'  80  3  ~/Sites/grsl.co.uk/vim.php
+-'  76  3  ~/Sites/grsl.co.uk/vim.php
+-'  71  0  ~/Sites/grsl.co.uk/vim.php
+-'  1  0  ~/Sites/grsl.co.uk/vim.php
+-'  1  0  ~/Sites/grsl.co.uk/php.vim
+-'  48  1  ~/Sites/grsl.co.uk/vim.php
+-'  47  53  ~/Sites/grsl.co.uk/vim.php
+-'  50  0  ~/Sites/grsl.co.uk/vim.php
+-'  62  8  ~/Sites/grsl.co.uk/vim.php
+-'  43  0  ~/Sites/grsl.co.uk/vim.php
+-'  65  19  ~/Sites/grsl.co.uk/vim.php
+-'  67  19  ~/Sites/grsl.co.uk/vim.php
+-'  58  15  ~/Sites/grsl.co.uk/vim.php
+-'  56  10  ~/Sites/grsl.co.uk/vim.php
+-'  54  5  ~/Sites/grsl.co.uk/vim.php
+-'  46  0  ~/Sites/grsl.co.uk/vim.php
+-'  19  0  ~/Sites/grsl.co.uk/vim.php
+-'  2  1  ~/Sites/grsl.co.uk/vim.php
+-'  3  0  ~/Sites/grsl.co.uk/vim.php
+-'  4  2  ~/Sites/grsl.co.uk/vim.php
+-'  2  0  ~/Sites/grsl.co.uk/foo.html
+-'  1  0  ~/Sites/grsl.co.uk/foo.html
+-'  5  23  ~/Sites/grsl.co.uk/foo.html
+-'  1  0  ~/Sites/grsl.co.uk/foo
+-'  25  0  ~/Sites/grsl.co.uk/vim.php
+-'  38  26  ~/Sites/grsl.co.uk/database/createTables.mysql
+-'  43  4  ~/Sites/grsl.co.uk/database/createTables.mysql
+-'  1  0  ~/Sites/grsl.co.uk/database/createTables.mysql
+-'  370  0  ~/Sites/grsl.co.uk/database/insertData.mysql
+-'  119  0  ~/Sites/grsl.co.uk/database/insertData.mysql
+-'  402  9  ~/Sites/grsl.co.uk/database/insertData.mysql
+-'  1  0  ~/Sites/grsl.co.uk/database/insertData.mysql
+-'  23  4  ~/Sites/grsl.co.uk/database/createViews.mysql
+-'  10  0  ~/Sites/grsl.co.uk/database/createViews.mysql
+-'  12  4  ~/Sites/grsl.co.uk/database/createViews.mysql
+-'  14  0  ~/Sites/grsl.co.uk/database/createViews.mysql
+-'  11  39  ~/Sites/grsl.co.uk/database/createViews.mysql
+-'  25  3  ~/Sites/grsl.co.uk/database/createViews.mysql
+-'  1  0  ~/Sites/grsl.co.uk/database/createViews.mysql
+-'  106  26  ~/Sites/grsl.co.uk/database/createTables.mysql
+-'  68  36  ~/Sites/grsl.co.uk/database/createTables.mysql
+-'  60  0  ~/Sites/grsl.co.uk/database/createTables.mysql
+-'  57  74  ~/Sites/grsl.co.uk/database/createTables.mysql
+-'  9  0  ~/Sites/grsl.co.uk/database/insertData.mysql
+-'  111  0  ~/Sites/grsl.co.uk/database/insertData.mysql
+-'  12  0  ~/Sites/grsl.co.uk/database/alterTables.mysql
+-'  23  4  ~/Sites/grsl.co.uk/database/alterTables.mysql
+-'  10  0  ~/Sites/grsl.co.uk/database/alterTables.mysql
+-'  17  0  ~/Sites/grsl.co.uk/database/alterTables.mysql
+-'  19  0  ~/Sites/grsl.co.uk/database/alterTables.mysql
+-'  21  0  ~/Sites/grsl.co.uk/database/alterTables.mysql
+-'  18  0  ~/Sites/grsl.co.uk/database/alterTables.mysql
+-'  1  0  ~/Sites/grsl.co.uk/database/alterTables.mysql
+-'  100  4  ~/Sites/grsl.co.uk/database/createTables.mysql
+-'  101  4  ~/Sites/grsl.co.uk/database/createTables.mysql
+-'  108  0  ~/Sites/grsl.co.uk/database/createTables.mysql
+-'  1  0  ~/Sites/grsl.co.uk/database/bookCellar.mysql
+-'  60  4  ~/Sites/grsl.co.uk/bookCellar.mysql
+-'  57  74  ~/Sites/grsl.co.uk/bookCellar.mysql
+-'  61  76  ~/Sites/grsl.co.uk/bookCellar.mysql
+-'  114  27  ~/Sites/grsl.co.uk/bookCellar.mysql
+-'  35  4  ~/Sites/grsl.co.uk/bookCellar.mysql
+-'  567  3  ~/Sites/grsl.co.uk/bookCellar.mysql
 -'  1  0  ~/Sites/grsl.co.uk/bookCellar.mysql
--'  29  4  ~/Sites/grsl.co.uk/bookCellar.mysql
--'  17  4  ~/Sites/grsl.co.uk/bookCellar.mysql
--'  6  0  ~/Sites/grsl.co.uk/bookCellar.mysql
--'  84  0  ~/Sites/grsl.co.uk/bookCellar.mysql
--'  10  0  ~/.vimrc
--'  1  0  ~/learnVimTheHardWay
--'  16  0  ~/Sites/grsl.co.uk/data.mysql
--'  268  0  ~/Sites/grsl.co.uk/data.mysql
--'  4  0  ~/Sites/grsl.co.uk/data.mysql
--'  101  76  ~/Sites/grsl.co.uk/bookCellar.mysql
--'  80  30  ~/Sites/grsl.co.uk/bookCellar.mysql
--'  102  0  ~/Sites/grsl.co.uk/bookCellar.mysql
--'  91  0  ~/Sites/grsl.co.uk/bookCellar.mysql
--'  264  0  ~/Sites/grsl.co.uk/data.mysql
--'  103  0  ~/Sites/grsl.co.uk/bookCellar.mysql
--'  77  19  ~/Sites/grsl.co.uk/bookCellar.mysql
--'  74  0  ~/Sites/grsl.co.uk/bookCellar.mysql
--'  48  33  ~/.vim/syntax/sql.vim
--'  46  0  ~/.vim/syntax/sql.vim
--'  1  0  ~/.vim/syntax/sql.vim
--'  2  0  ~/.vim/syntax/php.vim
--'  1  0  ~/.vim/syntax/php.vim
--'  3625  0  ~/.vim/syntax/php.vim
--'  673  0  ~/.vim/syntax/php.vim
--'  15  0  ~/Sites/grsl.co.uk/bookCellar.sql
--'  1  0  ~/Sites/grsl.co.uk/bookCellar.sql
--'  1  0  /private/etc/profile
--'  1  0  ~/Sites/grsl.co.uk/publishers.sql
--'  92  0  ~/Sites/grsl.co.uk/publishers.sql
--'  50  0  ~/.vim/syntax/sql.vim
--'  45  0  ~/.vim/syntax/sql.vim
--'  13  24  ~/.vim/syntax/sql.vim
--'  8  0  /private/etc/profile
--'  1  11  ~/.zprofile
--'  1  0  ~/Sites/grsl.co.uk/book
--'  1  0  ~/.vim/syntax/mysql.vim
--'  467  74  ~/Sites/grsl.co.uk/bookCellar.sql
--'  456  0  ~/Sites/grsl.co.uk/bookCellar.sql
--'  457  0  ~/Sites/grsl.co.uk/bookCellar.sql
--'  449  8  ~/Sites/grsl.co.uk/bookCellar.sql
--'  191  8  ~/Sites/grsl.co.uk/bookCellar.sql
--'  353  8  ~/Sites/grsl.co.uk/bookCellar.sql
--'  241  8  ~/Sites/grsl.co.uk/bookCellar.sql
--'  313  8  ~/Sites/grsl.co.uk/bookCellar.sql
--'  121  12  ~/Sites/grsl.co.uk/bookCellar.sql
--'  60  0  ~/Sites/grsl.co.uk/bookCellar.sql
--'  16  0  ~/Sites/grsl.co.uk/bookCellar.sql
--'  470  0  ~/Sites/grsl.co.uk/bookCellar.sql
--'  468  0  ~/Sites/grsl.co.uk/bookCellar.sql
--'  371  0  ~/Sites/grsl.co.uk/bookCellar.sql
--'  27  1  ~/Sites/grsl.co.uk/bookCellar.sql
--'  461  85  ~/Sites/grsl.co.uk/bookCellar.sql
--'  91  16  ~/Sites/grsl.co.uk/publishers.sql
--'  45  0  ~/Sites/grsl.co.uk/publishers.sql
--'  365  0  ~/Sites/grsl.co.uk/bookCellar.sql
--'  59  35  ~/.vimrc
--'  61  27  ~/.vimrc
+-'  568  4  ~/Sites/grsl.co.uk/bookCellar.mysql
+-'  98  57  ~/Sites/grsl.co.uk/bookCellar.mysql
+-'  70  0  ~/Sites/grsl.co.uk/bookCellar.mysql
+-'  106  4  ~/Sites/grsl.co.uk/bookCellar.mysql
+-'  116  4  ~/Sites/grsl.co.uk/bookCellar.mysql
+-'  566  4  ~/Sites/grsl.co.uk/bookCellar.mysql
+-'  2  0  ~/Sites/grsl.co.uk/foo.html
+-'  1  0  ~/Sites/grsl.co.uk/foo.html
+-'  5  23  ~/Sites/grsl.co.uk/foo.html
+-'  1  0  ~/Sites/grsl.co.uk/foo
+-'  72  21  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  1  0  ~/Sites/grsl.co.uk/php.vim
 
 # History of marks within files (newest to oldest):
 
+> ~/Sites/grsl.co.uk/vim.php
+	"	78	0
+	.	80	0
+	+	50	18
+	+	50	0
+	+	50	17
+	+	50	19
+	+	50	0
+	+	50	0
+	+	50	0
+	+	71	3
+	+	50	6
+	+	1	0
+	+	3	0
+	+	1	0
+	+	1	0
+	+	2	0
+	+	54	5
+	+	51	1
+	+	56	2
+	+	67	19
+	+	65	19
+	+	62	8
+	+	50	14
+	+	71	0
+	+	50	0
+	+	48	0
+	+	47	53
+	+	80	1
+	+	80	3
+	+	80	1
+	+	80	3
+	+	80	0
+	+	80	0
+	+	80	0
+	+	80	0
+	+	80	0
+	+	80	3
+	+	80	0
+	+	80	0
+	+	80	0
+	+	80	0
+	+	80	0
+	+	80	5
+	+	80	0
+	+	80	1
+	+	80	0
+	+	80	15
+	+	80	0
+	+	76	3
+	+	77	0
+	+	80	4
+	+	80	0
+	+	80	1
+	+	80	0
+	+	80	0
+	+	80	2
+	+	80	0
+	+	80	0
+	+	80	6
+	+	80	3
+	+	80	0
+	+	80	3
+	+	80	0
+	+	80	4
+	+	80	0
+	+	80	11
+	+	80	0
+	m	48	1
+
+> ~/.vimrc
+	"	70	26
+	^	70	27
+	.	70	26
+	+	39	12
+	+	40	0
+	+	35	0
+	+	43	0
+	+	51	0
+	+	52	0
+	+	52	0
+	+	52	0
+	+	50	0
+	+	51	0
+	+	52	0
+	+	52	0
+	+	52	0
+	+	52	0
+	+	50	0
+	+	42	0
+	+	43	0
+	+	44	0
+	+	46	0
+	+	47	0
+	+	50	0
+	+	52	0
+	+	43	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	50	0
+	+	49	0
+	+	43	0
+	+	46	0
+	+	49	0
+	+	52	0
+	+	56	15
+	+	57	17
+	+	58	17
+	+	74	0
+	+	62	67
+	+	62	49
+	+	62	31
+	+	62	72
+	+	62	16
+	+	62	16
+	+	62	16
+	+	62	36
+	+	62	35
+	+	62	50
+	+	62	72
+	+	62	71
+	+	74	0
+	+	62	35
+	+	74	0
+	+	63	0
+	+	35	0
+	+	37	9
+	+	47	26
+	+	48	26
+	+	44	26
+	+	45	26
+	+	44	26
+	+	45	26
+	+	47	26
+	+	48	26
+	+	2	27
+	+	3	32
+	+	2	21
+	+	3	26
+	+	44	34
+	+	45	34
+	+	47	26
+	+	48	34
+	+	47	34
+	+	44	34
+	+	45	34
+	+	47	34
+	+	48	34
+	+	59	15
+	+	66	61
+	+	67	18
+	+	67	58
+	+	68	71
+	+	9	28
+	+	10	28
+	+	70	32
+	+	71	22
+	+	72	11
+	+	74	0
+	+	71	3
+	+	72	3
+	+	70	3
+	+	72	2
+	+	71	2
+	+	70	2
+	+	74	0
+	+	70	29
+	+	49	6
+	+	46	5
+	+	43	5
+	+	42	8
+	+	74	0
+	+	70	26
+
+> ~/Sites/grsl.co.uk/php.vim
+	"	1	0
+
+> /usr/share/vim/vim73/doc/autocmd.txt
+	"	177	22
+
+> ~/Sites/grsl.co.uk/foo.html
+	"	2	0
+	^	2	1
+	.	2	0
+	+	1	6
+	+	5	23
+	+	3	0
+	+	2	0
+
+> ~/Sites/grsl.co.uk/foo
+	"	1	0
+
+> ~/Sites/grsl.co.uk/database/createTables.mysql
+	"	38	26
+	^	8	27
+	.	8	26
+	+	7	0
+	+	58	5
+	+	64	0
+	+	69	0
+	+	87	0
+	+	92	0
+	+	98	0
+	+	107	0
+	+	108	0
+	+	108	0
+	+	108	0
+	+	108	0
+	+	108	0
+	+	108	0
+	+	108	0
+	+	108	0
+	+	108	0
+	+	108	0
+	+	108	0
+	+	108	0
+	+	57	74
+	+	63	34
+	+	68	36
+	+	86	30
+	+	97	29
+	+	106	26
+	+	7	17
+	+	8	26
+
+> ~/Sites/grsl.co.uk/database/insertData.mysql
+	"	370	0
+	^	119	1
+	.	119	0
+	+	444	0
+	+	444	0
+	+	7	0
+	+	9	0
+	+	9	0
+	+	10	0
+	+	9	0
+	+	106	10
+	+	111	10
+	+	118	10
+	+	371	0
+	+	372	0
+	+	377	10
+	+	381	10
+	+	382	11
+	+	403	10
+	+	119	0
+
+> ~/Sites/grsl.co.uk/database/createViews.mysql
+	"	23	4
+	.	25	0
+	+	10	74
+	+	10	34
+	+	10	36
+	+	10	30
+	+	10	26
+	+	10	29
+	+	11	39
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	10
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	24
+	+	10	0
+	+	10	9
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	25	0
+
+> ~/Sites/grsl.co.uk/database/alterTables.mysql
+	"	12	0
+	.	10	0
+	+	7	0
+	+	10	0
+	+	17	0
+	+	18	0
+	+	20	0
+	+	22	0
+	+	24	0
+	+	7	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	12	0
+	+	13	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	18	0
+	+	17	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	10	0
+
+> ~/Sites/grsl.co.uk/database/bookCellar.mysql
+	"	1	0
+
+> ~/Sites/grsl.co.uk/bookCellar.mysql
+	"	60	4
+	^	57	76
+	.	60	4
+	+	482	17
+	+	482	18
+	+	482	24
+	+	485	0
+	+	482	17
+	+	483	17
+	+	561	75
+	+	562	12
+	+	563	39
+	+	565	15
+	+	566	4
+	+	564	4
+	+	563	25
+	+	565	6
+	+	480	7
+	+	481	5
+	+	11	19
+	+	12	24
+	+	11	56
+	+	15	21
+	+	16	26
+	+	17	27
+	+	18	24
+	+	19	32
+	+	20	20
+	+	21	21
+	+	22	26
+	+	23	33
+	+	24	64
+	+	23	4
+	+	14	0
+	+	61	0
+	+	60	4
+	+	57	75
+	+	60	0
+	+	61	0
+	+	57	74
+	+	333	0
+	+	188	0
+	+	480	0
+	+	207	0
+	+	224	77
+	+	225	71
+	+	40	0
+	+	116	0
+	+	116	0
+	+	116	78
+	+	116	0
+	+	116	71
+	+	116	17
+	+	116	17
+	+	116	68
+	+	116	45
+	+	114	7
+	+	116	76
+	+	111	27
+	+	118	33
+	+	118	0
+	+	116	41
+	+	118	0
+	+	101	0
+	+	118	0
+	+	117	0
+	+	95	0
+	+	100	0
+	+	96	10
+	+	116	0
+	+	114	26
+	+	568	0
+	+	116	0
+	+	114	26
+	+	116	0
+	+	568	0
+	+	567	3
+	+	568	0
+	+	106	0
+	+	568	0
+	+	98	57
+	+	568	0
+	+	60	0
+	+	57	75
+	+	60	16
+	+	568	0
+	+	35	62
+	+	34	74
+	+	35	0
+	+	115	0
+	+	114	27
+	+	60	0
+	+	61	4
+	+	61	19
+	+	61	76
+	+	57	74
+	+	61	0
+	+	58	4
+	+	59	17
+	+	58	74
+	+	57	75
+	+	59	70
+	+	60	4
+
+> ~/Sites/grsl.co.uk/updateGRSL.sh
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Sites/grsl.co.uk/bookCellar
+	"	1	0
+
+> ~/Sites/grsl.co.uk/bookCellar1
+	"	1	0
+
 > ~/Sites/grsl.co.uk/data.mysql
-	"	369	0
-	.	370	0
+	"	366	0
+	^	367	0
+	.	366	0
 	+	4	0
 	+	4	0
 	+	370	0
@@ -275,110 +770,77 @@ $INSERT
 	+	3	0
 	+	2	0
 	+	370	0
+	+	367	80
+	+	367	0
+	+	366	0
 
-> ~/.vimrc
-	"	59	35
-	.	60	0
-	+	42	0
-	+	47	0
-	+	41	0
-	+	41	1
-	+	3	25
-	+	41	45
-	+	42	23
-	+	42	28
-	+	42	23
-	+	42	28
-	+	41	18
-	+	42	18
-	+	43	18
-	+	42	23
-	+	42	28
-	+	45	0
-	+	45	0
-	+	44	10
-	+	47	0
-	+	42	0
-	+	48	40
-	+	49	42
-	+	49	28
-	+	49	42
-	+	49	41
-	+	48	29
-	+	1	13
+> ~/dotfiles/.git/COMMIT_EDITMSG
+	"	1	0
+
+> ~/updateDotFiles.sh
+	"	19	12
+	^	20	8
+	.	19	12
+	+	12	17
+	+	12	0
+	+	2	29
+	+	12	41
+	+	2	14
+	+	2	14
 	+	2	0
-	+	3	0
-	+	6	0
+	+	12	0
 	+	7	0
-	+	5	53
+	+	12	28
+	+	13	39
+	+	14	33
+	+	2	5
+	+	7	3
+	+	12	3
+	+	13	3
+	+	14	3
+	+	12	26
+	+	13	32
+	+	14	32
+	+	7	0
+	+	3	0
+	+	1	11
+	+	6	0
+	+	5	0
+	+	7	0
+	+	12	0
+	+	12	0
+	+	11	0
 	+	10	0
-	+	9	67
-	+	14	0
-	+	16	0
-	+	15	29
-	+	17	0
-	+	18	0
-	+	19	14
-	+	20	0
-	+	25	0
-	+	26	16
-	+	27	0
-	+	30	0
-	+	31	9
-	+	32	0
-	+	36	0
-	+	37	12
-	+	38	0
-	+	33	0
-	+	41	0
-	+	49	0
-	+	50	0
-	+	50	0
-	+	50	0
-	+	48	0
-	+	49	0
-	+	50	0
-	+	50	0
-	+	50	0
-	+	50	0
-	+	48	0
-	+	40	0
-	+	41	0
-	+	42	0
-	+	44	0
-	+	45	0
-	+	48	0
-	+	50	0
-	+	41	0
-	+	42	0
-	+	43	0
-	+	44	0
-	+	48	0
-	+	47	0
-	+	41	0
-	+	44	0
-	+	47	0
-	+	50	0
-	+	54	15
-	+	55	17
-	+	56	17
-	+	61	0
-	+	59	67
-	+	59	49
-	+	59	31
-	+	59	72
-	+	59	16
-	+	59	16
-	+	59	16
-	+	59	36
-	+	59	35
-	+	59	50
-	+	59	72
-	+	59	71
-	+	61	0
-	+	59	35
-	+	61	0
-	+	60	0
+	+	12	0
+	+	11	4
+	+	6	5
+	+	3	36
+	+	8	21
+	+	9	39
+	+	21	35
+	+	4	19
+	+	2	18
+	+	7	22
+	+	8	22
+	+	12	19
+	+	21	1
+	+	21	5
+	+	2	3
+	+	3	3
+	+	4	3
+	+	7	3
+	+	8	3
+	+	9	3
+	+	12	3
+	+	13	3
+	+	14	3
+	+	9	4
+	+	21	0
+	+	18	9
+	+	17	9
+	+	19	12
+	+	20	7
+	+	19	12
 
 > ~/.zshrc
 	"	89	36
@@ -412,62 +874,6 @@ $INSERT
 	+	89	13
 	+	89	119
 	+	89	36
-
-> ~/Sites/grsl.co.uk/bookCellar.mysql
-	"	16	13
-	^	28	2
-	.	16	13
-	+	91	0
-	+	91	64
-	+	91	79
-	+	102	84
-	+	91	78
-	+	91	67
-	+	91	58
-	+	91	0
-	+	91	20
-	+	91	0
-	+	91	27
-	+	75	28
-	+	76	23
-	+	91	81
-	+	91	74
-	+	91	0
-	+	91	78
-	+	91	11
-	+	91	69
-	+	91	11
-	+	91	0
-	+	91	54
-	+	91	11
-	+	91	52
-	+	91	54
-	+	91	78
-	+	91	0
-	+	91	0
-	+	91	75
-	+	91	79
-	+	91	69
-	+	91	0
-	+	91	0
-	+	91	11
-	+	91	22
-	+	97	0
-	+	102	25
-	+	91	0
-	+	103	0
-	+	91	0
-	+	91	0
-	+	103	0
-	+	97	0
-	+	80	30
-	+	102	80
-	+	28	0
-	+	17	0
-	+	12	14
-	+	13	7
-	+	14	0
-	+	16	13
 
 > /usr/share/vim/vim73/doc/options.txt
 	"	1	0
@@ -2403,285 +2809,3 @@ $INSERT
 
 > ~/Sites/phpSecureLogin/error.php
 	"	1	0
-
-> ~/Sites/phpSecureLogin/includes/psl-config.php
-	"	31	40
-	^	31	41
-	.	31	40
-	+	1	0
-	+	31	40
-
-> ~/Sites/phpSecureLogin/secure_login.sql
-	"	24	14
-	^	24	16
-	.	24	14
-	+	27	30
-	+	28	17
-	+	25	25
-	+	23	1
-	+	26	1
-	+	25	57
-	+	24	14
-
-> ~/Sites/phpSecureLogin/secure
-	"	1	0
-
-> ~/Documents/phpSecureLogin/index.php
-	"	1	0
-
-> ~/Documents/phpSecureLogin/includes/psl-config.php
-	"	1	0
-
-> ~/Documents/phpSecureLogin/includes/db_connect.php
-	"	1	0
-
-> ~/zxing/core/src/main/java/com/google/zxing/Reader.java
-	"	1	0
-
-> ~/Sites/carob.co.uk/index.html
-	"	15	9
-	^	15	10
-	.	15	0
-	+	6	23
-	+	7	0
-	+	8	0
-	+	7	0
-	+	8	0
-	+	13	11
-	+	13	299
-	+	13	433
-	+	13	478
-	+	14	0
-	+	13	478
-	+	14	0
-	+	26	0
-	+	35	141
-	+	35	6
-	+	35	277
-	+	35	299
-	+	37	0
-	+	35	299
-	+	36	0
-	+	37	138
-	+	37	6
-	+	37	273
-	+	37	331
-	+	38	0
-	+	37	331
-	+	38	144
-	+	38	281
-	+	38	337
-	+	39	0
-	+	38	305
-	+	39	0
-	+	49	0
-	+	1	14
-	+	2	5
-	+	13	30
-	+	13	0
-	+	14	0
-	+	16	0
-	+	39	0
-	+	40	9
-	+	74	9
-	+	13	0
-	+	15	0
-
-> ~/Sites/carob.co.uk/css/c.css
-	"	10	0
-	^	9	1
-	.	9	1
-	+	9	0
-	+	12	3
-	+	10	33
-	+	9	12
-	+	9	12
-	+	8	0
-	+	9	10
-	+	12	0
-	+	14	0
-	+	11	0
-	+	14	0
-	+	9	0
-	+	10	24
-	+	9	1
-
-> ~/Sites/carob.co.uk/customer.html
-	"	86	6
-	^	37	0
-	.	39	0
-	+	15	155
-	+	15	6
-	+	15	290
-	+	15	424
-	+	15	290
-	+	15	468
-	+	16	0
-	+	15	468
-	+	33	271
-	+	34	152
-	+	33	271
-	+	34	0
-	+	34	292
-	+	36	0
-	+	35	0
-	+	36	281
-	+	38	0
-	+	37	0
-	+	38	282
-	+	39	0
-
-> ~/Sites/carob.co.uk/links.html
-	"	77	6
-	^	37	0
-	.	40	0
-	+	15	155
-	+	15	291
-	+	15	425
-	+	15	470
-	+	16	0
-	+	15	470
-	+	17	0
-	+	29	0
-	+	31	0
-	+	34	136
-	+	34	135
-	+	36	0
-	+	34	135
-	+	35	11
-	+	38	0
-	+	37	0
-	+	40	0
-
-> ~/Sites/carob.co.uk/links
-	"	1	0
-
-> ~/Sites/newSiteTemplate/test.js
-	"	41	1
-	^	41	2
-	.	41	1
-	+	1	0
-	+	2	0
-	+	2	66
-	+	4	10
-	+	1	0
-	+	1	0
-	+	42	0
-	+	2	0
-	+	2	66
-	+	4	0
-	+	6	0
-	+	11	0
-	+	13	0
-	+	14	0
-	+	17	0
-	+	23	0
-	+	26	0
-	+	30	0
-	+	4	0
-	+	6	0
-	+	1	0
-	+	1	0
-	+	2	0
-	+	4	0
-	+	3	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	7	0
-	+	8	0
-	+	14	0
-	+	17	0
-	+	19	0
-	+	21	0
-	+	22	0
-	+	23	0
-	+	24	0
-	+	25	0
-	+	26	0
-	+	27	0
-	+	28	0
-	+	29	0
-	+	30	0
-	+	36	0
-	+	37	0
-	+	40	0
-	+	39	0
-	+	35	0
-	+	42	0
-	+	42	0
-	+	42	0
-	+	1	0
-	+	41	1
-
-> ~/updateDotFiles.sh
-	"	14	0
-	^	9	5
-	.	15	0
-	+	12	17
-	+	12	0
-	+	2	29
-	+	12	41
-	+	2	14
-	+	2	14
-	+	2	0
-	+	12	0
-	+	7	0
-	+	12	28
-	+	13	39
-	+	14	33
-	+	2	5
-	+	7	3
-	+	12	3
-	+	13	3
-	+	14	3
-	+	12	26
-	+	13	32
-	+	14	32
-	+	7	0
-	+	3	0
-	+	1	11
-	+	6	0
-	+	5	0
-	+	7	0
-	+	12	0
-	+	12	0
-	+	11	0
-	+	10	0
-	+	12	0
-	+	11	4
-	+	6	5
-	+	3	36
-	+	8	21
-	+	9	39
-	+	15	35
-	+	4	19
-	+	2	18
-	+	7	22
-	+	8	22
-	+	12	19
-	+	15	1
-	+	15	5
-	+	2	3
-	+	3	3
-	+	4	3
-	+	7	3
-	+	8	3
-	+	9	3
-	+	12	3
-	+	13	3
-	+	14	3
-	+	9	4
-	+	15	0
-
-> ~/Sites/splatmedia.co.uk/.gitignore
-	"	4	0
-	^	2	10
-	.	5	0
-	+	1	11
-	+	4	9
-	+	3	3
-	+	1	0
-	+	3	4
-	+	2	9
-	+	5	0
