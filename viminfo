@@ -17,9 +17,9 @@
 $
 
 # Command Line History (newest to oldest):
-:q!
 :wq
 :q
+:q!
 :w
 :jk
 :registers
@@ -101,18 +101,20 @@ $
 	>
 
 # File marks:
-'0  78  0  ~/Sites/grsl.co.uk/vim.php
-'1  1  0  ~/Sites/grsl.co.uk/php.vim
-'2  48  1  ~/Sites/grsl.co.uk/vim.php
-'3  2  1  ~/Sites/grsl.co.uk/vim.php
-'4  50  6  ~/Sites/grsl.co.uk/vim.php
-'5  2  0  ~/Sites/grsl.co.uk/foo.html
-'6  1  0  ~/Sites/grsl.co.uk/foo
-'7  38  26  ~/Sites/grsl.co.uk/database/createTables.mysql
-'8  370  0  ~/Sites/grsl.co.uk/database/insertData.mysql
-'9  23  4  ~/Sites/grsl.co.uk/database/createViews.mysql
+'0  1  0  ~/dotfiles/oh-my-zsh/.git/MERGE_MSG
+'1  1  0  ~/dotfiles/.git/COMMIT_EDITMSG
+'2  78  0  ~/Sites/grsl.co.uk/vim.php
+'3  1  0  ~/Sites/grsl.co.uk/php.vim
+'4  48  1  ~/Sites/grsl.co.uk/vim.php
+'5  2  1  ~/Sites/grsl.co.uk/vim.php
+'6  50  6  ~/Sites/grsl.co.uk/vim.php
+'7  2  0  ~/Sites/grsl.co.uk/foo.html
+'8  1  0  ~/Sites/grsl.co.uk/foo
+'9  38  26  ~/Sites/grsl.co.uk/database/createTables.mysql
 
 # Jumplist (newest first):
+-'  1  0  ~/dotfiles/oh-my-zsh/.git/MERGE_MSG
+-'  1  0  ~/dotfiles/.git/COMMIT_EDITMSG
 -'  78  0  ~/Sites/grsl.co.uk/vim.php
 -'  80  3  ~/Sites/grsl.co.uk/vim.php
 -'  76  3  ~/Sites/grsl.co.uk/vim.php
@@ -191,8 +193,35 @@ $
 -'  72  21  ~/.vimrc
 -'  1  0  ~/.vimrc
 -'  1  0  ~/Sites/grsl.co.uk/php.vim
+-'  78  0  ~/Sites/grsl.co.uk/vim.php
+-'  80  3  ~/Sites/grsl.co.uk/vim.php
+-'  76  3  ~/Sites/grsl.co.uk/vim.php
+-'  71  0  ~/Sites/grsl.co.uk/vim.php
+-'  1  0  ~/Sites/grsl.co.uk/vim.php
+-'  1  0  ~/Sites/grsl.co.uk/php.vim
+-'  48  1  ~/Sites/grsl.co.uk/vim.php
+-'  47  53  ~/Sites/grsl.co.uk/vim.php
+-'  50  0  ~/Sites/grsl.co.uk/vim.php
+-'  62  8  ~/Sites/grsl.co.uk/vim.php
+-'  43  0  ~/Sites/grsl.co.uk/vim.php
+-'  65  19  ~/Sites/grsl.co.uk/vim.php
+-'  67  19  ~/Sites/grsl.co.uk/vim.php
+-'  58  15  ~/Sites/grsl.co.uk/vim.php
+-'  56  10  ~/Sites/grsl.co.uk/vim.php
+-'  54  5  ~/Sites/grsl.co.uk/vim.php
+-'  46  0  ~/Sites/grsl.co.uk/vim.php
+-'  19  0  ~/Sites/grsl.co.uk/vim.php
 
 # History of marks within files (newest to oldest):
+
+> ~/dotfiles/oh-my-zsh/.git/MERGE_MSG
+	"	1	0
+	^	1	20
+	.	1	20
+	+	1	20
+
+> ~/dotfiles/.git/COMMIT_EDITMSG
+	"	1	0
 
 > ~/Sites/grsl.co.uk/vim.php
 	"	78	0
@@ -773,9 +802,6 @@ $
 	+	367	80
 	+	367	0
 	+	366	0
-
-> ~/dotfiles/.git/COMMIT_EDITMSG
-	"	1	0
 
 > ~/updateDotFiles.sh
 	"	19	12
@@ -2575,12 +2601,6 @@ $
 
 > ~/gw
 	"	1	0
-
-> ~/dotfiles/oh-my-zsh/.git/MERGE_MSG
-	"	1	19
-	^	1	20
-	.	1	20
-	+	1	20
 
 > ~/Sites/grsl.co.uk/contact.p
 	"	1	0

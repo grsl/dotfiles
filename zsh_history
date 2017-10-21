@@ -5070,3 +5070,59 @@ a;sldkfjas;ldkfjad
 : 1508581997:0;exit
 : 1508582381:0;cd 
 : 1508582385:0;./updateDotFiles.sh
+: 1508582427:0;gst
+: 1508582430:0;ll
+: 1508582439:0;vf dotfiles
+: 1508582440:0;ll
+: 1508582454:0;cd dotfiles
+: 1508582455:0;ll
+: 1508582457:0;gst
+: 1508582486:0;git checkout oh-my-zsh
+: 1508582487:0;gst
+: 1508582528:0;git add  oh-my-zsh
+: 1508582530:0;gst
+: 1508582553:0;git checkout -- oh-my-zsh
+: 1508582555:0;gst
+: 1508582565:0;git add oh-my-zsh
+: 1508582567:0;gst
+: 1508582576:0;git add -A
+: 1508582578:0;gst
+: 1508582594:0;git add oh-my-zsh
+: 1508582599:0;ll
+: 1508582606:0;cd oh-my-zsh
+: 1508582608:0;gst
+: 1508582623:0;git checkout oh-my-zsh
+: 1508582630:0;git fetch
+: 1508582640:0;git branch
+: 1508582643:0;gst
+: 1508582655:0;git commit -a
+: 1508582659:0;gst
+: 1508582664:0;ll
+: 1508582679:0;..
+: 1508582680:0;ll
+: 1508582687:0;git fetch
+: 1508582731:0;git commit -m "Rolled back to orignial version so I can keep up to date."
+: 1508582736:0;gst
+: 1508582750:0;ll
+: 1508582755:0;cd oh-my-zsh
+: 1508582756:0;ll
+: 1508582763:0;gst
+: 1508582769:0;la
+: 1508582782:0;git fetch .oh-my-zs
+: 1508582787:0;git fetch .oh-my-zsh
+: 1508582793:0;gst
+: 1508582814:0;git commit .oh-my-zsh -m "Reverted"
+: 1508582831:0;git pull
+: 1508582846:0;gst
+: 1508582855:0;git add
+: 1508582866:0;git add .oh-my-zsh
+: 1508582868:0;gst
+: 1508582879:0;git commit -a
+: 1508582894:0;ll
+: 1508582900:0;cd..\\
+..\=
+: 1508582901:0;..
+: 1508582903:0;ll
+: 1508582909:0;..
+: 1508582911:0;ll
+: 1508582916:0;./updateDotFiles.sh
