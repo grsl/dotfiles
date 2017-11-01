@@ -5126,3 +5126,312 @@ a;sldkfjas;ldkfjad
 : 1508582909:0;..
 : 1508582911:0;ll
 : 1508582916:0;./updateDotFiles.sh
+: 1508582953:0;ll
+: 1508582955:0;gst
+: 1508582966:0;la
+: 1508582973:0;cd .oh-my-zsh
+: 1508582975:0;ll
+: 1508582977:0;gst
+: 1508582993:0;git pull
+: 1508583018:0;ll
+: 1508583025:0;la -R
+: 1508583038:0;clear
+: 1508583039:0;ll
+: 1508583042:0;cd ~
+: 1508583043:0;ll
+: 1508583703:0;exit
+: 1508584134:0;cd ~/Sites/grsl.co.uk
+: 1508584137:0;ll
+: 1508584141:0;vim vim.php
+: 1508584680:0;exit
+: 1508585285:0;cd 
+: 1508585317:0;vim .vimrc
+: 1508588422:0;vim ./Sites/grsl.co.uk/vim.php
+: 1508589301:0;ll
+: 1508589304:0;cd Sites/grsl.co.uk
+: 1508589305:0;ll
+: 1508589310:0;vim.php
+: 1508589314:0;vim vim.php
+: 1508596365:0;~
+: 1508596374:0;vim .vimrc
+: 1508597618:0;cd -
+: 1508597623:0;cd database
+: 1508597625:0;ll
+: 1508597628:0;clear; la
+: 1508597648:0;mysql.server start
+: 1508597664:0;mysql -uroot -p < insertData.mysql
+: 1508597674:0;vim insertData.mysql
+: 1508598745:0;vim bookCellar.mysql
+: 1508598908:0;mysql -uroot -p < bookCell
+: 1508598916:0;cd Sites/grsl.co.uk
+: 1508598918:0;ll
+: 1508598922:0;cd database
+: 1508598927:0;mysql -uroot -p < bookCellar.mysql
+: 1508599571:0;clear
+: 1508599573:0;mysql -uroot -p < bookCellar.mysql
+: 1508599881:0;mysql -uroot -p < createTables.mysql
+: 1508599892:0;mysql -uroot -p < insertData.mysql
+: 1508599912:0;vim insertData.mysql
+: 1508600158:0;cd 
+: 1508600165:0;cd .vim
+: 1508600166:0;ll
+: 1508600185:0;la spell
+: 1508600193:0;cd syntax
+: 1508600194:0;ll
+: 1508600199:0;vim php.vim
+: 1508600406:0;vim sql.vim
+: 1508600449:0;exit
+: 1508600789:0;vim sql.vim
+: 1508601011:0;vim help
+: 1508601185:0;exit
+: 1508601415:0;cd ~
+: 1508601416:0;ll
+: 1508601418:0;clear
+: 1508601432:0;man mkdir
+: 1508601544:0;mkdir -p ~/.vim/autoload ~/.vim/bundle && \\
+curl -LSso ~/.vim/autoload/pathogen.vim https:://tpo.pe/pathogen.vim
+: 1508601563:0;mkdir -p ~/.vim/autoload ~/.vim/bundle && \\
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+: 1508601580:0;vim .vimrc
+: 1508602096:0;ll
+: 1508602101:0;cd .vim
+: 1508602102:0;ll
+: 1508602111:0;cd bundle
+: 1508602112:0;ll
+: 1508602184:0;cd ../autoload
+: 1508602185:0;ll
+: 1508602190:0;vim pathogen.vim
+: 1508602893:0;exit
+: 1508607661:0;brew update;
+: 1508607772:0;which vim
+: 1508607799:0;la /usr/bin/vim
+: 1508607803:0;la /usr/bin/vim/
+: 1508607810:0;la /usr/bin/vim
+: 1508607835:0;brew install vim8
+: 1508607901:0;brew upgrade
+: 1508608216:0;cd ../..
+: 1508608217:0;ll
+: 1508608219:0;cd ~
+: 1508608221:0;ll
+: 1508608242:0;mkdir texter; cd texter;
+: 1508608244:0;ll
+: 1508608251:0;git init
+: 1508608277:0;git git://github.com/grsl/texter.git
+: 1508608290:0;git clone git://github.com/grsl/texter.git
+: 1508608297:0;ll
+: 1508608307:0;cd ..
+: 1508608308:0;ll
+: 1508608320:0;rm -rf texter
+: 1508608321:0;ll
+: 1508608331:0;git clone git://github.com/grsl/texter.git
+: 1508608338:0;ll
+: 1508608344:0;cd texter
+: 1508608345:0;ll
+: 1508608361:0;vim texter.ahk
+: 1508608715:0;clear
+: 1508608718:0;cd ~
+: 1508608719:0;ll
+: 1508608726:0;cd .vim/bundle
+: 1508608727:0;ll
+: 1508608729:0;la
+: 1508608731:0;..
+: 1508608733:0;la
+: 1508608794:0;git init
+: 1508608797:0;ll
+: 1508608806:0;git push
+: 1508608836:0;git push grsl
+: 1508608872:0;git push --set-upstream grsl master
+: 1508608908:0;git remote add master git://github.com/grsl/.vim.git
+: 1508608912:0;git push
+: 1508608948:0;git remote add vim https://github.com/grsl/
+: 1508608951:0;git push
+: 1508608967:0;git global.user
+: 1508608978:0;git global user.name
+: 1508608988:0;git --help
+: 1508609052:0;git show
+: 1508609128:0;git commit -m "Initial commit of my .vim folder as suggested in Learn Vim the hard way that this folder should be under version control."
+: 1508609141:0;git add -A
+: 1508609145:0;git commit -m "Initial commit of my .vim folder as suggested in Learn Vim the hard way that this folder should be under version control."
+: 1508609187:0;git push git://github.com/grsl/vim.git
+: 1508609209:0;git push --set-upstream git://github.com/grsl/vim.git master
+: 1508609238:0;git push --set-upstream https://github.com/grsl/vim.git master
+: 1508609293:0;git push --set-upstream https://github.com/grsl/.vim.git master
+: 1508609335:0;ll
+: 1508609340:0;gst
+: 1508609393:0;echo "# .vim" >> README.md
+: 1508609398:0;git add README.md
+: 1508609445:0;git commit -m "Added README.md"
+: 1508609474:0;git remote add origin https://github.com/grsl/.vim.git
+: 1508609484:0;push -u origin master
+: 1508609490:0;git push -u origin master
+: 1508609529:0;vim README.md
+: 1508609829:0;git commit -m "Edited README.md"
+: 1508609842:0;git add README.md
+: 1508609845:0;git commit -m "Edited README.md"
+: 1508609852:0;git push
+: 1508609877:0;vim README.md
+: 1508609904:0;cd ~/Sites/grsl.co.uk/database
+: 1508609906:0;ll
+: 1508609916:0;..
+: 1508609917:0;ll
+: 1508609921:0;gst
+: 1508609935:0;git add database/
+: 1508609939:0;gst
+: 1508609951:0;cat foo.html
+: 1508609957:0;rm foo.html
+: 1508609965:0;vim vim.php
+: 1508609981:0;rm vim.php
+: 1508609982:0;ll
+: 1508609985:0;gst
+: 1508609994:0;git rm vim.php
+: 1508609998:0;gst
+: 1508610237:0;cd database
+: 1508610238:0;ll
+: 1508610249:0;vim database.md
+: 1508610466:0;cd ~
+: 1508610471:0;vim .vimrc
+: 1508610627:0;cd -
+: 1508610629:0;ll
+: 1508610638:0;vim bookCellar.mysql
+: 1508612703:0;cd ~
+: 1508612711:0;vim .vimrc
+: 1508782730:0;exit
+: 1508782756:0;vim
+: 1508782894:0;~
+: 1508782902:0;vim .vimrc
+: 1508783113:0;exit
+: 1508783121:0;vim .vimrc
+: 1508785957:0;exit
+: 1508864514:0;ll
+: 1508864523:0;mv goo goo.php
+: 1508864528:0;vim goo.php
+: 1508864796:0;vim .vimrc
+: 1508865572:0;exit
+: 1508866159:0;ll
+: 1508866163:0;cd Sites/grsl.co.uk
+: 1508866164:0;ll
+: 1508866201:0;mv login.php login.js
+: 1508866213:0;cp login.js login.py
+: 1508866215:0;ll
+: 1508866222:0;vim login.js
+: 1508866262:0;vm login.py
+: 1508866268:0;vim login.py
+: 1508866518:0;vim userName.php
+: 1508870026:0;vim .vimrc
+: 1508870235:0;exit
+: 1508870244:0;cd database
+: 1508870248:0;la
+: 1508870259:0;vim goo.php
+: 1508870425:0;cd ~
+: 1508870432:0;cd .vim/syntax
+: 1508870434:0;ll
+: 1508870438:0;vim php.vim
+: 1508870485:0;vim sql.vim
+: 1508870510:0;cd -
+: 1508870513:0;cd +
+: 1508870520:0;cd -
+: 1508870522:0;ll
+: 1508870528:0;gst
+: 1508870551:0;~/updateDotFiles.sh
+: 1508870579:0;git status
+: 1508870583:0;cd ~
+: 1508870585:0;ll
+: 1508870589:0;cd Sites/grsl.co.uk
+: 1508870590:0;ll
+: 1508870613:0;git branch
+: 1508870622:0;gch
+: 1508870627:0;gck
+: 1508870631:0;gco
+: 1508870649:0;git status
+: 1508870686:0;ll
+: 1508870689:0;cd database
+: 1508870692:0;vim goo.php
+: 1508871542:0;exit
+: 1508950949:0;ll
+: 1508950956:0;vim bookCellar.mysql
+: 1508950997:0;vim
+: 1508951101:0;vim bookCellar.mysql
+: 1508951182:0;cd Sites/grsl.co.uk/database
+: 1508951183:0;ll
+: 1508951192:0;mysql.server start
+: 1508951206:0;mysql -uroot -p < bookCellar.mysql
+: 1508952338:0;mysql -uroot -p
+: 1508952408:0;mysql -uroot -p < bookCellar.mysql
+: 1508952437:0;mysql -uroot -p
+: 1508952457:0;mysql -uroot -p < bookCellar.mysql
+: 1508952502:0;mysql -uroot -p
+: 1508956466:0;ll
+: 1508956480:0;vim createTables.mysql
+: 1508956532:0;vim bookCellar.mysql
+: 1508956843:0;mysql -uroot -p < bookCellar.mysql
+: 1508956856:0;vim bookCellar.mysql
+: 1508956905:0;vim createTables.mysql
+: 1508957674:0;exit
+: 1509124232:0;mysql -uroot -p < bookCellar.mysql
+: 1509124243:0;mysql.server start
+: 1509124245:0;mysql -uroot -p < bookCellar.mysql
+: 1509124258:0;cd Sites/grsl.co.uk/database
+: 1509124261:0;vim bookCellar.mysql
+: 1509124735:0;mysql -uroot -p < bookCellar.mysql
+: 1509125056:0;ll
+: 1509125071:0;vim createTables.mysql
+: 1509125089:0;vim 
+: 1509125254:0;exit
+: 1509125907:0;mysql -uroot -p < bookCellar.mysql
+: 1509125976:0;mysql -uroot -p
+: 1509126181:0;mysql -uroot -p < bookCellar.mysql
+: 1509127267:0;clear
+: 1509127307:0;mysql -uroot -p < bookCellar.mysql
+: 1509127464:0;clear
+: 1509127465:0;mysql -uroot -p < bookCellar.mysql
+: 1509127566:0;mysql -uroot -p
+: 1509128986:0;vim bookCellar.mysql
+: 1509129328:0;mysql bookCellar -uroot -p
+: 1509130548:0;ll
+: 1509130557:0;vim bookCellar.mysql
+: 1509130786:0;exity
+: 1509130787:0;exit
+: 1509181618:0;vim bookCellar.mysql
+: 1509190273:0;mysql.server start
+: 1509190987:0;alter table years add constraint y_a foreign key years(year_id) references awards(year_id);
+: 1509191013:0;mysql -uroot -p
+: 1509198352:0;exit
+: 1509212094:0;lll
+: 1509212095:0;ll
+: 1509212104:0;vim sql
+: 1509212145:0;ll
+: 1509212161:0;chmod +x sql
+: 1509212162:0;ll
+: 1509212168:0;./sql
+: 1509212187:0;sql
+: 1509212210:0;mysql.server stop
+: 1509212215:0;sql
+: 1509212234:0;vim sql
+: 1509212254:0;sql
+: 1509212328:0;pwd
+: 1509212343:0;cd Sites/grsl.co.uk/database
+: 1509212346:0;vim bookCellar.mysql
+: 1509217730:0;exit
+: 1509309263:0;sql
+: 1509309720:0;vim bookCellar.mysql
+: 1509310765:0;exit
+: 1509391851:0;sql
+: 1509391868:0;~\sql
+: 1509391879:0;~\.sql
+: 1509391884:0;pwd
+: 1509391886:0;ll
+: 1509391893:0;./sql
+: 1509391919:0;mysql -uroot -p < bookCellar.mysql
+: 1509391946:0;vim bookCellar.mysql
+: 1509393886:0;exit
+: 1509475584:0;vim bookCellar.mysql
+: 1509475589:0;./sql
+: 1509478431:0;mysql -uroot -p < bookCellar.mysql
+: 1509478449:0;mysql -uroot -p
+: 1509559787:0;./sql
+: 1509561549:0;exit
+: 1509564412:0;gst
+: 1509564420:0;git add bookCellar.mysql
+: 1509564423:0;gst
+: 1509564436:0;cd ~
+: 1509564440:0;./updateDotFiles.sh
