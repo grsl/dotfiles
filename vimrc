@@ -1,6 +1,11 @@
 " Using TPope's Pathogen.
 "execute pathogen#infect()
 
+:set nocompatible
+:filetype plugin on
+:set path+=**
+:set wildmenu
+
 " Set Leaders.
     :let mapleader = ";"
     :let maplocalleader = ";"

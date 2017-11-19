@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/fold
+~Msle0~/\<INT\>
 
 # Last Substitute Search Pattern:
 ~MSle0&\^\<\w\+\>
@@ -20,25 +20,27 @@ $
 :q
 :w
 :ls
+:bn
+:find authors1.sql
+:find reflection-common/
+:find *.php
+:find bookCellar.sql
+:set path?
+:find *.html
+:find *.sql
+:find 
+:h path
 :bd
-:e snippets/login.php
-:close
-:wq
-:h syn-qstart
-:h syntax
-:/UNSIGNED/
-:%s/\^\<\w\+\>/
-:%s/^\<\w\+\>/
-:%s/\<\w\+\>/
-:set hlsearch
-:exit
-:%s/null/NULL/g
-:b 2
-:bquit
-:b quit
 :bq
+:find list.log
+:set wildmenu
+:path
+:path?
+:329,577 sort
 
 # Search String History (newest to oldest):
+? \<INT\>
+? \<CHAR\>
 ?/fold
 ?/;a
 ? UNSIGNED
@@ -57,8 +59,6 @@ $
 ?/./
 ? ^"\<
 ? ^"\<.+
-? \<Adolf\>
-? ^"\<.
 
 # Expression History (newest to oldest):
 
@@ -69,75 +69,79 @@ $
 # Registers:
 "0	LINE	0
 	    :nnoremap <localleader>a zM
-"1	CHAR	0
-	
-	        Hello world.
-	        <div class="container-fluid">
-	            <form id="login" action=""
-	                enctype="application/x-www-form-urlencoded"
-	                enctype="multipart/from-data"
-	                enctype="text/plain" method="POST" method="GET"
-	                autocomplete="on" target="_self"
-	                class="form-horizontal">
-	                <div class="form-group">
-	                    <fieldset>
-	                        <legend>Contact Me</legend>
-	                        <label for="name">Name</label></br>
-	                        <input type="text" name="name"
-	                            placeholder="Please enter your name."
-	                            value="<?php echo $name; ?>" size="30">
-	                        <label for="email">Email Address</label>
-	                        <input type="email" name="email"
-	                                placeholder="Please enter your email address."
-	                                value="<?php echo $email; ?>" size="30">
-	                        <textarea name="message" cols="100%" rows="20"
-	                            placeholder="Enter your message here."
-	                            maxlength="1000"><?php echo $msg; ?></textarea>
-	                        <button class="btn btn-default btn-primary" type="reset"
-	                            value="Cancel">Cancel</button>
-	                        <button class="btn btn-default btn-primary" type="submit"
-	                            value="Submit">Submit</button></br>
-	                    </fieldset>
-	            </div>
-	<!--  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
-	    
-"2	CHAR	0
-	
-	        Hello world.
-	        <div class="container-fluid">
-	            <form id="login" action=""
-	                enctype="application/x-www-form-urlencoded"
-	                enctype="multipart/from-data"
-	                enctype="text/plain" method="POST" method="GET"
-	                autocomplete="on" target="_self"
-	                class="form-horizontal">
-	                <div class="form-group">
-	                    <fieldset>
-	                        <legend>Contact Me</legend>
-	                        <label for="name">Name</label></br>
-	                        <input type="text" name="name"
-	                            placeholder="Please enter your name."
-	                            value="<?php echo $name; ?>" size="30">
-	                        <label for="email">Email Address</label>
-	                        <input type="email" name="email"
-	                                placeholder="Please enter your email address."
-	                                value="<?php echo $email; ?>" size="30">
-	                        <textarea name="message" cols="100%" rows="20"
-	                            placeholder="Enter your message here."
-	                            maxlength="1000"><?php echo $msg; ?></textarea>
-	                        <button class="btn btn-default btn-primary" type="reset"
-	                            value="Cancel">Cancel</button>
-	                        <button class="btn btn-default btn-primary" type="submit"
-	                            value="Submit">Submit</button></br>
-	                    </fieldset>
-	            </div>
-	<!--  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
-	    
+"1	LINE	0
+	:filetype plugin on
+"2	LINE	0
+	oooooooo
 "3	CHAR	0
+	
+	        Hello world.
+	        <div class="container-fluid">
+	            <form id="login" action=""
+	                enctype="application/x-www-form-urlencoded"
+	                enctype="multipart/from-data"
+	                enctype="text/plain" method="POST" method="GET"
+	                autocomplete="on" target="_self"
+	                class="form-horizontal">
+	                <div class="form-group">
+	                    <fieldset>
+	                        <legend>Contact Me</legend>
+	                        <label for="name">Name</label></br>
+	                        <input type="text" name="name"
+	                            placeholder="Please enter your name."
+	                            value="<?php echo $name; ?>" size="30">
+	                        <label for="email">Email Address</label>
+	                        <input type="email" name="email"
+	                                placeholder="Please enter your email address."
+	                                value="<?php echo $email; ?>" size="30">
+	                        <textarea name="message" cols="100%" rows="20"
+	                            placeholder="Enter your message here."
+	                            maxlength="1000"><?php echo $msg; ?></textarea>
+	                        <button class="btn btn-default btn-primary" type="reset"
+	                            value="Cancel">Cancel</button>
+	                        <button class="btn btn-default btn-primary" type="submit"
+	                            value="Submit">Submit</button></br>
+	                    </fieldset>
+	            </div>
+	<!--  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+	    
+"4	CHAR	0
+	
+	        Hello world.
+	        <div class="container-fluid">
+	            <form id="login" action=""
+	                enctype="application/x-www-form-urlencoded"
+	                enctype="multipart/from-data"
+	                enctype="text/plain" method="POST" method="GET"
+	                autocomplete="on" target="_self"
+	                class="form-horizontal">
+	                <div class="form-group">
+	                    <fieldset>
+	                        <legend>Contact Me</legend>
+	                        <label for="name">Name</label></br>
+	                        <input type="text" name="name"
+	                            placeholder="Please enter your name."
+	                            value="<?php echo $name; ?>" size="30">
+	                        <label for="email">Email Address</label>
+	                        <input type="email" name="email"
+	                                placeholder="Please enter your email address."
+	                                value="<?php echo $email; ?>" size="30">
+	                        <textarea name="message" cols="100%" rows="20"
+	                            placeholder="Enter your message here."
+	                            maxlength="1000"><?php echo $msg; ?></textarea>
+	                        <button class="btn btn-default btn-primary" type="reset"
+	                            value="Cancel">Cancel</button>
+	                        <button class="btn btn-default btn-primary" type="submit"
+	                            value="Submit">Submit</button></br>
+	                    </fieldset>
+	            </div>
+	<!--  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+	    
+"5	CHAR	0
 	
 	        <meta charset="utf-8">
 	        <!-- Latest compiled and minified CSS -->
@@ -156,54 +160,71 @@ $
 	        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 	
 	    
-"4	LINE	0
-	    break the habit of using them.
-	    :noremap <Up> <NOP>
-"5	LINE	0
-	    break the habit of using them.
-	    :noremap <Up> <NOP>
 "6	LINE	0
+	    break the habit of using them.
+	    :noremap <Up> <NOP>
+"7	LINE	0
+	    break the habit of using them.
+	    :noremap <Up> <NOP>
+"8	LINE	0
 	" Stop the arrow keys from working to break the habit of using them.
 	    :noremap <Up> <NOP>
 	    :noremap <Down> <NOP>
 	    :noremap <Left> <NOP>
 	    :noremap <Right> <NOP>
 	
-"7	LINE	0
-	   " :hi search bg=LightBlue
-"8	LINE	0
-	    :hi search bg=LightBlue
-	    
 "9	LINE	0
-	    k
+	   " :hi search bg=LightBlue
 "j	CHAR	0
 	jkjjjjjlllliwjkjkIejkejk
 "q	CHAR	0
 	hjhhhjjjjjjjj:q
 ""-	CHAR	0
-	 
+	*
 
 # File marks:
 'M  4  0  ~/.vimrc
-'0  7  12  ~/Sites/grsl.co.uk/contact.php
-'1  65  30  ~/.vimrc
-'2  31  0  ~/Sites/grsl.co.uk/contact.php
-'3  32  10  ~/Sites/grsl.co.uk/contact.php
-'4  1  0  ~/Sites/grsl.co.uk/logout.php
-'5  3  0  ~/test.php
-'6  1  0  ~/test.p
-'7  1043  8  ~/.vim/syntax/php.vim
-'8  64  8  ~/.vimrc
-'9  1  0  ~/.vim/syntax/sql.vim
+'0  5  4  ~/.gitignore
+'1  6  11  ~/.gitignore
+'2  1  0  ~/.vimrc
+'3  1  0  ~/Sites/grsl.co.uk/database/authors1.sql
+'4  1  0  ~/Sites/grsl.co.uk/database/bookCellar.sql
+'5  5  0  ~/.vimrc
+'6  63  4  ~/Sites/grsl.co.uk/database/bookCellar.sql
+'7  93  46  ~/.zshrc
+'8  89  45  ~/.zshrc
+'9  1  0  ~/test.php
 
 # Jumplist (newest first):
+-'  5  4  ~/.gitignore
+-'  1  0  ~/.gitignore
+-'  6  11  ~/.gitignore
+-'  1  0  ~/.vimrc
+-'  1  0  ~/Sites/grsl.co.uk/database/authors1.sql
+-'  1  0  ~/Sites/grsl.co.uk/database/bookCellar.sql
+-'  5  0  ~/.vimrc
+-'  8  11  ~/.vimrc
+-'  63  4  ~/Sites/grsl.co.uk/database/bookCellar.sql
+-'  62  8  ~/Sites/grsl.co.uk/database/bookCellar.sql
+-'  54  5  ~/Sites/grsl.co.uk/database/bookCellar.sql
+-'  19  7  ~/Sites/grsl.co.uk/database/bookCellar.sql
+-'  14  8  ~/Sites/grsl.co.uk/database/bookCellar.sql
+-'  93  46  ~/.zshrc
+-'  89  13  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  0  ~/test.php
+-'  2  0  ~/test.php
+-'  1  0  ~/list.log
+-'  329  5  ~/Sites/grsl.co.uk/database/bookCellar.sql
+-'  591  10  ~/Sites/grsl.co.uk/database/bookCellar.sql
+-'  1  0  ~/Sites/grsl.co.uk/database/bookCellar.mysql
+-'  1  0  ~/Sites/grsl.co.uk/database/authors.sql
 -'  7  12  ~/Sites/grsl.co.uk/contact.php
 -'  1  0  ~/Sites/grsl.co.uk/contact.php
 -'  1  0  ~/Sites/grsl.co.uk/snippets/login.php
--'  65  30  ~/.vimrc
--'  64  8  ~/.vimrc
--'  1  0  ~/.vimrc
--'  110  5  ~/.vimrc
+-'  66  30  ~/.vimrc
+-'  65  8  ~/.vimrc
+-'  111  5  ~/.vimrc
 -'  44  42  ~/Sites/grsl.co.uk/contact.php
 -'  43  32  ~/Sites/grsl.co.uk/contact.php
 -'  32  10  ~/Sites/grsl.co.uk/contact.php
@@ -212,14 +233,13 @@ $
 -'  22  4  ~/Sites/grsl.co.uk/contact.php
 -'  1  0  ~/Sites/grsl.co.uk/logout.php
 -'  3  0  ~/test.php
--'  1  0  ~/test.php
 -'  1  0  ~/test.p
 -'  1043  8  ~/.vim/syntax/php.vim
 -'  1  0  ~/.vim/syntax/php.vim
--'  25  5  ~/.vimrc
--'  18  0  ~/.vimrc
--'  49  0  ~/.vimrc
--'  21  3  ~/.vimrc
+-'  26  5  ~/.vimrc
+-'  19  0  ~/.vimrc
+-'  50  0  ~/.vimrc
+-'  22  3  ~/.vimrc
 -'  47  20  /usr/share/vim/vim73/doc/syntax.txt
 -'  26  0  /usr/share/vim/vim73/doc/syntax.txt
 -'  1  0  /usr/share/vim/vim73/doc/syntax.txt
@@ -229,7 +249,6 @@ $
 -'  27  4  ~/Sites/grsl.co.uk/database/bookCellar.mysql
 -'  128  4  ~/Sites/grsl.co.uk/database/bookCellar.mysql
 -'  119  4  ~/Sites/grsl.co.uk/database/bookCellar.mysql
--'  1  0  ~/Sites/grsl.co.uk/database/bookCellar.mysql
 -'  8  0  ~/test.php
 -'  1  0  ~/test.html
 -'  161  0  ~/Sites/grsl.co.uk/database/authors1.sql
@@ -238,7 +257,6 @@ $
 -'  8  27  ~/Sites/grsl.co.uk/database/authors1.sql
 -'  21  40  ~/Sites/grsl.co.uk/database/authors1.sql
 -'  20  31  ~/Sites/grsl.co.uk/database/authors1.sql
--'  1  0  ~/Sites/grsl.co.uk/database/authors1.sql
 -'  111  0  ~/Sites/grsl.co.uk/database/bookCellar.mysql
 -'  2  0  ~/Sites/grsl.co.uk/database/bookCellar.mysql
 -'  1193  0  /usr/share/vim/vim73/doc/windows.txt
@@ -246,15 +264,13 @@ $
 -'  1  0  /usr/share/vim/vim73/doc/windows.txt
 -'  1  0  /usr/share/vim/vim73/doc/pattern.txt
 -'  328  0  /usr/share/vim/vim73/doc/pattern.txt
--'  137  0  ~/.vimrc
+-'  138  0  ~/.vimrc
 -'  60  0  ~/Sites/grsl.co.uk/database/bookCellar.mysql
 -'  12  0  ~/Sites/grsl.co.uk/database/bookCellar.mysql
--'  1  0  ~/Sites/grsl.co.uk/database/authors.sql
 -'  1  0  ~/id_rsa.bak
 -'  7  54  /usr/share/vim/vim73/doc/windows.txt
 -'  1  0  /usr/share/vim/vim73/doc/windows.txt
 -'  3  0  ~/.gitignore
--'  1  0  ~/.gitignore
 -'  28  90  ~/Sites/grsl.co.uk/database/hugoAwards.sql
 -'  35  75  ~/Sites/grsl.co.uk/database/hugoAwards.sql
 -'  19  0  ~/Sites/grsl.co.uk/database/hugoAwards.sql
@@ -277,13 +293,436 @@ $
 -'  1  0  ~/Sites/grsl/resources/views/about.blade.php
 -'  1  0  ~/Sites/grsl/routes/web.php
 -'  2  0  ~/Sites/grsl/routes/web.php
--'  1  0  ~/Sites/grsl/public/index.php
--'  4  49  ~/.vim/README.md
--'  1  0  ~/.vim/README.md
--'  103  23  ~/.vimrc
--'  1  0  ~/Sites/grsl.co.uk/logout.php
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	"	5	4
+	^	6	24
+	.	6	23
+	+	1	4
+	+	7	0
+	+	2	8
+	+	3	3
+	+	4	8
+	+	3	0
+	+	5	4
+	+	6	23
+
+> ~/.vimrc
+	"	1	0
+	.	5	0
+	+	140	28
+	+	141	28
+	+	132	0
+	+	128	0
+	+	114	0
+	+	138	0
+	+	132	0
+	+	128	0
+	+	123	0
+	+	117	0
+	+	116	0
+	+	9	0
+	+	118	0
+	+	124	0
+	+	129	0
+	+	133	0
+	+	136	0
+	+	124	0
+	+	105	14
+	+	112	0
+	+	111	5
+	+	111	0
+	+	111	0
+	+	111	50
+	+	81	19
+	+	80	15
+	+	10	16
+	+	11	20
+	+	10	16
+	+	11	22
+	+	10	11
+	+	11	11
+	+	10	20
+	+	11	19
+	+	38	0
+	+	106	0
+	+	106	0
+	+	106	4
+	+	106	8
+	+	112	0
+	+	110	0
+	+	106	25
+	+	107	24
+	+	108	58
+	+	118	0
+	+	106	22
+	+	107	22
+	+	108	23
+	+	10	23
+	+	11	28
+	+	108	0
+	+	110	157
+	+	107	0
+	+	110	167
+	+	110	94
+	+	110	0
+	+	108	0
+	+	110	176
+	+	110	163
+	+	109	0
+	+	109	208
+	+	109	160
+	+	23	3
+	+	24	0
+	+	25	13
+	+	27	3
+	+	23	0
+	+	24	10
+	+	21	10
+	+	27	0
+	+	25	0
+	+	25	16
+	+	25	0
+	+	27	0
+	+	27	0
+	+	27	0
+	+	27	0
+	+	26	0
+	+	26	0
+	+	54	0
+	+	23	0
+	+	29	41
+	+	32	0
+	+	31	0
+	+	30	6
+	+	29	38
+	+	30	8
+	+	106	0
+	+	115	5
+	+	69	0
+	+	70	30
+	+	4	16
+	+	6	0
+	+	9	0
+	+	6	0
+	+	7	12
+	+	8	0
+	+	6	4
+	+	8	0
+	+	5	0
+	m	129	4
+
+> ~/Sites/grsl.co.uk/database/authors1.sql
+	"	1	0
+	^	11	14
+	.	2	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	9
+	+	1	22
+	+	1	19
+	+	1	30
+	+	1	42
+	+	1	53
+	+	1	67
+	+	1	81
+	+	1	67
+	+	1	53
+	+	1	43
+	+	1	30
+	+	1	21
+	+	1	31
+	+	1	44
+	+	1	55
+	+	1	69
+	+	1	65
+	+	1	65
+	+	1	0
+	+	1	69
+	+	1	0
+	+	1	69
+	+	1	35
+	+	1	34
+	+	1	31
+	+	1	0
+	+	1	67
+	+	1	29
+	+	1	33
+	+	1	1
+	+	1	12
+	+	1	12
+	+	1	12
+	+	1	14
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	47
+	+	1	42
+	+	1	0
+	+	1	0
+	+	1	38
+	+	1	59
+	+	1	48
+	+	1	47
+	+	1	43
+	+	1	37
+	+	1	25
+	+	1	0
+	+	1	0
+	+	1	0
+	+	20	26
+	+	21	36
+	+	8	38
+	+	9	0
+	+	10	31
+	+	11	65
+	+	12	0
+	+	2	0
+	m	3	6
+
+> ~/Sites/grsl.co.uk/database/bookCellar.sql
+	"	1	0
+	^	19	8
+	.	40	5
+	+	329	0
+	+	19	0
+	+	39	5
+	+	40	5
+
+> ~/.zshrc
+	"	93	46
+	^	93	48
+	.	93	13
+	+	1	0
+	+	90	0
+	+	79	0
+	+	80	0
+	+	89	40
+	+	1	0
+	+	79	0
+	+	86	63
+	+	23	0
+	+	89	104
+	+	89	13
+	+	91	19
+	+	89	17
+	+	89	81
+	+	89	0
+	+	89	82
+	+	91	0
+	+	88	0
+	+	89	0
+	+	87	0
+	+	90	0
+	+	89	0
+	+	90	0
+	+	89	0
+	+	89	110
+	+	89	13
+	+	89	119
+	+	89	36
+	+	95	0
+	+	94	0
+	+	89	45
+	+	93	47
+	+	89	13
+	+	93	13
+
+> ~/test.php
+	"	1	0
+	^	1	5
+	.	1	4
+	+	18	0
+	+	15	0
+	+	15	2
+	+	17	0
+	+	16	0
+	+	15	0
+	+	14	5
+	+	8	0
+	+	1	4
+
+> ~/list.log
+	"	1	0
+
+> /usr/share/vim/vim73/doc/options.txt
+	"	5193	5
+
+> ~/Sites/grsl.co.uk/database/bookCellar.mysql
+	"	1	0
+	^	115	23
+	.	857	9
+	+	655	39
+	+	654	39
+	+	653	39
+	+	652	39
+	+	166	0
+	+	172	0
+	+	166	31
+	+	167	10
+	+	168	9
+	+	170	4
+	+	168	21
+	+	169	11
+	+	170	23
+	+	173	0
+	+	179	0
+	+	175	0
+	+	173	33
+	+	174	12
+	+	175	10
+	+	176	11
+	+	177	27
+	+	180	33
+	+	181	10
+	+	188	29
+	+	182	9
+	+	183	14
+	+	184	9
+	+	185	11
+	+	188	0
+	+	186	0
+	+	188	0
+	+	186	13
+	+	189	59
+	+	178	5
+	+	187	13
+	+	181	11
+	+	187	39
+	+	188	16
+	+	189	100
+	+	189	0
+	+	188	32
+	+	191	0
+	+	192	38
+	+	193	16
+	+	194	21
+	+	195	15
+	+	196	0
+	+	763	47
+	+	763	0
+	+	763	0
+	+	763	0
+	+	763	0
+	+	763	0
+	+	763	0
+	+	763	0
+	+	763	64
+	+	763	10
+	+	763	11
+	+	767	0
+	+	762	0
+	+	198	0
+	+	213	0
+	+	212	0
+	+	202	62
+	+	203	28
+	+	204	28
+	+	205	0
+	+	204	32
+	+	205	32
+	+	205	72
+	+	207	32
+	+	208	32
+	+	204	10
+	+	205	10
+	+	205	50
+	+	207	10
+	+	208	10
+	+	209	10
+	+	203	11
+	+	204	11
+	+	205	11
+	+	205	51
+	+	207	11
+	+	208	11
+	+	209	11
+	+	207	0
+	+	205	29
+	+	206	36
+	+	207	30
+	+	208	36
+	+	209	33
+	+	210	0
+	+	211	29
+	+	202	23
+	+	209	36
+	+	210	37
+	+	762	0
+	+	115	14
+	+	3	0
+	+	857	9
+
+> ~/Sites/grsl.co.uk/database/authors.sql
+	"	1	0
+	.	1	0
+	+	162	41
+	+	162	0
+	+	162	0
+	+	162	0
+	+	162	0
+	+	162	0
+	+	162	0
+	+	162	0
+	+	162	0
+	+	162	0
+	+	162	0
+	+	1	0
+	+	162	0
+	+	13	0
+	+	17	0
+	+	1	0
+	+	17	0
+	+	1	0
+	+	1	0
+	+	13	0
+	+	61	0
+	+	96	0
+	+	112	0
+	+	148	0
+	+	162	0
+	+	162	0
+	+	1	0
 
 > ~/Sites/grsl.co.uk/contact.php
 	"	7	12
@@ -315,131 +754,11 @@ $
 	+	10	0
 	+	7	0
 
-> ~/.vimrc
-	"	3	0
-	^	64	9
-	.	65	30
-	+	131	0
-	+	132	0
-	+	133	0
-	+	133	0
-	+	127	0
-	+	134	0
-	+	134	0
-	+	135	0
-	+	136	0
-	+	135	28
-	+	136	28
-	+	127	0
-	+	123	0
-	+	109	0
-	+	133	0
-	+	127	0
-	+	123	0
-	+	118	0
-	+	112	0
-	+	111	0
-	+	4	0
-	+	113	0
-	+	119	0
-	+	124	0
-	+	128	0
-	+	131	0
-	+	119	0
-	+	100	14
-	+	107	0
-	+	106	5
-	+	106	0
-	+	106	0
-	+	106	50
-	+	76	19
-	+	75	15
-	+	5	16
-	+	6	20
-	+	5	16
-	+	6	22
-	+	5	11
-	+	6	11
-	+	5	20
-	+	6	19
-	+	33	0
-	+	101	0
-	+	101	0
-	+	101	4
-	+	101	8
-	+	107	0
-	+	105	0
-	+	101	25
-	+	102	24
-	+	103	58
-	+	113	0
-	+	101	22
-	+	102	22
-	+	103	23
-	+	5	23
-	+	6	28
-	+	103	0
-	+	105	157
-	+	102	0
-	+	105	167
-	+	105	94
-	+	105	0
-	+	103	0
-	+	105	176
-	+	105	163
-	+	104	0
-	+	104	208
-	+	104	160
-	+	18	3
-	+	19	0
-	+	20	13
-	+	22	3
-	+	18	0
-	+	19	10
-	+	16	10
-	+	22	0
-	+	20	0
-	+	20	16
-	+	20	0
-	+	22	0
-	+	22	0
-	+	22	0
-	+	22	0
-	+	21	0
-	+	21	0
-	+	49	0
-	+	18	0
-	+	24	41
-	+	27	0
-	+	26	0
-	+	25	6
-	+	24	38
-	+	25	8
-	+	101	0
-	+	110	5
-	+	64	0
-	+	65	30
-	m	124	4
-
 > ~/Sites/grsl.co.uk/snippets/login.php
 	"	1	0
 
 > ~/Sites/grsl.co.uk/logout.php
 	"	1	0
-
-> ~/test.php
-	"	3	0
-	^	1	5
-	.	1	4
-	+	18	0
-	+	15	0
-	+	15	2
-	+	17	0
-	+	16	0
-	+	15	0
-	+	14	5
-	+	8	0
-	+	1	4
 
 > ~/test.p
 	"	1	0
@@ -558,111 +877,6 @@ $
 	+	50	0
 	+	50	0
 
-> ~/Sites/grsl.co.uk/database/bookCellar.mysql
-	"	13	5
-	^	115	23
-	.	857	9
-	+	655	39
-	+	654	39
-	+	653	39
-	+	652	39
-	+	166	0
-	+	172	0
-	+	166	31
-	+	167	10
-	+	168	9
-	+	170	4
-	+	168	21
-	+	169	11
-	+	170	23
-	+	173	0
-	+	179	0
-	+	175	0
-	+	173	33
-	+	174	12
-	+	175	10
-	+	176	11
-	+	177	27
-	+	180	33
-	+	181	10
-	+	188	29
-	+	182	9
-	+	183	14
-	+	184	9
-	+	185	11
-	+	188	0
-	+	186	0
-	+	188	0
-	+	186	13
-	+	189	59
-	+	178	5
-	+	187	13
-	+	181	11
-	+	187	39
-	+	188	16
-	+	189	100
-	+	189	0
-	+	188	32
-	+	191	0
-	+	192	38
-	+	193	16
-	+	194	21
-	+	195	15
-	+	196	0
-	+	763	47
-	+	763	0
-	+	763	0
-	+	763	0
-	+	763	0
-	+	763	0
-	+	763	0
-	+	763	0
-	+	763	64
-	+	763	10
-	+	763	11
-	+	767	0
-	+	762	0
-	+	198	0
-	+	213	0
-	+	212	0
-	+	202	62
-	+	203	28
-	+	204	28
-	+	205	0
-	+	204	32
-	+	205	32
-	+	205	72
-	+	207	32
-	+	208	32
-	+	204	10
-	+	205	10
-	+	205	50
-	+	207	10
-	+	208	10
-	+	209	10
-	+	203	11
-	+	204	11
-	+	205	11
-	+	205	51
-	+	207	11
-	+	208	11
-	+	209	11
-	+	207	0
-	+	205	29
-	+	206	36
-	+	207	30
-	+	208	36
-	+	209	33
-	+	210	0
-	+	211	29
-	+	202	23
-	+	209	36
-	+	210	37
-	+	762	0
-	+	115	14
-	+	3	0
-	+	857	9
-
 > ~/test.html
 	"	1	0
 	^	1	8
@@ -722,148 +936,11 @@ $
 	+	1	7
 	+	1	7
 
-> ~/Sites/grsl.co.uk/database/authors1.sql
-	"	161	0
-	^	11	14
-	.	2	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	9
-	+	1	22
-	+	1	19
-	+	1	30
-	+	1	42
-	+	1	53
-	+	1	67
-	+	1	81
-	+	1	67
-	+	1	53
-	+	1	43
-	+	1	30
-	+	1	21
-	+	1	31
-	+	1	44
-	+	1	55
-	+	1	69
-	+	1	65
-	+	1	65
-	+	1	0
-	+	1	69
-	+	1	0
-	+	1	69
-	+	1	35
-	+	1	34
-	+	1	31
-	+	1	0
-	+	1	67
-	+	1	29
-	+	1	33
-	+	1	1
-	+	1	12
-	+	1	12
-	+	1	12
-	+	1	14
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	47
-	+	1	42
-	+	1	0
-	+	1	0
-	+	1	38
-	+	1	59
-	+	1	48
-	+	1	47
-	+	1	43
-	+	1	37
-	+	1	25
-	+	1	0
-	+	1	0
-	+	1	0
-	+	20	26
-	+	21	36
-	+	8	38
-	+	9	0
-	+	10	31
-	+	11	65
-	+	12	0
-	+	2	0
-	m	3	6
-
 > /usr/share/vim/vim73/doc/windows.txt
 	"	1193	0
 
 > /usr/share/vim/vim73/doc/pattern.txt
 	"	1	0
-
-> ~/Sites/grsl.co.uk/database/authors.sql
-	"	1	0
-	.	1	0
-	+	162	41
-	+	162	0
-	+	162	0
-	+	162	0
-	+	162	0
-	+	162	0
-	+	162	0
-	+	162	0
-	+	162	0
-	+	162	0
-	+	162	0
-	+	1	0
-	+	162	0
-	+	13	0
-	+	17	0
-	+	1	0
-	+	17	0
-	+	1	0
-	+	1	0
-	+	13	0
-	+	61	0
-	+	96	0
-	+	112	0
-	+	148	0
-	+	162	0
-	+	162	0
-	+	1	0
 
 > ~/id_rsa.bak
 	"	1	0
@@ -873,17 +950,6 @@ $
 
 > ~/Sites/grsl.co.uk/database/use_txt7
 	"	1	0
-
-> ~/.gitignore
-	"	3	0
-	^	3	1
-	.	3	0
-	+	1	4
-	+	5	0
-	+	2	8
-	+	3	3
-	+	4	8
-	+	3	0
 
 > /usr/share/vim/vim73/doc/eval.txt
 	"	3624	7
@@ -1081,9 +1147,6 @@ $
 
 > ~/help
 	"	1	0
-
-> /usr/share/vim/vim73/doc/options.txt
-	"	6494	1
 
 > ~/updateDotFiles.sh
 	"	16	12
@@ -2012,39 +2075,6 @@ $
 	+	367	0
 	+	366	0
 
-> ~/.zshrc
-	"	89	36
-	^	89	120
-	.	89	36
-	+	1	0
-	+	90	0
-	+	79	0
-	+	80	0
-	+	89	40
-	+	1	0
-	+	79	0
-	+	86	63
-	+	23	0
-	+	89	104
-	+	89	13
-	+	91	19
-	+	89	17
-	+	89	81
-	+	89	0
-	+	89	82
-	+	91	0
-	+	88	0
-	+	89	0
-	+	87	0
-	+	90	0
-	+	89	0
-	+	90	0
-	+	89	0
-	+	89	110
-	+	89	13
-	+	89	119
-	+	89	36
-
 > /usr/share/vim/vim73/doc/message.txt
 	"	1	0
 
@@ -2654,45 +2684,4 @@ $
 	+	19	0
 
 > ~/Sites/testSite/public/index.php
-	"	1	0
-
-> ~/Sites/grsl.co.uk/Includes/database.php
-	"	1	0
-	^	12	2
-	.	13	59
-	+	3	5
-	+	3	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	19	0
-	+	14	0
-	+	12	48
-	+	8	0
-	+	11	16
-	+	12	0
-	+	3	0
-	+	13	0
-	+	3	0
-	+	3	0
-	+	1	0
-	+	3	0
-	+	2	0
-	+	11	0
-	+	10	0
-	+	11	0
-	+	12	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	17	6
-	+	19	0
-	+	13	43
-	+	9	19
-	+	13	62
-	+	12	1
-	+	13	59
-
-> ~/.bashrc
 	"	1	0
