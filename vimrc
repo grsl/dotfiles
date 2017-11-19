@@ -2,8 +2,8 @@
 "execute pathogen#infect()
 
 " Set Leaders.
-    :let mapleader = ';'
-    :let maplocalleader = ';'
+    :let mapleader = ";"
+    :let maplocalleader = ";"
 
     :set laststatus=2
     :set statusline=%-F\ \ 
@@ -13,11 +13,21 @@
     :set autowrite     " Automatically :write before running commands.
     :set ruler         " Show the cursor position at all times.
 
-" Turn on syntax Highlighting.
+" Turn on Syntax Highlighting.
     :syntax enable
 
+" Turn on Search Highlighting.
+    :set hlsearch
+    
 " Use jk instead of the <USC> key to exit insert mode.
     :inoremap jk <esc>
+    " Stop the arrow keys from working 
+    " to break the habit of using them.
+    :noremap <Up> <NOP>
+    :noremap <Down> <NOP>
+    :noremap <Left> <NOP>
+    :noremap <Right> <NOP>
+
 
 " Surround words with specific characters.
     :inoremap <localleader>" <esc>viw<space>""<esc>bpi
@@ -36,12 +46,6 @@
     :nnoremap <localleader>s mm[s1z=`m
     :set nospell
 
-" Stop the arrow keys from working to break the habit of using them.
-    :noremap <Up> <NOP>
-    :noremap <Down> <NOP>
-    :noremap <Left> <NOP>
-    :noremap <Right> <NOP>
-
 " Tab settings.
     :set tabstop=4
     :set softtabstop=4
@@ -58,6 +62,7 @@
     :set foldlevel=5
     :set foldenable
     :nnoremap <localleader>a zM
+    :nnoremap <localleader>s zE
 
     " Learn Vim script the Hard Way
     "Upper-case a word in normal and insert modes.
@@ -93,21 +98,22 @@
     :iabbrev <buffer> --- &mdash; 
 
 " HTML Mappings
-:inoremap p<tab> <p></p><Esc>F<i
-:inoremap 1<tab> <h1></h1><Esc>F<i
-:inoremap div<tab> <div class=""><cr><cr></class><Esc>2kf"a
+    :autocmd FileType html :inoremap p<tab> <p></p><Esc>F<i
+    :autocmd FileType html :inoremap 1<tab> <h1></h1><Esc>F<i
+    :autocmd FileType html :inoremap div<tab> <div class=""><cr><cr></div><Esc>2kf"a
+    :autocmd FileType html :inoremap html<tab><!DOCTYPE html><cr><cr><html><cr><cr><head><cr><cr><title></title><cr><cr></head><cr><cr><body><cr><cr></body><cr><cr></html>
 
 " SQL  Mappings
 
 
 :if !exists("autocommands_loaded")
-:   let autocommands_loaded = 1 
+    :let autocommands_loaded = 1 
 
     " Comment out lines
-        :autocmd FileType sql   nnoremap <buffer> <localleader>c I#<esc>
-        :autocmd FileType mysql nnoremap <buffer> <localleader>c I#<esc><space>
-        :autocmd FileType php   nnoremap <buffer> <localleader>c I//<esc><space>
-        :autocmd FileType php   nnoremap <buffer> <localleader>cc I/*<cr><cr>//*/<esc>k<tab>i
+    :autocmd FileType sql   nnoremap <buffer> <localleader>c I#<esc>
+    :autocmd FileType mysql nnoremap <buffer> <localleader>c I#<esc><space>
+    :autocmd FileType php   nnoremap <buffer> <localleader>c I//<esc><space>
+    :autocmd FileType php   nnoremap <buffer> <localleader>cc I/*<cr><cr>//*/<esc>k<tab>i
 
     " Uncomment lines
     :autocmd FileType sql   nnoremap <buffer> <localleader>uc Ix<esc>
