@@ -13,19 +13,19 @@
 :highlight Error        cterm=bold
 
 " Color specifications. Change them as you would like.
-hi Comment      term=none       ctermfg=red    guifg=none
+hi Comment      term=none       ctermfg=red     guifg=none
 hi Constant     term=underline  ctermfg=cyan    guifg=Cyan
-hi Identifier   term=underline  ctermfg=cyan    guifg=White
+hi Identifier   term=underline  ctermfg=red     guifg=White
 hi Statement    term=bold       ctermfg=green   guifg=White
 hi PreProc      term=underline  ctermfg=magenta guifg=Blue
 hi Type         term=underline  ctermfg=white   guifg=White
-hi Special      term=bold       ctermfg=cyan   guifg=Blue
+hi Special      term=bold       ctermfg=cyan    guifg=Blue
 hi Nontext      term=bold       ctermfg=red     guifg=Red
 " hi Normal       guifg=Yellow    guibg=#00007F
 " hi Normal       ctermfg=darkgreen
 
 hi Comment      cterm=none  gui=none
-hi Constant     cterm=none gui=none
+hi Constant     cterm=none  gui=none
 hi Identifier   cterm=none  gui=none
 hi Statement    cterm=none  gui=none
 hi PreProc      cterm=none  gui=none
@@ -54,6 +54,8 @@ syn match sqlComment "^\s*#.\+$"
 syn match sqlComment "^\s-\s-\s.\+$"
 syn match sqlTodo "^# todo.\+$"
 
+
+syn match sqlIdentifier ","
 
 :highlight link sqlKeyword Keyword
 :highlight link sqlConstant Constant
