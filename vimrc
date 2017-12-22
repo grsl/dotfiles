@@ -1,11 +1,10 @@
-" Using TPope's Pathogen.
-"execute pathogen#infect()
 "
     :set nocompatible
     :filetype plugin on
     :set path+=**
     :set wildmenu
     :set wrap
+    :set magic
 
 " Set Leaders.
     :let mapleader = ";"
@@ -24,7 +23,7 @@
     :syntax enable
 
 " Turn on Search Highlighting.
-    :set hlsearch
+    " :set hlsearch incsearch
     
 " Use jk instead of the <USC> key to exit insert mode.
     :inoremap jk <esc>
@@ -64,7 +63,7 @@
 
     " Folding.
     :set foldmethod=indent
-    :set foldlevel=5
+    :set foldlevel=1
     :set foldenable
     :nnoremap <localleader>a zM
     :nnoremap <localleader>s zE
@@ -102,6 +101,7 @@
     :onoremap an( :<c-u>normal! t(vi(<cr>
     :onoremap an{ :<c-u>normal! t{vi{<cr>
 
+:nnoremap <localleader>g :grep -R <cword> .<cr>
 " Abbreviations
     :iabbrev adn and
     :iabbrev waht what
@@ -119,6 +119,13 @@
 
 :if !exists("autocommands_loaded")
     :let autocommands_loaded = 1 
+
+    " HTML Files.
+    :augroup vimFiles
+    :   autocmd!
+    :   autocmd FileType vim :nnoremap <buffer> <localleader>c I"<space><esc>
+    :   autocmd FileType vim :inoremap <buffer> <localleader>c I"<space>
+    :augroup END
 
     " HTML Files.
     :augroup htmlFiles
@@ -154,6 +161,7 @@
     :   autocmd FileType php :nnoremap <buffer> <localleader>cp I/*<cr><cr>//*/<esc>k<tab>i
     " Uncomment lines
     :   autocmd FileType php :nnoremap <buffer> <localleader>uc Ix<esc>
+    :   autocmd FileType vim :nnoremap <buffer> <localleader>uc I" <esc>
     "   Abbreviations - snippets
     :   autocmd FileType php :iabbrev  <buffer> iff if () {<cr><cr>}<esc>kkf(a
     :   autocmd FileType php :iabbrev  <buffer> ife if () {<cr><cr>}<cr>else () {<cr><cr>}<esc>5kf(a

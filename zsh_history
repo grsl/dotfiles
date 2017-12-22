@@ -6807,3 +6807,323 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 : 1511810491:0;vim bookCellar.sql
 : 1511814681:0;cd 
 : 1511814686:0;./updateDotFiles.sh
+: 1511814701:0;mysql.server stop
+: 1511814718:0;cd dotfiles
+: 1511814719:0;ll
+: 1511814724:0;gst
+: 1511814733:0;git add -A
+: 1511814735:0;ll
+: 1511814750:0;ll -R bim
+: 1511814757:0;ll -R vim
+: 1511814768:0;ll
+: 1511814814:0;git commit ./vim/ -m "Updated syntax files."
+: 1511814837:0;git branch
+: 1511814846:0;git push 
+: 1511814853:0;exit
+: 1511894282:0;cd Sites/grsl.co.uk/database
+: 1511894287:0;vim bookCellar.sql
+: 1511894313:0;vim .vim/after/syntax/sql.vim
+: 1511894481:0;sql
+: 1511895595:0;vim bookCellar.sql
+: 1511898272:0;exit
+: 1511981367:0;vim bookCellar.sql
+: 1511981555:0;sql
+: 1511985125:0;exit
+: 1511985133:0;./updateDotFiles.sh
+: 1511985184:0;cd dotfiles
+: 1511985185:0;ll
+: 1511985188:0;gst
+: 1511985203:0;git add vim/.vim/after/syntax/sql.vim
+: 1511985220:0;git add viminfo
+: 1511985245:0;git commit -m "Yet another update to .vimrc."
+: 1511985254:0;exit
+: 1512153127:0;vim bookCellar.sql
+: 1512153132:0;sql
+: 1512153645:0;clear
+: 1512153648:0;sql
+: 1512153767:0;exit
+: 1512154067:0;git log
+: 1512154105:0;git status
+: 1512154118:0;git rm bookCellar.mysql
+: 1512154122:0;gst
+: 1512154135:0;vim bookCellar.sql
+: 1512157707:0;sql
+: 1512157745:0;exit
+: 1512212580:0;vim bookCellar.sql
+: 1512212605:0;sql
+: 1512212796:0;exit
+: 1512241924:0;vim
+: 1512242768:0;vim .vimrc
+: 1512243021:0;exit
+: 1512243032:0;vim bookCellar.sql
+: 1512246450:0;exit
+: 1512411851:0;vim bookCellar.sql
+: 1512412313:0;vim .vim/after/syntax/sql.vim
+: 1512413206:0;sql
+: 1512414698:0;exit
+: 1512500553:0;cd Sites/grsl.co.uk/database
+: 1512500558:0;vim bookCellar.sql
+: 1512501270:0;exit
+: 1512583321:0;vim bookCellar.sql
+: 1512583390:0;sql
+: 1512583399:0;~/sql
+: 1512583452:0;vim bookCellar.sql
+: 1512586954:0;exit
+: 1512677544:0;sql
+: 1512677910:0;exit
+: 1512759302:0;vim bookCellar.sql
+: 1512759316:0;cd Sites/grsl.co.uk/database
+: 1512759317:0;ll
+: 1512759396:0;dir
+: 1512759397:0;ls
+: 1512759400:0;ll
+: 1512759565:0;vim bookCellar.sql
+: 1512759829:0;cp bookCellar.sql tablesAndViews.sql
+: 1512759842:0;rm bookCellar.sql
+: 1512759847:0;ll
+: 1512759856:0;cat authors.sql
+: 1512759867:0;vim authors.sql
+: 1512760076:0;vim data.sql
+: 1512834514:0;cd Sites/grsl.co.uk/database
+: 1512834514:0;ll
+: 1512834532:0;vimdiff authors1.sql authors.sql
+: 1512834578:0;vim authors1.sql
+: 1512837739:0;sql
+: 1512837744:0;~/sql
+: 1512837753:0;clear;ls
+: 1512837755:0;ll
+: 1512837772:0;mysql -uroot -p < authors1.sql
+: 1512837788:0;vim authors1.sql
+: 1512839018:0;ll
+: 1512839028:0;vim tablesAndViews.sql
+: 1512839104:0;cd 
+: 1512839109:0;brew update;
+: 1512839123:0;cd Sites
+: 1512839127:0;cd grsl.co.uk
+: 1512839131:0;gst
+: 1512839145:0;cd ../grsl
+: 1512839148:0;gst
+: 1512839163:0;git checout master
+: 1512839172:0;git checkout master
+: 1512839182:0;php artisan up
+: 1512839276:0;php artisan serve
+: 1512839326:0;php artisan halt
+: 1512839333:0;php artisan down
+: 1512839338:0;php artisan stop
+: 1512839342:0;exit
+: 1512839357:0;brew upgrade;
+: 1512840181:0;exit
+: 1512898661:0;sql
+: 1512898758:0;ll
+: 1512898764:0;vim tablesAndViews.sql
+: 1512899723:0;exit
+: 1513021080:0;cd Sites/grsl.co.uk/database
+: 1513021081:0;dir
+: 1513021085:0;ls
+: 1513021087:0;ll
+: 1513021176:0;nano
+: 1513021202:0;vim authors1.sql
+: 1513021256:0;vim tablesAndViews.sql
+: 1513021383:0;cd 
+: 1513021393:0;cd .vim
+: 1513021395:0;l
+: 1513021400:0;cd after
+: 1513021402:0;ll
+: 1513021405:0;cd syntax
+: 1513021406:0;ll
+: 1513021411:0;vim sql.vim
+: 1513021503:0;cd 
+: 1513021517:0;vim Sites/grsl.co.uk/database/tablesAndViews.sql
+: 1513021647:0;vim .vim/after/syntax/sql.vim
+: 1513022578:0;exit
+: 1513103673:0;ls
+: 1513103681:0;vim tablesAndViews.sql
+: 1513103697:0;ll
+: 1513103699:0;la
+: 1513103706:0;vim .vimrc
+: 1513103889:0;cd .vim/after/syntax/
+: 1513103891:0;ll
+: 1513103895:0;vim sql.vim
+: 1513103930:0;vim ~/.vimrc
+: 1513104189:0;vim sql.vim
+: 1513104221:0;vim ~/.vimrc
+: 1513104317:0;vim sql.vim
+: 1513106129:0;vim tablesAndViews.sql
+: 1513106154:0;vim sql.vim
+: 1513106203:0;vim tablesAndViews.sql
+: 1513107750:0;vim sql.vim
+: 1513107756:0;vim tablesAndViews.sql
+: 1513110049:0;exit
+: 1513192098:0;vim .vim/after/syntax/sql.vim
+: 1513195002:0;exit
+: 1513283260:0;vim .vim/after/syntax/sql.vim
+: 1513283469:0;vim .vim/after/syntax/php.vim
+: 1513283606:0;vim
+: 1513283948:0;vim .vim/after/syntax/sql.vim
+: 1513284173:0;exit
+: 1513284198:0;which vim
+: 1513284229:0;vim /usr/bin/vim/syntax
+: 1513284238:0;cd /usr/bin/vim/syntax
+: 1513284243:0;cd /usr/bin/vim
+: 1513284250:0;cd /usr/bin/vim/
+: 1513284261:0;ls /usr/bin/v*
+: 1513284279:0;echo $VIMRUNTIME
+: 1513284297:0;echo $PATH
+: 1513284311:0;cd .vim
+: 1513284313:0;ll
+: 1513284315:0;cd syntax
+: 1513284316:0;ll
+: 1513284411:0;cd ../after
+: 1513284412:0;ll
+: 1513284415:0;cd syntax
+: 1513284418:0;vim sql
+: 1513284423:0;vim sql.vim
+: 1513284564:0;vim ~/Sites/grsl.co.uk/database/tablesAndViews.sql
+: 1513284587:0;vim sql.vim
+: 1513284650:0;vim ~/Sites/grsl.co.uk/database/tablesAndViews.sql
+: 1513284668:0;vim sql.vim
+: 1513284725:0;vim ~/Sites/grsl.co.uk/database/tablesAndViews.sql
+: 1513284736:0;vim sql.vim
+: 1513284819:0;vim ~/Sites/grsl.co.uk/database/tablesAndViews.sql
+: 1513284832:0;vim sql.vim
+: 1513284915:0;vim ~/Sites/grsl.co.uk/database/tablesAndViews.sql
+: 1513420804:0;ll
+: 1513420815:0;cd ~/Sites/grsl.co.uk/database
+: 1513420816:0;ll
+: 1513420823:0;vim tablesAndViews.sql
+: 1513421089:0;sql
+: 1513422261:0;exit
+: 1513426720:0;cd Sites/grsl.co.uk/database
+: 1513426723:0;vim tablesAndViews.sql
+: 1513426940:0;ll
+: 1513426946:0;vim constraints.sql
+: 1513427501:0;exit
+: 1513428379:0;gst
+: 1513428393:0;php artisan update
+: 1513428422:0;brew update; brew upgrade;
+: 1513428451:0;vim tablesAndViews.sql
+: 1513431268:0;brew upgrade;
+: 1513431387:0;vim tablesAndViews.sql
+: 1513432282:0;ll
+: 1513432295:0;vim data.sql
+: 1513432662:0;mysql -uroot -p
+: 1513434630:0;ll
+: 1513434643:0;vim authors1.sql
+: 1513435932:0;exit
+: 1513435942:0;ll
+: 1513435955:0;mysql.server stop
+: 1513435962:0;mysql.server stary
+: 1513435965:0;mysql.server start
+: 1513447660:0;vim authors1.sql
+: 1513453217:0;mysql -uroot -p 
+: 1513453391:0;vim authors1.sql
+: 1513454141:0;ll
+: 1513454154:0;mv authors.sql authors.sql.bak
+: 1513454174:0;mv authors1.sql authors.sql
+: 1513454175:0;ll
+: 1513454180:0;gst
+: 1513454201:0;cd ..
+: 1513454203:0;ll
+: 1513454207:0;gst
+: 1513454215:0;cd database
+: 1513454216:0;ll
+: 1513454220:0;gst
+: 1513454247:0;git --help
+: 1513454295:0;ll
+: 1513454302:0;clear;ll
+: 1513454314:0;vim tablesAndViews.sql
+: 1513454333:0;vim data.sql
+: 1513456479:0;exit
+: 1513512840:0;brew list
+: 1513512855:0;tmux
+: 1513512858:0;ll
+: 1513512860:0;dir
+: 1513512864:0;exit
+: 1513512869:0;man tmux
+: 1513513249:0;ll
+: 1513513260:0;vim data.sql
+: 1513513288:0;sql
+: 1513514205:0;ll 
+: 1513514210:0;vim tablesAndViews.sql
+: 1513514684:0;vim *.sql
+: 1513516184:0;sql
+: 1513516557:0;clear
+: 1513516565:0;brew update;
+: 1513516606:0;brew update;ll
+: 1513516625:0;vim test.sql
+: 1513517830:0;ll tablesAndViews.sql
+: 1513517835:0;vim tablesAndViews.sql
+: 1513518037:0;cd Sites/grsl.co.uk/database
+: 1513518050:0;mysql -uroot -p < data.sql
+: 1513518081:0;mysql -uroot -p
+: 1513518360:0;ll
+: 1513518367:0;vim data.sql
+: 1513519241:0;ll
+: 1513519245:0;vim tablesAndViews.sql
+: 1513519326:0;exit
+: 1513519329:0;eix
+: 1513519332:0;exit
+: 1513624374:0;sql
+: 1513624396:0;ll
+: 1513624421:0;mysql -uroot -p < tablesAndViews.sql
+: 1513624435:0;mysql -uroot -p < data.sql
+: 1513624446:0;mysql -uroot -p < hugoAwards.sql
+: 1513624453:0;vim hugoAwards.sql
+: 1513624507:0;mysql -uroot -p < hugoAwards.sql
+: 1513624527:0;vim hugoAwards.sql
+: 1513624669:0;mysql -uroot -p < hugoAwards.sql
+: 1513624687:0;vim tablesAndViews.sql
+: 1513624753:0;mysql -uroot -p < tablesAndViews.sql
+: 1513624759:0;mysql -uroot -p < hugoAwards.sql
+: 1513624774:0;vim tablesAndViews.sql
+: 1513625067:0;exit
+: 1513708589:0;sql
+: 1513708612:0;brew update &;
+: 1513708618:0;vim tablesAndViews.sql
+: 1513713128:0;exit
+: 1513714779:0;ll
+: 1513714788:0;vim authors.sql
+: 1513714894:0;exit
+: 1513793262:0;sql
+: 1513793271:0;vim tablesAndViews.sql
+: 1513796800:0;exit
+: 1513882769:0;sql
+: 1513882783:0;vim tablesAndViews.sql
+: 1513885875:0;exit
+: 1513959479:0;sql
+: 1513959942:0;vim tablesAndViews.sql
+: 1513960953:0;ll
+: 1513961592:0;vim vOrders.sql
+: 1513962016:0;ll
+: 1513962041:0;mysql -uroot -p < data.sql
+: 1513962051:0;vim data.sql
+: 1513966331:0;exit
+: 1513966730:0;ll
+: 1513966737:0;vim authors.sql
+: 1513967938:0;ll
+: 1513967957:0;mysql -u root -p < hugoAwards.sql
+: 1513967973:0;rm authors.sql.bak
+: 1513967977:0;gst
+: 1513968015:0;ll
+: 1513968027:0;vim test.sql
+: 1513968270:0;sql
+: 1513968563:0;ll
+: 1513968578:0;mysql -u root -p < authors.sql
+: 1513968588:0;mysql -u root -p < data
+: 1513968593:0;mysql -u root -p < data.sql
+: 1513968608:0;mysql -u root -p < hugoAwards.sql
+: 1513968618:0;mysql -u root -p < tablesAndViews.sql
+: 1513968632:0;mysql -u root -p < vOrders.sql
+: 1513968673:0;vim tablesAndViews.sql
+: 1513970851:0;brew install pandoc
+: 1513971006:0;brew upgrade
+: 1513971017:0;which lua
+: 1513971041:0;brew install lua
+: 1513971053:0;which lua
+: 1513971072:0;exit
+: 1513971132:0;lua
+: 1513971443:0;pandoc --version
+: 1513971454:0;pandoc --help
+: 1513971467:0;pandoc --help | more
+: 1513971506:0;ll
+: 1513971512:0;./updateDotFiles.sh
