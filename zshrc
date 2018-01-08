@@ -88,3 +88,7 @@ alias gw="ssh grsl@host58.servers.prgn.misp.co.uk -p2510 -lgrsl"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="~/.composer/vendor/bin:/usr/local/Cellar/php71/7.1.8_20/bin:~/.rvm/bin:$PATH:/usr/local/bin:"
 
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="/usr/local/Cellar/ctags/5.8.1/bin/:$PATH:$HOME/.rvm/bin"
+

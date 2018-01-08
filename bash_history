@@ -1,6 +1,3 @@
-ll
-cd ~
-ll
 cd Sites/
 cd grsl.co.uk
 ll
@@ -497,4 +494,7 @@ exit
 which php
 exit
 which php
+exit
+sha256 vagrant_2.0.1_x86_64.dmg 
+cd ~
 exit
