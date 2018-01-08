@@ -52,6 +52,7 @@ syn keyword sqlKeyword CHARSET InnoDB CONCAT COALESCE NULL FOREIGN ENUM
 syn match sqlComment "^\s*#.\+$"
 " Matches any line that starts ' - - '.
 syn match sqlComment "^\s-\s-\s.\+$"
+syn match sqlComment "/*.\+*/"
 syn match sqlTodo "^# todo.\+$"
 
 
