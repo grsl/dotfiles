@@ -1,4 +1,26 @@
 # If you come from bash you might have to change your $PATH.
+
+#-----------------------------------------
+# Enable VIm mode on the zsh command line.
+#-----------------------------------------
+
+bindkey -v
+
+#show vim status
+function zle-line-int zle-keymap-select {
+    RSP1="i${${KEYMAP/vicmd/--}/(main|viins)/-- INSERT --}"
+    RSP2=RSP1
+    zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+# Add missing hot keys.
+bindkey -a u undo
+bindkey -a '^R' redo
+bindkey '^?' backward-delete-char
+bindkey '^H' backward-delete-char
+#-----------------------------------------
+
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -84,11 +106,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gw="ssh grsl@host58.servers.prgn.misp.co.uk -p2510 -lgrsl"
+alias sw="ssh p05splatmed@splatmedia.co.uk"
+alias nw="npm watch"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="~/.composer/vendor/bin:/usr/local/Cellar/php71/7.1.8_20/bin:~/.rvm/bin:$PATH:/usr/local/bin:"
-
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="/usr/local/Cellar/ctags/5.8.1/bin/:$PATH:$HOME/.rvm/bin"
-
+#export PATH="~/.composer/vendor/bin:/usr/local/Cellar/php71/7.1.8_20/bin:~/.rvm/bin:/usr/local/Cellar/ctags/5.8.1/bin/:/usr/local/bin:/usr/sbin:/bin:"
+export PATH="/usr/local/Cellar/ctags/5.8.1/bin/:/usr/local/bin/:/usr/local/sbin/:/usr/sbin:/usr/bin/:/sbin/:/bin/"

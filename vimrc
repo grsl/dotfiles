@@ -1,6 +1,6 @@
 "
     :set nocompatible
-    :filetype plugin on
+    " :filetype plugin on
     :set path+=**
     :set wildmenu
     :set wrap
@@ -10,7 +10,7 @@
     :let mapleader = ";"
     :let maplocalleader = ";"
 
-"
+" Status Line
     :set laststatus=2
     :set statusline=%-F\ \ 
     :set statusline+=Current:\ %-4l
@@ -27,17 +27,19 @@
     
 " Use jk instead of the <USC> key to exit insert mode.
     :inoremap jk <esc>
-    " Stop the arrow keys from working to break the habit of using them.
+    " Stop the arrow keys from working
+    " to break the habit of using them.
     :noremap <Up> <NOP>
     :noremap <Down> <NOP>
     :noremap <Left> <NOP>
     :noremap <Right> <NOP>
 
 " Surround words with specific characters.
-    :inoremap <localleader>" <esc>viw<space>""<esc>bpi
-    :inoremap <localleader>' <esc>diwi<space>''<esc>bpi
-    :inoremap <localleader>[ <esc>diwi<space>[]<esc>bpi
-    :inoremap <localleader>{ <esc>diwi<space>{}<esc>bpi
+    :inoremap <localleader>" <esc>bi"<esc>ea"
+    :inoremap <localleader>' <esc>bi'<esc>ea'
+    " :inoremap <localleader>[ <esc>bi\[<esc>ea\]
+    " :inoremap <localleader>{ <esc>bi\{<esc>ea\}
+    :inoremap <localleader>` <esc>bi`<esc>ea`
 
 " Navigate Splits 
     :nnoremap <localleader>J <C-w>j
@@ -49,6 +51,9 @@
     :setlocal spell spelllang=en_gb
     :nnoremap <localleader>s mm[s1z=`m
     :set nospell
+" Remove ^M line endings.
+    :nnoremap <localleader>M  execute :%s/\r//g
+    :nnoremap <localleader>ws execute :%s/\s\+$//
 
 " Tab settings.
     :set tabstop=4
@@ -63,10 +68,11 @@
 
     " Folding.
     :set foldmethod=indent
+    :set foldcolumn=4
     :set foldlevel=1
     :set foldenable
-    :nnoremap <localleader>a zM
-    :nnoremap <localleader>s zE
+    :nnoremap <localleader>a zM             " Close all folds.
+    :nnoremap <localleader>s zR             " Open all folds.
 
     " Learn Vim script the Hard Way
     "Upper-case a word in normal and insert modes.
@@ -77,7 +83,7 @@
     :inoremap <localleader><localleader>u <esc>viwui
     " Speed-up access to .vimrc
     :nnoremap <localleader>ev :vsplit $MYVIMRC<cr>
-    :nnoremap <localleader>sv :source  $MYVIMRC<cr>
+    :nnoremap <localleader>sv :source $MYVIMRC<cr>
     " Make space more useful.
     :nnoremap <space> za
 
@@ -101,8 +107,9 @@
     :onoremap an( :<c-u>normal! t(vi(<cr>
     :onoremap an{ :<c-u>normal! t{vi{<cr>
 
-:nnoremap <localleader>g :grep -R <cword> .<cr>
-" Abbreviations
+    :nnoremap <localleader>g :grep -R <cword> .<cr>
+
+    " Abbreviations
     :iabbrev adn and
     :iabbrev waht what
     :iabbrev soem some
@@ -113,6 +120,9 @@
     :iabbrev ccopy Copyright 2017 Simon Long, all rights reserved.
     :iabbrev ssig -----------------<cr>Simon Long<cr>grslong@gmail.com<cr>-----------------
     :iabbrev wweb www.grsl.co.uk
+    :iabbrev /h /*\r|/r*/
+    :iabbrev ff <form></form>
+
 
     :onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rkvg_"<cr>
     :onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rg_vk0"<cr>
@@ -145,11 +155,16 @@
     " Comment out lines
     :   autocmd FileType sql   :noremap  <buffer> <localleader>c  I#<esc>
     :   autocmd FileType sql   :nnoremap <buffer> <localleader>pc {I/*<esc>}I//*/
-    :   autocmd FileType mysql :nnoremap <buffer> <localleader>c  I#<esc>
-    :   autocmd FileType mysql :nnoremap <buffer> <localleader>pc {I/*<esc>}I//*/
+    " :   autocmd FileType mysql :nnoremap <buffer> <localleader>c  I#<esc>
+    " :   autocmd FileType mysql :nnoremap <buffer> <localleader>pc {I/*<esc>}I//*/
+
+    " Comment out paragraph
+    ":   autocmd FileType sql   :nnoremap <buffer> <localleader>bc {Oi/*<esc>}o*/
     " Uncomment lines
     :   autocmd FileType sql   :nnoremap <buffer> <localleader>uc Ix<esc>
-    :   autocmd FileType mysql :nnoremap <buffer> <localleader>uc Ix<esc>
+    " :   autocmd FileType mysql :nnoremap <buffer> <localleader>uc Ix<esc>
+
+
     :augroup END
 
     " PHP Files
@@ -165,6 +180,9 @@
     "   Abbreviations - snippets
     :   autocmd FileType php :iabbrev  <buffer> iff if () {<cr><cr>}<esc>kkf(a
     :   autocmd FileType php :iabbrev  <buffer> ife if () {<cr><cr>}<cr>else () {<cr><cr>}<esc>5kf(a
+    " Insert HTML Headers
+    :   autocmd FileType html :inoremap p<tab> <p></p><Esc>F<i
+    :   autocmd FileType html :inoremap 1<tab> <h1></h1><Esc>F<i
     :augroup END
 
     " JavaScript Files.
