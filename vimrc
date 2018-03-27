@@ -1,6 +1,6 @@
 "
-    :set nocompatible
-    " :filetype plugin on
+    set nocompatible
+    :filetype plugin on
     :set path+=**
     :set wildmenu
     :set wrap
@@ -25,35 +25,40 @@
 " Turn on Search Highlighting.
     " :set hlsearch incsearch
     
-" Use jk instead of the <USC> key to exit insert mode.
+" Use jk instead of the <ESC> key to exit insert mode.
     :inoremap jk <esc>
-    " Stop the arrow keys from working
-    " to break the habit of using them.
+    " Stop the arrow keys from working to break the habit of using them.
     :noremap <Up> <NOP>
     :noremap <Down> <NOP>
     :noremap <Left> <NOP>
     :noremap <Right> <NOP>
 
 " Surround words with specific characters.
+    " Insert mode.
     :inoremap <localleader>" <esc>bi"<esc>ea"
     :inoremap <localleader>' <esc>bi'<esc>ea'
-    " :inoremap <localleader>[ <esc>bi\[<esc>ea\]
-    " :inoremap <localleader>{ <esc>bi\{<esc>ea\}
     :inoremap <localleader>` <esc>bi`<esc>ea`
+    
+    " Normal mode.
+    :nnoremap <localleader>" ciw""<esc>P
 
 " Navigate Splits 
     :nnoremap <localleader>J <C-w>j
     :nnoremap <localleader>K <C-w>k
     :nnoremap <localleader>L <C-w>l
     :nnoremap <localleader>H <C-w>h
+    :nnoremap <localleader>O <C-w>o
 
 " Spell checking
     :setlocal spell spelllang=en_gb
     :nnoremap <localleader>s mm[s1z=`m
     :set nospell
+
 " Remove ^M line endings.
     :nnoremap <localleader>M  execute :%s/\r//g
-    :nnoremap <localleader>ws execute :%s/\s\+$//
+
+" Remove extraneous white space from the end of lines.
+    :nnoremap <localleader>ds :<c-u>execute ":%s/\\s\\+$//"<cr>
 
 " Tab settings.
     :set tabstop=4
@@ -62,20 +67,21 @@
     :set shiftwidth=4
     :set autoindent
 
-    " Screen display.
+" Screen display.
     :set number
     :set numberwidth=3
 
-    " Folding.
+" Folding.
     :set foldmethod=indent
-    :set foldcolumn=4
+    :set foldcolumn=3
     :set foldlevel=1
     :set foldenable
-    :nnoremap <localleader>a zM             " Close all folds.
-    :nnoremap <localleader>s zR             " Open all folds.
+    :nnoremap <localleader>a zM " Close all folds.
+    :nnoremap <localleader>s zR " Open all folds.
+    :nnoremap <space> za        " Toggle the current fold.
 
-    " Learn Vim script the Hard Way
-    "Upper-case a word in normal and insert modes.
+" Learn Vim script the Hard Way
+"Upper-case a word in normal and insert modes.
     :nnoremap <localleader>U viwU
     :inoremap <localleader>U <esc>viwUi
     "Lower-case a word in normal and insert modes.
@@ -85,12 +91,11 @@
     :nnoremap <localleader>ev :vsplit $MYVIMRC<cr>
     :nnoremap <localleader>sv :source $MYVIMRC<cr>
     " Make space more useful.
-    :nnoremap <space> za
 
     "
-    :inoremap <localleader>{ {}<esc>O<tab>
-    :inoremap <localleader>[ []<esc>O<tab>
-    :inoremap <localleader>( ()<esc>O<tab>
+    :inoremap <localleader>{ {<cr>}<esc>O<tab>
+    :inoremap <localleader>[ []<esc>F[a
+    :inoremap <localleader>( ()<esc>F(a
 
     :nnoremap <c-w>o <c-o>
     :nnoremap - ddp
@@ -122,6 +127,7 @@
     :iabbrev wweb www.grsl.co.uk
     :iabbrev /h /*\r|/r*/
     :iabbrev ff <form></form>
+    :iabbrev addr Plum Tree Cottage<cr>Goose Rye Road<cr>Worplesdon<cr>GU3 3RJ<cr><cr>
 
 
     :onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rkvg_"<cr>
@@ -130,7 +136,7 @@
 :if !exists("autocommands_loaded")
     :let autocommands_loaded = 1 
 
-    " HTML Files.
+    " VimML Files.
     :augroup vimFiles
     :   autocmd!
     :   autocmd FileType vim :nnoremap <buffer> <localleader>c I"<space><esc>
@@ -142,10 +148,12 @@
     :   autocmd!
     :   autocmd FileType html :nnoremap <buffer> " &ldquo; 
     :   autocmd FileType html :nnoremap <buffer> " &rdquo; 
-    :   autocmd FileType html :inoremap p<tab> <p></p><Esc>F<i
-    :   autocmd FileType html :inoremap 1<tab> <h1></h1><Esc>F<i
+    :   autocmd FileType html :inoremap <localleader>p <p></p><Esc>F<i
+    :   autocmd FileType html :inoremap ;1 <h1></h1><Esc>F<i
+    :   autocmd FileType html :inoremap ;2 <h2></h2><Esc>F<i
+    :   autocmd FileType html :inoremap ;3 <h3></h3><Esc>F<i
     :   autocmd FileType html :inoremap div<tab> <div class=""><cr><cr></div><Esc>2kf"a
-    :   autocmd FileType html :inoremap html<tab><!DOCTYPE html><cr><cr><html><cr><cr><head><cr><cr><title></title><cr><cr></head><cr><cr><body><cr><cr></body><cr><cr></html>
+    :   autocmd FileType html :inoremap html<tab> <!DOCTYPE html><cr><cr><html><cr><cr><head><cr><cr><title></title><cr><cr></head><cr><cr><body><cr><cr></body><cr><cr></html>
     :   iabbrev FileType html <buffer> --- &mdash; 
     :augroup END
 
@@ -153,7 +161,7 @@
     :augroup sqlFiles
     :   autocmd!
     " Comment out lines
-    :   autocmd FileType sql   :noremap  <buffer> <localleader>c  I#<esc>
+    :   autocmd FileType sql   :nnoremap <buffer> <localleader>c  I#<esc>
     :   autocmd FileType sql   :nnoremap <buffer> <localleader>pc {I/*<esc>}I//*/
     " :   autocmd FileType mysql :nnoremap <buffer> <localleader>c  I#<esc>
     " :   autocmd FileType mysql :nnoremap <buffer> <localleader>pc {I/*<esc>}I//*/
@@ -163,8 +171,6 @@
     " Uncomment lines
     :   autocmd FileType sql   :nnoremap <buffer> <localleader>uc Ix<esc>
     " :   autocmd FileType mysql :nnoremap <buffer> <localleader>uc Ix<esc>
-
-
     :augroup END
 
     " PHP Files
@@ -196,3 +202,21 @@
     :   autocmd!
     :augroup END
 :endif
+
+"-------------------------------------------------------------------
+" Taken from http://www.shapeshed.com/
+" George Ornbo's blog.
+:if has("autocmd")
+    augroup templates
+        autocmd BufNewFile *.html 0r ~/.vim/templates/skeleton.html
+        autocmd BufNewFile *.php 0r ~/.vim/templates/skeleton.php
+        autocmd BufNewFile *.sql 0r ~/.vim/templates/skeleton.sql
+    augroup END
+endif
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 0
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+"------------------------------------------------------------------
