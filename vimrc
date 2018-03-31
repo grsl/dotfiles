@@ -19,7 +19,18 @@
     :syntax enable      " Turn on Syntax Highlighting.
     :nnoremap <localleader>M  execute :%s/\r//g " Remove ^M line endings.
     :nnoremap <localleader>ds :<c-u>execute ":%s/\\s\\+$//"<cr> " Remove extraneous white
-                                                                  space from the end of lines
+    " space from the end of lines
+
+"--------------------------------------------------------------------------------------------
+" Mappings
+"--------------------------------------------------------------------------------------------
+
+"--------------------------------------------------------------------------------------------
+" html <buffer> --- &mdash;   <buffer> --- &mdash;  - Specific Settings
+"--------------------------------------------------------------------------------------------
+"--------------------------------------------------------------------------------------------
+" Mappings
+"--------------------------------------------------------------------------------------------
 
 "--------------------------------------------------------------------------------------------
 " Set Leaders.
@@ -38,11 +49,11 @@
 "--------------------------------------------------------------------------------------------
 " Surround words with specific characters.
 "--------------------------------------------------------------------------------------------
-    " Insert mode.
+" Insert mode.
     :inoremap <localleader>" <esc>bi"<esc>ea"
     :inoremap <localleader>' <esc>bi'<esc>ea'
     :inoremap <localleader>` <esc>bi`<esc>ea`
-    
+
     " Normal mode.
     :nnoremap <localleader>" ciw""<esc>P
     :nnoremap <localleader>' ciw''<esc>P
@@ -121,7 +132,7 @@
     :nnoremap <localleader>K <c-w>k
     :nnoremap <localleader>L <c-w>l
     :nnoremap <localleader>H <c-w>h
-    
+
     :onoremap in( :<c-u>normal! f(vi(<cr>
     :onoremap in{ :<c-u>normal! f{vi{<cr>
     :onoremap an( :<c-u>normal! t(vi(<cr>
@@ -136,14 +147,9 @@
     :iabbrev tehn then
     :iabbrev teh the
     :iabbrev hte the
-    :iabbrev @@ grslong@gmail.com
     :iabbrev ccopy Copyright 2017 Simon Long, all rights reserved.
-    :iabbrev ssig -----------------<cr>Simon Long<cr>grslong@gmail.com<cr>-----------------
-    :iabbrev wweb www.grsl.co.uk
     :iabbrev /h /*\r|/r*/
     :iabbrev ff <form></form>
-    :iabbrev addr Plum Tree Cottage<cr>Goose Rye Road<cr>Worplesdon<cr>GU3 3RJ<cr><cr>
-
 
     :onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rkvg_"<cr>
     :onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rg_vk0"<cr>
@@ -152,85 +158,85 @@
 " Autocommands.
 "--------------------------------------------------------------------------------------------
     :if !exists("autocommands_loaded")
-        :let autocommands_loaded = 1 
+    :let autocommands_loaded = 1 
 
-        " VimML Files.
-        :augroup vimFiles
-        :   autocmd!
-        :   autocmd FileType vim :nnoremap <buffer> <localleader>c I"<space><esc>
-        :   autocmd FileType vim :inoremap <buffer> <localleader>c I"<space>
-        :augroup END
+    " VimML Files.
+    :augroup vimFiles
+    :   autocmd!
+    :   autocmd FileType vim :nnoremap <buffer> <localleader>c I"<space><esc>
+    :   autocmd FileType vim :inoremap <buffer> <localleader>c <esc>I"<space>i
+    :augroup END
 
-        " HTML Files.
-        :augroup htmlFiles
-        :   autocmd!
-        :   autocmd FileType html :nnoremap <buffer> " &ldquo; 
-        :   autocmd FileType html :nnoremap <buffer> " &rdquo; 
-        :   autocmd FileType html :inoremap <localleader>p <p></p><Esc>F<i
-        :   autocmd FileType html :inoremap ;1 <h1></h1><Esc>F<i
-        :   autocmd FileType html :inoremap ;2 <h2></h2><Esc>F<i
-        :   autocmd FileType html :inoremap ;3 <h3></h3><Esc>F<i
-        :   autocmd FileType html :inoremap div<tab> <div class=""><cr><cr></div><Esc>2kf"a
-        :   autocmd FileType html :inoremap html<tab> <!DOCTYPE html><cr><cr><html><cr><cr><head><cr><cr><title></title><cr><cr></head><cr><cr><body><cr><cr></body><cr><cr></html>
-        :   iabbrev FileType html <buffer> --- &mdash; 
-        :augroup END
+    " HTML Files.
+    :augroup htmlFiles
+    :   autocmd!
+    :   autocmd FileType html :nnoremap <buffer> " &ldquo; 
+    :   autocmd FileType html :nnoremap <buffer> " &rdquo; 
+    :   autocmd FileType html :inoremap <localleader>p <p></p><Esc>F<i
+    :   autocmd FileType html :inoremap ;1 <h1></h1><Esc>F<i
+    :   autocmd FileType html :inoremap ;2 <h2></h2><Esc>F<i
+    :   autocmd FileType html :inoremap ;3 <h3></h3><Esc>F<i
+    :   autocmd FileType html :inoremap div<tab> <div class=""><cr><cr></div><Esc>2kf"a
+    :   autocmd FileType html :inoremap html<tab> <!DOCTYPE html><cr><cr><html><cr><cr><head><cr><cr><title></title><cr><cr></head><cr><cr><body><cr><cr></body><cr><cr></html>
+    :   iabbrev FileType html <buffer> --- &mdash; 
+    :augroup END
 
-        " SQL Files
-        :augroup sqlFiles
-        :   autocmd!
-        " Comment out lines
-        :   autocmd FileType sql   :nnoremap <buffer> <localleader>c  I#<esc>
-        :   autocmd FileType sql   :nnoremap <buffer> <localleader>pc {I/*<esc>}I//*/
-        " :   autocmd FileType mysql :nnoremap <buffer> <localleader>c  I#<esc>
-        " :   autocmd FileType mysql :nnoremap <buffer> <localleader>pc {I/*<esc>}I//*/
+    " SQL Files
+    :augroup sqlFiles
+    :   autocmd!
+    " Comment out lines
+    :   autocmd FileType sql   :nnoremap <buffer> <localleader>c  I#<esc>
+    :   autocmd FileType sql   :nnoremap <buffer> <localleader>pc {I/*<esc>}I//*/
+    " :   autocmd FileType mysql :nnoremap <buffer> <localleader>c  I#<esc>
+    " :   autocmd FileType mysql :nnoremap <buffer> <localleader>pc {I/*<esc>}I//*/
 
-        " Comment out paragraph
-        ":   autocmd FileType sql   :nnoremap <buffer> <localleader>bc {Oi/*<esc>}o*/
-        " Uncomment lines
-        :   autocmd FileType sql   :nnoremap <buffer> <localleader>uc Ix<esc>
-        " :   autocmd FileType mysql :nnoremap <buffer> <localleader>uc Ix<esc>
-        :augroup END
+    " Comment out paragraph
+    ":   autocmd FileType sql   :nnoremap <buffer> <localleader>bc {Oi/*<esc>}o*/
+    " Uncomment lines
+    :   autocmd FileType sql   :nnoremap <buffer> <localleader>uc Ix<esc>
+    " :   autocmd FileType mysql :nnoremap <buffer> <localleader>uc Ix<esc>
+    :augroup END
 
-        " PHP Files
-        :augroup phpFiles
-        :   autocmd! 
-        "   Comment out lines
-        :   autocmd FileType php :nnoremap <buffer> <localleader>c I//<esc><space>
-        :   autocmd FileType php :nnoremap <buffer> <localleader>cc I/*<cr><cr>//*/<esc>k<tab>i
-        :   autocmd FileType php :nnoremap <buffer> <localleader>cp I/*<cr><cr>//*/<esc>k<tab>i
-        " Uncomment lines
-        :   autocmd FileType php :nnoremap <buffer> <localleader>uc Ix<esc>
-        :   autocmd FileType vim :nnoremap <buffer> <localleader>uc I" <esc>
-        "   Abbreviations - snippets
-        :   autocmd FileType php :iabbrev  <buffer> iff if () {<cr><cr>}<esc>kkf(a
-        :   autocmd FileType php :iabbrev  <buffer> ife if () {<cr><cr>}<cr>else () {<cr><cr>}<esc>5kf(a
-        " Insert HTML Headers
-        :   autocmd FileType html :inoremap p<tab> <p></p><Esc>F<i
-        :   autocmd FileType html :inoremap 1<tab> <h1></h1><Esc>F<i
-        :augroup END
+    " PHP Files
+    :augroup phpFiles
+    :   autocmd! 
+    "   Comment out lines
+    :   autocmd FileType php :nnoremap <buffer> <localleader>c I//<esc><space>
+    :   autocmd FileType php :nnoremap <buffer> <localleader>cc I/*<cr><cr>//*/<esc>k<tab>i
+    :   autocmd FileType php :nnoremap <buffer> <localleader>cp I/*<cr><cr>//*/<esc>k<tab>i
+    " Uncomment lines
+    :   autocmd FileType php :nnoremap <buffer> <localleader>uc Ix<esc>
+    :   autocmd FileType vim :nnoremap <buffer> <localleader>uc I" <esc>
+    "   Abbreviations - snippets
+    :   autocmd FileType php :iabbrev  <buffer> iff if () {<cr><cr>}<esc>kkf(a
+    :   autocmd FileType php :iabbrev  <buffer> ife if () {<cr><cr>}<cr>else () {<cr><cr>}<esc>5kf(a
+    " Insert HTML Headers
+    :   autocmd FileType html :inoremap p<tab> <p></p><Esc>F<i
+    :   autocmd FileType html :inoremap 1<tab> <h1></h1><Esc>F<i
+    :augroup END
 
-        " JavaScript Files.
-        :augroup javascriptFiles
-        :   autocmd!
-        :   autocmd FileType javascript :iabbrev <buffer> iff if ()<left>
-        :augroup END
-        
-        " Markdown Files.
-        :augroup markdownFiles
-        :   autocmd!
-        :   autocmd FileType md :nnoremap <buffer> <localleader>1<space> I#
-        :augroup END
+    " JavaScript Files.
+    :augroup javascriptFiles
+    :   autocmd!
+    :   autocmd FileType javascript :iabbrev <buffer> iff if ()<left>
+    :augroup END
+
+    " Markdown Files.
+    :augroup markdownFiles
+    :   autocmd!
+    :   autocmd FileType md :nnoremap <buffer> <localleader>1<space> I#
+    :augroup END
     :endif
 
 "--------------------------------------------------------------------------------------------
-" Taken from George Ornbo's blog at http://www.shapeshed.com/  
+        " Taken from George Ornbo's blog at http://www.shapeshed.com/  
 "--------------------------------------------------------------------------------------------
     :if has("autocmd")
-        augroup templates
-            autocmd BufNewFile *.html 0r ~/.vim/templates/skeleton.html
-            autocmd BufNewFile *.php 0r ~/.vim/templates/skeleton.php
-            autocmd BufNewFile *.sql 0r ~/.vim/templates/skeleton.sql
-        augroup END
+    augroup templates
+    autocmd BufNewFile *.html 0r ~/.vim/templates/skeleton.html
+    autocmd BufNewFile *.php 0r ~/.vim/templates/skeleton.php
+    autocmd BufNewFile *.sql 0r ~/.vim/templates/skeleton.sql
+    augroup END
     endif
 
 "--------------------------------------------------------------------------------------------
@@ -241,3 +247,17 @@
     let g:netrw_browse_split = 4
     let g:netrw_altv = 1
     let g:netrw_winsize = 25
+
+"--------------------------------------------------------------------------------------------
+" Functions.
+"--------------------------------------------------------------------------------------------
+
+    " :function! ClearEndOfLineWhiteSpace()
+    :function! C()
+    :   normal! mz
+    :   let temp = @@    
+    :   normal! <c-u>execute ":%s/\\s\\+$//"<cr>             
+    :   let @@ = temp
+    :   normal! 'z
+    :endfunction
+
