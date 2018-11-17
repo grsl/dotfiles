@@ -108,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 alias gw="ssh grsl@host58.servers.prgn.misp.co.uk -p2510 -lgrsl"
 alias sw="ssh p05splatmed@splatmedia.co.uk"
 alias nw="npm watch"
+alias cls="clear"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 #export PATH="~/.composer/vendor/bin:/usr/local/Cellar/php71/7.1.8_20/bin:~/.rvm/bin:/usr/local/Cellar/ctags/5.8.1/bin/:/usr/local/bin:/usr/sbin:/bin:"
