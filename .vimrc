@@ -28,7 +28,7 @@ execute pathogen#infect()
         :noremap <Down> <NOP>
         :noremap <Left> <NOP>
         :noremap <Right> <NOP>
-        :syntax enable      " Turn on Syntax Highlighting.
+        :syntax enable   " Turn on Syntax Highlighting.
 
 "-------------------------------------------------------------------------
 " Set Leaders.
