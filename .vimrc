@@ -4,11 +4,6 @@
 "
 "-------------------------------------------------------------------------
 
-"-------------------------------------------------------------------------
-" Include Pathogen by Tim Pope.
-"-------------------------------------------------------------------------
-execute pathogen#infect()
-
 "------------------------------------------------------------------------
 " Basic settings
 "-------------------------------------------------------------------------
@@ -24,11 +19,11 @@ execute pathogen#infect()
     :inoremap jk <esc> " Use jk instead of the <ESC> key to exit insert mode.
 
     " Stop the arrow keys from working to break the habit of using them.
-        :noremap <Up> <NOP>
-        :noremap <Down> <NOP>
-        :noremap <Left> <NOP>
-        :noremap <Right> <NOP>
-        :syntax enable   " Turn on Syntax Highlighting.
+    :noremap <Up> <NOP>
+    :noremap <Down> <NOP>
+    :noremap <Left> <NOP>
+    :noremap <Right> <NOP>
+    :syntax enable   " Turn on Syntax Highlighting.
 
 "-------------------------------------------------------------------------
 " Set Leaders.
@@ -59,6 +54,7 @@ execute pathogen#infect()
         :nnoremap <leader>M ma:%s/\s\+$//<cr>'a
 
     " Visual mode.
+    " Visual mode is for pussies.
 
 "-------------------------------------------------------------------------
 " Navigate Splits
@@ -143,8 +139,8 @@ execute pathogen#infect()
     :iabbrev teh the
     :iabbrev hte the
     :iabbrev ccopy Copyright 2017 Simon Long, all rights reserved.
-    :iabbrev /h /*\r|/r*/
-    :iabbrev ff <form></form>
+    ":iabbrev /h /*\r|/r*/
+    ":iabbrev ff <form></form>
 
     :onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rkvg_"<cr>
     :onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rg_vk0"<cr>
@@ -153,14 +149,15 @@ execute pathogen#infect()
 " Autocommands.
 "-------------------------------------------------------------------------
     :if !exists("autocommands_loaded")
-    :let autocommands_loaded = 1
 
-    " VimML Files.
-    :augroup vimFiles
-    :   autocmd!
-    :   autocmd FileType vim :nnoremap <buffer> <leader>c mzI"<space><esc>`z
-    :   autocmd FileType vim :inoremap <buffer> <leader>c <esc>I"<space>i
-    :augroup END
+        :let autocommands_loaded = 1
+
+        " VimML Files.
+        :augroup vimFiles
+        :   autocmd!
+        :   autocmd FileType vim :nnoremap <buffer> <leader>c mzI"<space><esc>`z
+        :   autocmd FileType vim :inoremap <buffer> <leader>c <esc>I"<space>i
+        :augroup END
 
     " HTML Files.
     :augroup htmlFiles
