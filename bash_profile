@@ -7,7 +7,7 @@ alias l="ls -G"
 alias ll="ls -lG"
 alias lla="ls -alG"
 alias la="ls -aG"
-
+alias cls="clear"
 alias ..="cd .."
 alias ~="cd ~"
 alias cls="clear"
